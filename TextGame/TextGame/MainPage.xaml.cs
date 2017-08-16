@@ -22,7 +22,7 @@ namespace TextGame
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        Personagem personagem = new Personagem();
+        Npc npc1 = new Npc("Marcondes", "Pedreiro", 'M', true);
 
         public MainPage()
         {
@@ -31,9 +31,12 @@ namespace TextGame
 
         private void btn_teste_Click(object sender, RoutedEventArgs e)
         {
-            personagem.setNome("Xablau");
+            npc1.adicionarFala("Hello");
 
-            teste.Text = personagem.getNome();
+            for (int i = 0; i < npc1.Falas.Count; i++)
+            {
+                teste.Text += npc1.Falas[i].ToString();
+            }           
         }
     }
 }

@@ -8,16 +8,8 @@ namespace TextGame
 {
     class Personagem
     {
-        private String nome;
+        public String nome { get; set; }
+        public String ocupacao { get; set; }
 
-        public void setNome(String nome)
-        {
-            this.nome = nome;
-        }
-
-        public String getNome()
-        {
-            return this.nome;
-        }
     }
 }
