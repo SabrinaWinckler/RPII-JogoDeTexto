@@ -22,9 +22,18 @@ namespace TextGame
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Personagem personagem = new Personagem();
+
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private void btn_teste_Click(object sender, RoutedEventArgs e)
+        {
+            personagem.setNome("Xablau");
+
+            teste.Text = personagem.getNome();
         }
     }
 }

@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="367*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="teste" HorizontalAlignment="Left" Margin="807,363,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="80" AutomationProperties.Name="" Text="Testando" Grid.ColumnSpan="2"/>
+        <Button x:Name="btn_teste" Content="Button" HorizontalAlignment="Left" Margin="0,469,0,0" VerticalAlignment="Top" Width="305" Height="68" Grid.Column="1" Click="btn_teste_Click"/>
     </Grid>
 </Page>
