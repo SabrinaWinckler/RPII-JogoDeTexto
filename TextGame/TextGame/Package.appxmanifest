@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="cc306db8-7638-44aa-a400-98530be6b0ea"
+    Name="85a40556-8f7f-4fe2-a9c5-f32141b6fda6"
     Publisher="CN=gusta"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="cc306db8-7638-44aa-a400-98530be6b0ea" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="85a40556-8f7f-4fe2-a9c5-f32141b6fda6" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>TextGame</DisplayName>
