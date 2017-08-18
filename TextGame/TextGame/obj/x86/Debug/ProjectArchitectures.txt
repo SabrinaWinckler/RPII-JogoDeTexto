@@ -1,1 +1,1 @@
-C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\TextGame.csproj;x86
+C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\TextGame.csproj;x86

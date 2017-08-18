@@ -22015,10 +22015,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gusta\\Documents\\Universidade\\2017\\2º semestre\\RP2\\Trabalho1\\TextGame\\TextGame\\TextGame.csproj",
+      "projectUniqueName": "C:\\Users\\gusta\\Documents\\Universidade\\2017\\2º semestre\\RP2\\trabalho1\\TextGame\\TextGame\\TextGame.csproj",
       "projectName": "TextGame",
-      "projectPath": "C:\\Users\\gusta\\Documents\\Universidade\\2017\\2º semestre\\RP2\\Trabalho1\\TextGame\\TextGame\\TextGame.csproj",
-      "outputPath": "C:\\Users\\gusta\\Documents\\Universidade\\2017\\2º semestre\\RP2\\Trabalho1\\TextGame\\TextGame\\obj\\",
+      "projectPath": "C:\\Users\\gusta\\Documents\\Universidade\\2017\\2º semestre\\RP2\\trabalho1\\TextGame\\TextGame\\TextGame.csproj",
+      "outputPath": "C:\\Users\\gusta\\Documents\\Universidade\\2017\\2º semestre\\RP2\\trabalho1\\TextGame\\TextGame\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "uap10.0.10586"

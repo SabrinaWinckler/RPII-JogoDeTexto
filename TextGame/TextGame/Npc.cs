@@ -6,8 +6,8 @@ namespace TextGame
 {
     class Npc : Personagem
     {
-        public char genero { get; private set; }
-        public bool antagonista { get; private set; }
+        public char genero { get; }
+        public bool antagonista { get; }
         private ArrayList falas = new ArrayList();
 
     public Npc(String nome, String ocupacao, char genero, bool antagonista)

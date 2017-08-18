@@ -29,7 +29,7 @@ namespace TextGame
             this.InitializeComponent();
         }
 
-        private void btn_teste_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {
             npc1.adicionarFala("Hello");
 

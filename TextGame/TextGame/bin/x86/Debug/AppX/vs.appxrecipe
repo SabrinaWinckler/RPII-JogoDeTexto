@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>85a40556-8f7f-4fe2-a9c5-f32141b6fda6</PackageIdentityName>
     <PackageIdentityPublisher>CN=gusta</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>6A9390746E044A534EB09D8DE019003D28C2B15C6DC60AB608599553E29D25E0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>85a40556-8f7f-4fe2-a9c5-f32141b6fda6_1.0.0.0_x86__me2nt6vs76q4e</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>85a40556-8f7f-4fe2-a9c5-f32141b6fda6_me2nt6vs76q4e!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-16T04:58:08.775</Modified>
+      <Modified>2017-08-16T17:52:19.164</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\bin\x86\Debug\TextGame.exe">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\bin\x86\Debug\TextGame.exe">
       <PackagePath>entrypoint\TextGame.exe</PackagePath>
-      <Modified>2017-08-16T04:58:07.266</Modified>
+      <Modified>2017-08-16T17:52:13.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gusta\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -495,60 +495,60 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T02:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-08-16T00:01:12.249</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-08-09T10:57:02.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-08-09T10:57:02.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-08-09T10:57:02.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-08-09T10:57:02.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-08-09T10:57:02.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-08-09T10:57:02.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-08-09T10:57:02.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\bin\x86\Debug\TextGame.xr.xml">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\bin\x86\Debug\TextGame.xr.xml">
       <PackagePath>TextGame.xr.xml</PackagePath>
-      <Modified>2017-08-16T00:30:28.049</Modified>
+      <Modified>2017-08-16T06:13:59.808</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.15063.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-08-09T05:58:31.982</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-16T04:21:45.366</Modified>
+      <Modified>2017-08-16T17:52:17.408</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\Trabalho1\TextGame\TextGame\bin\x86\Debug\Core\TextGame.exe">
+    <AppxPackagedFile Include="C:\Users\gusta\Documents\Universidade\2017\2º semestre\RP2\trabalho1\TextGame\TextGame\bin\x86\Debug\Core\TextGame.exe">
       <PackagePath>TextGame.exe</PackagePath>
-      <Modified>2017-08-16T04:58:08.767</Modified>
+      <Modified>2017-08-16T17:52:19.147</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
