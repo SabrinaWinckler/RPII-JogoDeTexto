@@ -1,22 +1,140 @@
 {
-  "begin": {
-    "cena1": {
-      "texto": "...",
-      "1": {
-        "ramificacao": "Você faz isso",
-        "consequencia": "cena2"
+  {
+    "begin": {
+      "cena1": {
+        "texto": "O fim do seu expediente já passou e seu dia foi basicamente o mesmo. Bom, “expediente” é relativo -ontem foi as 18:30, hoje foi às 17:45. Você está refazendo o “ritual” que você mesmo considera clichê, bebendo uma dose de whisky no seu escritório/apartamento. O lugar também não foge dos padrões impostos pela literatura norte-americana de como deve ser o escritório de um I.P.: sala única com apenas um banheiro, a clássica mesa de madeira no meio e dois gabinetes de arquivos na parede ao lado -os quais você empurra para o lado, revelando uma cama de parede, quando quer dormir. Você se lembra que este foi o único motivo de você escolher este lugar como sua moradia e local de trabalho.Você está escorado na sua mesa, com o copo de whisky na mão, encarando a placa com seu nome ao lado da sua mão. Você sente a nostalgia que não existe. Você ri internamente compreendendo que uma das suas felicidades nesta vida é esses momentos que você sente uma nostalgia inexistente, vivendo um arquétipo do que seria uma profissão romantizada. Você está tranquilo, pois você já resolveu 4 casos esse mês, pagou todas suas dívidas de aluguel e gastos, re-estocou a dispensa com o necessário e sobrou dinheiro o suficiente para você dar um jeito de passar o próximo mês. É sempre assim, vivendo mês após mês.Apesar de ter entrado neste ramo de trabalho por motivos “glorificados” você é muito bom no que faz e ganhou um razoável reconhecimento na área nestes 6 anos que atua como investigador privado. Você até solucionou alguns crimes que acabou tropeçando enquanto trabalhava em um caso. Por isso não foi surpresa quando a silhueta na sua porta apareceu aquela hora (você mandou trocar a porta de madeira inteiriça do escritório por uma que é metade de vidro embaçado, com seu nome e profissão no meio). A cena é típica de um romance e você sente a mesma adrenalina de estar vivendo um conto de mistério, uma sensação que é segredo para o resto do mundo. Mesmo depois de tantos anos você ainda sente a mesma coisa quando acontece. A sombra bate na porta e você percebe que é uma mulher. A luz do corredor está fraca, impedindo você de deduzir características de clientes de dentro do escritório. Você pensa em mandar trocar a lâmpada.Alguém está na porta. O que você faz?",
+        "1": {
+          "ramificacao": "Deixa o copo de whisky na mesa e vai atender a porta.",
+          "consequencia": "cena2"
+        },
+        "2": {
+          "ramificacao": "Desencosta da mesa e vai até a porta, tomando mais um gole da dose de whisky.",
+          "consequencia": "cena2"
+        },
+        "3": {
+          "ramificacao": "Pega seu revolver magnum .357 na gaveta da mesa e coloca atrás na sua calça, deixa o copo na mesa e vai até a porta. Nunca se pode ser cuidadoso demais...",
+          "consequencia": "cena2_1"
+        }
       },
-      "2": {
-        "ramificacao": "Você faz isso",
-        "consequencia": "cena2"
+      "cena2": {
+        "texto": "Você vai até a porta, [segurando o copo]. Você se sente a prova de balas neste momento, herói protagonista do seu próprio show de TV. Você abre a porta com o peito estufado e com a cara o mais serena possível. Todo o ato é inútil. Sua cara serena se desfaz em uma fração de segundo. Você sabia que era uma mulher antes de abrir a porta e parte da sua pose era para impressionar a mulher atrás da sua porta. O inverso acontece. Você abre a porta com as mão firmes, mas ante da porta chegar na extensão do seu braço esquerdo você mal consegue segurar o copo na mão. A mulher é com toda certeza a pessoa mais bonita que você já viu, cabelos ondulados ruivos e olhos verdes, rosto esculpido e lábios grossos. O padrão de beleza divulgado nas revistas está gritando na sua frente, na sua porta. Nem mesmo você, vivendo o momento nostálgico inexistente, poderia estar preparado para esta cena. A voz leve e forte, quase de um coro se pronuncia ser te dar chance de ao menos pensar em dizer algo: -Boa noite, o senhor Teller se encontra?",
+        "1": {
+          "ramificacao": "Ah.. Boa noite. Sim, eu sou Dante Teller.. E a senhora é?",
+          "consequencia": "dialogo1"
+        },
+        "2": {
+          "ramificacao": "Uh.. Olá, quem gostaria?",
+          "consequencia": "dialogo1"
+        }
+      },
+      "cena2_1": {
+        "texto": "Você vai até a porta, [segurando o copo]. Você se sente a prova de balas neste momento, herói protagonista do seu próprio show de TV. Você abre a porta com o peito estufado e com a cara o mais serena possível. Todo o ato é inútil. Sua cara serena se desfaz em uma fração de segundo. Você sabia que era uma mulher antes de abrir a porta e parte da sua pose era para impressionar a mulher atrás da sua porta. O inverso acontece. Você abre a porta com as mão firmes, mas ante da porta chegar na extensão do seu braço esquerdo você mal consegue segurar o copo na mão. A mulher é com toda certeza a pessoa mais bonita que você já viu, cabelos ondulados ruivos e olhos verdes, rosto esculpido e lábios grossos. O padrão de beleza divulgado nas revistas está gritando na sua frente, na sua porta. Nem mesmo você, vivendo o momento nostálgico inexistente, poderia estar preparado para esta cena. A voz leve e forte, quase de um coro se pronuncia ser te dar chance de ao menos pensar em dizer algo: -Boa noite, o senhor Teller se encontra?",
+        "1": {
+          "ramificacao": "Ah.. Boa noite. Sim, eu sou Dante Teller.. E a senhora é?",
+          "consequencia": "dialogo1"
+        },
+        "2": {
+          "ramificacao": "Uh.. Olá, quem gostaria?",
+          "consequencia": "dialogo1"
+        }
+      },
+      "dialogo1": {
+        "texto": "Perdoe minha grosseiria. Meu nome é Beatriz Duskwood...",
+        "1": {
+          "ramificacao": "continuar",
+          "consequencia": "dialogo2"
+        }
+      },
+      "dialogo2": {
+        "texto": "E por favor, não existe necessidade de me chamar de Senhora. Não tenho cônjuge legal e não sou tão velha.",
+        "1": {
+          "ramificacao": "continuar",
+          "consequencia": "dialogo3"
+        }
+      },
+      "dialogo3": {
+        "texto": "O senhor Teller?",
+        "1": {
+          "ramificacao": "continuar",
+          "consequencia": "dialogo4"
+        }
+      },
+      "dialogo4": {
+        "texto": "Sim, claro. Eu sou Dante Teller.",
+        "1": {
+          "ramificacao": "continuar",
+          "consequencia": "dialogo5"
+        }
+      },
+      "dialogo5": {
+        "texto": "Por favor, entre..",
+        "1": {
+          "ramificacao": "continuar",
+          "consequencia": "dialogo6"
+        },
+        "2": {
+          "ramificacao": "continuar",
+          "consequencia": "dialogo6_1"
+        }
+      },
+      "dialogo6": {
+        "texto": "Pode me chamar apenas de Beatriz...",
+        "1": {
+          "ramificacao": "continuar",
+          "consequencia": "cena3"
+        },
+        "dialogo6_1": {
+          "texto": "[Enquanto entra, ela diz:]O senhor não vai precisar disso para conversar comigo, Sr. Teller. [Ela aponta para suas costas]",
+          "1": {
+            "ramificacao": "Nunca se é cuidadoso demais Sra. Duskwood..",
+            "consequencia": "dialogo6_2"
+          },
+          "2": {
+            "ramificacao": "É apenas costume Sra. Duskwood..",
+            "consequencia": "dialogo6_2"
+          },
+          "3": {
+            "ramificacao": "Não se preocupe com isso Sra. Duskwood",
+            "consequencia": "dialogo6_2"
+          }
+        },
+        "dialogo6_2": {
+          "texto": "\"[Ela levanta uma sobrancelha] Certo, mas já disse, não sou casada ou velha pra me chamar de \"Senhora\".[Ela tenta esboçar um sorriso amigável, mas a preocupação em seu rosto não desaparece...]\"",
+          "1": {
+            "ramificacao": "continuar",
+            "consequencia": "dialogo6_3"
+          }
+        },
+        "dialogo6_3": {
+          "texto": "Como posso chama-la então?",
+          "1": {
+            "ramificacao": "continuar",
+            "consequencia": "dialogo6_4"
+          }
+        },
+        "dialogo6_4": {
+          "texto": "Pode me chamar apenas de Beatriz...",
+          "1": {
+            "ramificacao": "continuar",
+            "consequencia": "cena3_1"
+          }
+        },
+        "cena3_1": {
+          "texto": "Você a convida para entrar e se sentar. Você a espera entrar e fecha a porta. Você pensa em como ela deve estar acostumada com situações como essa, pessoas que a acabam de conhecê-la simplesmente se esquecer de como ser funcional por alguns segundos. Agora que seu cérebro está em perfeita função de pensamentos novamente você imagina o quanto esta mulher está acostumada a receber tudo que deseja sem levantar um dedo, sem qualquer débito, só pelo fato de ela existir. Você se senta do outro lado da mesa, na sua cadeira. Ainda tem whisky no seu copo… O que você faz?",
+          "1": {
+            "ramificacao": "[Você coloca o revolver prateado no coldre axilar pendurado na arara de casacos]",
+            "consequencia": "dialogo6_2"
+          },
+          "2": {
+            "ramificacao": "[Você passa pelo lado da mesa e coloca o revolver prateado casualmente em sua superfície, próximo do seu lado da mesa]",
+            "consequencia": "dialogo6_2"
+          },
+          "3": {
+            "ramificacao": "[Você passa pelo lado da mesa e coloca o revolver prateado casualmente em sua superfície, próximo do seu lado da mesa]",
+            "consequencia": "dialogo6_2"
+          }
+        }
       }
     }
-    },
-
-    "cena2": {
-      "texto": "...",
-      "1":  { "ramificacao": "Você faz isso", "consequencia": "cena2" }
-    }
   }
-
-
+}
