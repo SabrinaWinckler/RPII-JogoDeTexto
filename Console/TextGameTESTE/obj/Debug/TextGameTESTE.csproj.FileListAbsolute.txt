@@ -5,3 +5,10 @@ D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\TextGameTEST
 D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\TextGameTESTE\TextGameTESTE\bin\Debug\TextGameTESTE.pdb
 D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\TextGameTESTE\TextGameTESTE\obj\Debug\TextGameTESTE.exe
 D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\TextGameTESTE\TextGameTESTE\obj\Debug\TextGameTESTE.pdb
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGameTESTE\bin\Debug\TextGameTESTE.exe.config
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGameTESTE\bin\Debug\TextGameTESTE.exe
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGameTESTE\bin\Debug\TextGameTESTE.pdb
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGameTESTE\obj\Debug\TextGameTESTE.csprojResolveAssemblyReference.cache
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGameTESTE\obj\Debug\TextGameTESTE.csproj.CoreCompileInputs.cache
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGameTESTE\obj\Debug\TextGameTESTE.exe
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGameTESTE\obj\Debug\TextGameTESTE.pdb

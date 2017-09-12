@@ -119,9 +119,6 @@ namespace TextGameTESTE
                         }
                         else { Console.WriteLine("Voce nao possui um personagem ainda!"); }
                         break;
-                    default:
-                        Console.WriteLine("Entrada inválida. Tente novamente!"); Console.WriteLine();
-                        break;
                 }
                 Console.WriteLine();
                 Console.Write("Pressione qualquer tecla para continuar...");
