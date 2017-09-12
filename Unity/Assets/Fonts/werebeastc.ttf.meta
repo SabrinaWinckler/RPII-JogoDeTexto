@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 63dfead7cf61d0b438477415ba0e1424
+timeCreated: 1504247226
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Were-Beast Condensed
+  fontNames:
+  - Were-Beast Condensed
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

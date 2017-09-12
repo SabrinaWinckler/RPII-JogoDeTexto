@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 145ca10e0a7b3764e8e6e5d1e1eab773
+timeCreated: 1504247226
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Were-Beast Italic
+  fontNames:
+  - Were-Beast Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
