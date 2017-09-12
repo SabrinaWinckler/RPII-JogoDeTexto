@@ -1,0 +1,22 @@
+{
+  "begin": {
+    "cena1": {
+      "texto": "...",
+      "1": {
+        "ramificacao": "Você faz isso",
+        "consequencia": "cena2"
+      },
+      "2": {
+        "ramificacao": "Você faz isso",
+        "consequencia": "cena2"
+      }
+    }
+    },
+
+    "cena2": {
+      "texto": "...",
+      "1":  { "ramificacao": "Você faz isso", "consequencia": "cena2" }
+    }
+  }
+
+
