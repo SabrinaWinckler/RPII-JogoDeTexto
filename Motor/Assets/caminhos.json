@@ -108,7 +108,7 @@
         "dialogo6_3": {
           "texto": "Como posso chama-la então?",
           "1": {
-            "ramificacao": "continuar",
+            "ramificacao": "contiuar",
             "consequencia": "dialogo6_4"
           }
         },
