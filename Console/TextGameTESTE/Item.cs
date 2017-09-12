@@ -11,6 +11,7 @@ namespace TextGameTESTE
     {
         //ATRIBUTOS
         private String nome;
+        //String de itens apenas para teste em console
         private String[] item = { "FACA", "GRANADA", "ARMA", "REMEDIO", "LUVA", "BUSSOLA", "IDENTIDADES FALSAS", "PASSAPORTES FALSOS", "OCULOS", "CANETA"};
         private Random r = new Random();
 

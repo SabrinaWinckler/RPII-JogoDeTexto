@@ -49,7 +49,7 @@ namespace TextGameTESTE
 
         public bool IsFull()
         {
-            return (inventario.Count == 10) ;
+            return (inventario.Count == 10);
         }
 
         public void Abrir()
