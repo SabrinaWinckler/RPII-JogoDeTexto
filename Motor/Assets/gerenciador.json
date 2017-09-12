@@ -1,0 +1,80 @@
+{
+    "gerenciador": [
+        {
+            "nomeCenario": "beginning",
+            "bg_cenario": "beginning.jpg",
+            "cena": [
+                {
+                    "nomeCena": "cena1",
+                    "enredo": [
+                        {
+                            "texto": "E a porta se abriu",
+                            "fx": "porta_rangendo.mp3"
+                        },
+                        {
+                            "texto": "E suas mãos ficaram tremendo",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Lalalá",
+                            "segmento": {
+                                "nomeCenario": "beginning",
+                                "nomeCena": "cena2"
+                            },
+                            "permissao": "todos",
+                            "amortizar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Lelelé",
+                            "segmento": {
+                                "nomeCenario": "beginning",
+                                "nomeCena": "cena3"
+                            },
+                            "permissao": "ator",
+                            "amortizar": 200.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "cena2",
+                    "enredo": [
+                        {
+                            "texto": "E a porta se abriu",
+                            "fx": "porta_rangendo.mp3"
+                        },
+                        {
+                            "texto": "E suas mãos ficaram tremendo",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Lalalá",
+                            "segmento": {
+                                "nomeCenario": "beginning",
+                                "nomeCena": "cena2"
+                            },
+                            "permissao": "todos",
+                            "amortizar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Lelelé",
+                            "segmento": {
+                                "nomeCenario": "beginning",
+                                "nomeCena": "cena3"
+                            },
+                            "permissao": "ator",
+                            "amortizar": 200.0,
+                            "item": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
