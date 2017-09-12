@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using System.IO;
 using Escolha;
 
 public class MainPlayer : MonoBehaviour
@@ -12,19 +13,19 @@ public class MainPlayer : MonoBehaviour
 
         void Start()
         {
-            Gerenciador game = new Gerenciador();
-            string text = System.IO.File.ReadAllText(@"C:\Users\SABRINA\Documents\trabalho1\Motor\Assets\caminhos.json");
+            bool interacao = false;
+            string text = File.ReadAllText(@"C:\Users\SABRINA\Documents\trabalho1\Motor\Assets\Gerenciador.json");
             Gerenciador.CreateFromJSON(text);
             //do
             //{
-                System.Console.WriteLine("Contents of WriteText.txt = {0}", text);
+               
             //a partit do id texto é mostrado e depois do click é levado a uma nova cena. 
            // } while (!game.resposta);
         }
 
         void Update()
         {
-            game.resposta = false;
+            
             // e avança para o próximo objeto instanciado atraves do json 
         }
     }
