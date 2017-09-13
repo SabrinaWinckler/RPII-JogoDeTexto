@@ -1,2 +1,0 @@
-C:\Users\SABRINA\Documents\trabalho1\Motor\Temp\UnityVS_obj\Debug\Motor.csprojResolveAssemblyReference.cache
-C:\Users\SABRINA\Documents\trabalho1\Motor\Temp\UnityVS_obj\Debug\Motor.csproj.CoreCompileInputs.cache
