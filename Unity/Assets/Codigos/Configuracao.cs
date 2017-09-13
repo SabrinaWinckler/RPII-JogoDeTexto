@@ -66,6 +66,8 @@ namespace textgame
 
         #endregion
 
+        public Button iniciar;
+
         #endregion
 
         void Awake()
@@ -108,10 +110,12 @@ namespace textgame
 
             btn_config.onClick.AddListener(() => {
                 cena_config.gameObject.SetActive(true);
+                iniciar.gameObject.SetActive(false);
             });
 
             btn_pronto_config.onClick.AddListener(() => {
                 cena_config.gameObject.SetActive(false);
+                iniciar.gameObject.SetActive(true);
                 audios.PlayOneShot(fx_pronto_config, PlayerPrefs.GetFloat("AUDIO_EFEITO"));
             });
 

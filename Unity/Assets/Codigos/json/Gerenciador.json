@@ -1,0 +1,80 @@
+{
+    "cenarios": [
+        {
+            "nomeCenario": "beginning",
+            "bg_cenario": "beginning.jpg",
+            "cenas": [
+                {
+                    "nomeCena": "cena1",
+                    "enredos": [
+                        {
+                            "texto": "  O fim do seu expediente já passou e seu dia foi basicamente o mesmo. Bom, “expediente” é relativo -ontem foi as 18:30, hoje foi às 17:45. Você está refazendo o “ritual” que você mesmo considera clichê, bebendo uma dose de whisky no seu escritório/apartamento. \n\n    O lugar também não foge dos padrões impostos pela literatura norte-americana de como deve ser o escritório de um I.P.: sala única com apenas um banheiro, a clássica mesa de madeira no meio e dois gabinetes de arquivos na parede ao lado -os quais você empurra para o lado, revelando uma cama de parede, quando quer dormir. Você se lembra que este foi o único motivo de você escolher este lugar como sua moradia e local de trabalho. Você está escorado na sua mesa, com o copo de whisky na mão, encarando a placa com seu nome ao lado da sua mão. Você sente a nostalgia que não existe. Você ri internamente compreendendo que uma das suas felicidades nesta vida são esses momentos de nostalgia, vivendo um arquétipo do que seria uma profissão romantizada. Você está tranquilo, pois você já resolveu 4 casos esse mês, pagou todas suas dívidas de aluguel e gastos, re-estocou a dispensa com o necessário e sobrou dinheiro o suficiente para você dar um jeito de passar o próximo mês. É sempre assim, vivendo mês após mês. Apesar de ter entrado neste ramo de trabalho por motivos “glorificados” você é muito bom no que faz e ganhou um razoável reconhecimento na área nestes 6 anos que atua como investigador privado. Você até solucionou alguns crimes que acabou tropeçando enquanto trabalhava em um caso. Por isso não foi surpresa quando a silhueta na sua porta apareceu aquela hora (você mandou trocar a porta de madeira inteiriça do escritório por uma que é metade de vidro embaçado, com seu nome e profissão no meio). A cena é típica de um romance e você sente a mesma adrenalina de estar vivendo um conto de mistério, uma sensação que é segredo para o resto do mundo. Mesmo depois de tantos anos você ainda sente a mesma coisa quando acontece. A sombra bate na porta e você percebe que é uma mulher. A luz do corredor está fraca, impedindo você de deduzir características de clientes de dentro do escritório. Você pensa em mandar trocar a lâmpada. Alguém está na porta. O que você faz?",
+                            "fx": "porta_rangendo.mp3"
+                        },
+                        {
+                            "texto": "E suas mãos ficaram tremendo",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Lalalá",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 1
+                            },
+                            "permissao": "todos",
+                            "amortizar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Lelelé",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 2
+                            },
+                            "permissao": "ator",
+                            "amortizar": 200.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "cena2",
+                    "enredos": [
+                        {
+                            "texto": "E a porta se abriu",
+                            "fx": "porta_rangendo.mp3"
+                        },
+                        {
+                            "texto": "E suas mãos ficaram tremendo",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Lalalá",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 1
+                            },
+                            "permissao": "todos",
+                            "amortizar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Lelelé",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 1
+                            },
+                            "permissao": "ator",
+                            "amortizar": 200.0,
+                            "item": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -984,9 +984,9 @@ GameObject:
   - component: {fileID: 487122848}
   - component: {fileID: 487122847}
   - component: {fileID: 487122846}
-  - component: {fileID: 487122851}
   - component: {fileID: 487122852}
   - component: {fileID: 487122853}
+  - component: {fileID: 487122851}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1035,7 +1035,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 228.09592
+  orthographic size: 359.8764
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1058,7 +1058,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 487122845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 512, y: 230, z: 1}
+  m_LocalPosition: {x: 640, y: 362, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1262649298}
@@ -1071,7 +1071,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 487122845}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e51b3aecabe0ba14c9aa9841cc85dbbd, type: 3}
   m_Name: 
@@ -1185,6 +1185,7 @@ MonoBehaviour:
   btn_pronto_config: {fileID: 31228914}
   fx_pronto_config: {fileID: 8300000, guid: 276422dc631c10e45b786c6571cb460f, type: 3}
   btn_restaurar_padrao: {fileID: 2114697935}
+  iniciar: {fileID: 367701280}
 --- !u!1 &510459563
 GameObject:
   m_ObjectHideFlags: 0
