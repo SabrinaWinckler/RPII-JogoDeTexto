@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 5293c59872b8b8441b5ce1593719298b
+timeCreated: 1505426669
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hastro
+  fontNames:
+  - Hastro
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
