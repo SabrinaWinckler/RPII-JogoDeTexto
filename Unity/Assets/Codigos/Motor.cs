@@ -14,6 +14,7 @@ namespace textgame
     {
 
         public Text historia;
+        public Scrollbar scrollbar_historia;
 
         bool interacao;
         private string jsonGerenciador;
@@ -98,7 +99,8 @@ namespace textgame
             {
                 historia.text += frase[letra];
                 letra++;
-                yield return new WaitForSeconds(0.005f);
+                yield return new WaitForSeconds(0.001f);
+                scrollbar_historia.value = 0;
             }
         }
     }
