@@ -922,8 +922,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1553910547}
   m_HandleRect: {fileID: 1553910546}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 0
+  m_Size: 0.9679659
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1293,6 +1293,7 @@ GameObject:
   - component: {fileID: 487122846}
   - component: {fileID: 487122852}
   - component: {fileID: 487122851}
+  - component: {fileID: 487122853}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1388,10 +1389,10 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 487122845}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 41271ad5c9a3b964f811bcb9ab42bfc5, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1462,6 +1463,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &487122853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 487122845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13d92f5ccd233245b5ca7f63c372d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  historia: {fileID: 1901448029}
+  scrollbar_historia: {fileID: 192723106}
+  btn_opcs:
+  - {fileID: 39904848}
+  - {fileID: 1026141969}
+  - {fileID: 753059535}
+  - {fileID: 2007231860}
 --- !u!1 &519167419
 GameObject:
   m_ObjectHideFlags: 0
@@ -2369,7 +2388,7 @@ GameObject:
   - component: {fileID: 940481327}
   - component: {fileID: 940481326}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Text_btn_opc1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5779,7 +5798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.6000061, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0.6000061, y: 4.754272}
   m_SizeDelta: {x: -25.2, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1901448029
@@ -6375,7 +6394,6 @@ GameObject:
   - component: {fileID: 2120983225}
   - component: {fileID: 2120983224}
   - component: {fileID: 2120983223}
-  - component: {fileID: 2120983226}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -6428,19 +6446,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2120983226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2120983222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f13d92f5ccd233245b5ca7f63c372d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  historia: {fileID: 1901448029}
-  scrollbar_historia: {fileID: 192723106}
 --- !u!1 &2133029531
 GameObject:
   m_ObjectHideFlags: 0

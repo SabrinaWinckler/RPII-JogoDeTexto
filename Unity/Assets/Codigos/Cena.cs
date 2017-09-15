@@ -9,6 +9,7 @@ namespace textgame
     {
         [SerializeField]
         public string nomeCena;
+        public string bg_cena;
         public List<Enredo> enredos;
         public List<Opcao> opcoes;
     }
