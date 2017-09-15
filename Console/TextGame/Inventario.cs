@@ -33,7 +33,7 @@ namespace TextGameTESTE
             item_remover = Console.ReadLine();
             foreach (var item in inventario)
             {
-                if ( String.Equals(item.Nome, item_remover, StringComparison.OrdinalIgnoreCase) )
+                if (String.Equals(item.Nome, item_remover, StringComparison.OrdinalIgnoreCase))
                 {
                     inventario.Remove(item);
                     return true;
@@ -44,7 +44,7 @@ namespace TextGameTESTE
 
         public bool IsEmpty()
         {
-            return (inventario.Count == 0) ;
+            return (inventario.Count == 0);
         }
 
         public bool IsFull()

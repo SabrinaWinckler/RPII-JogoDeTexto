@@ -42,19 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Advogado.cs" />
-    <Compile Include="Ator.cs" />
-    <Compile Include="Historia.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="Jogo.cs" />
-    <Compile Include="Medico.cs" />
-    <Compile Include="Ocupacao.cs" />
     <Compile Include="Personagem.cs" />
-    <Compile Include="Policial.cs" />
-    <Compile Include="Professor.cs" />
+    <Compile Include="Profissao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Psicologo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
