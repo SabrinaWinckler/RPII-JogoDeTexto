@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEditor;
 
 namespace textgame
 {
@@ -18,13 +17,12 @@ namespace textgame
         public Text historia;
         public Text nomeCenario;
         public Scrollbar scrollbar_historia;
-        public Button[] btn_opcs;
 
         private AudioSource audios;
 
         private AudioClip fxAtual;
 
-        bool interacao;
+        private bool interacao;
         private string jsonGerenciador;
         private string filePath;
         private Gerenciador gerenciador;
@@ -45,8 +43,8 @@ namespace textgame
 
             audios = GetComponent<AudioSource>();
 
-            //this.jsonGerenciador = "../Codigos/json/Gerenciador.json";
-            this.jsonGerenciador = "../Codigos/json/Teste.json";
+            this.jsonGerenciador = "json/Gerenciador.json";
+            //this.jsonGerenciador = "json/Teste.json";
             this.filePath = Path.Combine(Application.streamingAssetsPath, this.jsonGerenciador);
 
             historia.text = "";
@@ -56,11 +54,7 @@ namespace textgame
             personagem.setProfissao("Ator");
             personagem.Saldo = 200;
 
-            
-
             interacao = false;
-
-            btn_opcs = new Button[4];
 
             gerenciador = new Gerenciador();
 
@@ -72,6 +66,7 @@ namespace textgame
                 string arquivo = File.ReadAllText(filePath);
 
                 gerenciador = JsonUtility.FromJson<Gerenciador>(arquivo);
+                Debug.Log("JSON CARREGADO");
             }
             else
             {
@@ -87,6 +82,7 @@ namespace textgame
         {
             if (!interacao)
             {
+                Debug.Log("Entrou em '!interacao' ");
                 StartCoroutine(
                     Engrenagem(gerenciador.cenarios[cenarioAtual].cenas[cenaAtual])
                 );
@@ -98,17 +94,28 @@ namespace textgame
 
         IEnumerator Engrenagem(Cena cena)
         {
+            Debug.Log("Entrou em 'Engrenagem' ");
             nomeCenario.text = gerenciador.cenarios[cenarioAtual].nomeCenario;
-            canvas.GetComponent<RawImage>().texture = Resources.Load("Imagens/bg_cenario_cena/" + cena.bg_cena, typeof(Texture)) as Texture;
+            WWW textura = new WWW(Path.Combine(Application.streamingAssetsPath, "bg_cenario_cena/" + cena.bg_cena));
+            canvas.GetComponent<RawImage>().texture = textura.texture;
 
             for (int i = 0; i < cena.enredos.Count; i++)
             {
-                fxAtual = Resources.Load("Musicas/" + cena.enredos[i].fx, typeof(AudioClip)) as AudioClip;
+
+                if(cena.enredos[i].fx != null)
+                {
+                    WWW wwwAudioFX = new WWW(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
+                    Debug.LogError(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
+                    fxAtual = wwwAudioFX.GetAudioClip(false, true, AudioType.OGGVORBIS);
+                    Debug.LogError(fxAtual);
+                    Debug.Log("Deveria ter FX");
+                }
+                   
 
                 for (int j = 0; j < cena.enredos[i].texto.Length; j++)
                 {
                     historia.text += cena.enredos[i].texto[j];
-                    yield return new WaitForSeconds(0.001f);
+                    yield return new WaitForSeconds(0.04f);
                     scrollbar_historia.value = 0;
                 }
 
