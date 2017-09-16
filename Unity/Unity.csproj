@@ -83,11 +83,14 @@
     <Compile Include="Assets\Codigos\Configuracao.cs" />
     <Compile Include="Assets\Codigos\Enredo.cs" />
     <Compile Include="Assets\Codigos\Gerenciador.cs" />
+    <Compile Include="Assets\Codigos\Inventario.cs" />
     <Compile Include="Assets\Codigos\Item.cs" />
     <Compile Include="Assets\Codigos\Jogo.cs" />
     <Compile Include="Assets\Codigos\Motor.cs" />
     <Compile Include="Assets\Codigos\Opcao.cs" />
+    <Compile Include="Assets\Codigos\Personagem.cs" />
     <Compile Include="Assets\Codigos\Principal.cs" />
+    <Compile Include="Assets\Codigos\Profissao.cs" />
     <Compile Include="Assets\Codigos\Segmento.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

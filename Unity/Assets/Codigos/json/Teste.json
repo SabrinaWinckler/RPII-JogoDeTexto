@@ -5,18 +5,18 @@
       "cenas": [
         {
           "nomeCena": "cena1",
-          "bg_cena": "bg_beginning_beco.jpg",
+          "bg_cena": "bg_beginning_beco",
           "enredos": [
             {
-              "texto": "O fim do seu expediente já passou e seu dia foi basicamente o mesmo. Bom, “expediente” é relativo -ontem foi as 18:30, hoje foi às 17:45. Você está refazendo o “ritual” que você mesmo considera clichê, bebendo uma dose de whisky no seu escritório/apartamento.",
-              "fx": "porta_rangendo"
-            },
-            {
-              "texto": "O lugar também não foge dos padrões impostos pela literatura norte-americana de como deve ser o escritório de um I.P.: sala única com apenas um banheiro, a clássica mesa de madeira no meio e dois gabinetes de arquivos na parede ao lado -os quais você empurra para o lado, revelando uma cama de parede, quando quer dormir. Você se lembra que este foi o único motivo de você escolher este lugar como sua moradia e local de trabalho.",
+              "texto": "TEXTO 1.",
               "fx": null
             },
             {
-              "texto": "Você está escorado na sua mesa, com o copo de whisky na mão, encarando a placa com seu nome ao lado da sua mão. Você sente a nostalgia que não existe. Você ri internamente compreendendo que uma das suas felicidades nesta vida são esses momentos de nostalgia, vivendo um arquétipo do que seria uma profissão romantizada. Você está tranquilo, pois você já resolveu 4 casos esse mês, pagou todas suas dívidas de aluguel e gastos, re-estocou a dispensa com o necessário e sobrou dinheiro o suficiente para você dar um jeito de passar o próximo mês. É sempre assim, vivendo mês após mês.",
+              "texto": "TEXTO 2.",
+              "fx": null
+            },
+            {
+              "texto": "TEXTO 3.",
               "fx": null
             }
           ],
@@ -27,8 +27,8 @@
                 "idCenario": 0,
                 "idCena": 1
               },
-              "permissao": "todos",
-              "amortizar": 0.0,
+              "permissao": "ator",
+              "descontar": 199.99,
               "item": null
             },
             {
@@ -38,18 +38,18 @@
                 "idCena": 2
               },
               "permissao": "todos",
-              "amortizar": 0.0,
+              "descontar": 0.0,
               "item": null
             }
           ]
         },
         {
           "nomeCena": "cena2",
-          "bg_cena": "bg_beginning_carta.jpg",
+          "bg_cena": "bg_beginning_carta",
           "enredos": [
             {
               "texto": "Você está na cena 2.",
-              "fx": "beginning.mp3"
+              "fx": null
             },
             {
               "texto": "DEPOIS DO AUDIO.",
@@ -64,7 +64,7 @@
                 "idCena": 0
               },
               "permissao": "todos",
-              "amortizar": 0.0,
+              "descontar": 0.0,
               "item": null
             },
             {
@@ -74,7 +74,7 @@
                 "idCena": 2
               },
               "permissao": "todos",
-              "amortizar": 0.0,
+              "descontar": 0.0,
               "item": null
             }
           ]
@@ -100,7 +100,7 @@
                 "idCena": 1
               },
               "permissao": "todos",
-              "amortizar": 0.0,
+              "descontar": 0.0,
               "item": null
             },
             {
@@ -110,7 +110,7 @@
                 "idCena": 0
               },
               "permissao": "todos",
-              "amortizar": 0.0,
+              "descontar": 0.0,
               "item": null
             }
           ]
