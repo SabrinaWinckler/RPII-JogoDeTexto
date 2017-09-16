@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using UnityEditor;
 
 namespace textgame
 {
@@ -15,8 +15,18 @@ namespace textgame
 
         public Text historia;
         public Scrollbar scrollbar_historia;
+        public Button[] btn_opcs;
+
+        private AudioSource audios;
+        private float inicioTempo;
+
+        [Space(20)]
+        [Header("Efeitos sonoros")]
+        //public AudioClip ;
+        private AudioClip fxAtual;
 
         bool interacao;
+        bool ditado_rodando;
         private string jsonGerenciador;
         private string filePath;
         Gerenciador gerenciador;
@@ -25,13 +35,21 @@ namespace textgame
         private int cenaAtual;
         private int escolha;
 
+
         // Use this for initialization
         void Start()
         {
             DontDestroyOnLoad(gameObject);
-            //  this.jsonGerenciador = "../Codigos/json/Gerenciador.json";
+
+            audios = GetComponent<AudioSource>();
+
+            //this.jsonGerenciador = "../Codigos/json/Gerenciador.json";
             this.jsonGerenciador = "../Codigos/json/Teste.json";
             this.filePath = Path.Combine(Application.streamingAssetsPath, this.jsonGerenciador);
+
+            interacao = false;
+
+            btn_opcs = new Button[4];
 
             gerenciador = new Gerenciador();
 
@@ -42,23 +60,22 @@ namespace textgame
             if (File.Exists(filePath))
             {
                 string arquivo = File.ReadAllText(filePath);
-                
+
                 gerenciador = JsonUtility.FromJson<Gerenciador>(arquivo);
-
                 // StartCoroutine(Ditado(gerenciador.cenarios[0].cenas[0].enredos[0].texto));
-                for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos.Count; i++)
-                {
-                    Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos[i].texto);
-                    Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos[i].fx);
-                }
+                //for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos.Count; i++)
+                //{
+                //    Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos[i].texto);
+                //    Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos[i].fx);
+                //}
 
-                for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes.Count; i++)//mostra todas opções
-                {
-                    Debug.Log((gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes[i].resposta));
-               
-                }
+                //for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes.Count; i++)//mostra todas opções
+                //{
+                //    Debug.Log((gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes[i].resposta));
 
-                
+                //}
+
+
 
 
             }
@@ -66,6 +83,24 @@ namespace textgame
             {
                 Debug.LogError("Não foi possivel carregar o arquivo JSON!");
             }
+
+
+            StartCoroutine(Ditado(gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].enredos[0].texto));
+
+            if (gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].enredos[0].fx != null)
+            {
+                fxAtual = Resources.Load(gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].enredos[0].fx, typeof(AudioClip)) as AudioClip;
+
+                do
+                {
+                    audios.PlayOneShot(fxAtual, 1);
+                } while (isPlaying());
+
+                Debug.Log("oi");
+                
+                interacao = true;
+            }
+
             Debug.Log("Motor inicializado.");
 
         }
@@ -73,22 +108,38 @@ namespace textgame
         // Update is called once per frame
         void Update()
         {
-            for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos.Count; i++)
+            #region CODIGO ANTIGO
+            //for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos.Count; i++)
+            //{
+            //    Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos[i].texto);
+            //    Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos[i].fx);
+            //}
+
+            //for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes.Count; i++)//mostra todas opções
+            //{
+            //    Debug.Log((gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes[i].resposta));
+
+            //}
+
+            ////Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].enredos[gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes[escolha].segmento.idCenario].texto);
+            ////(gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes[escolha].segmento.idCena)
+            #endregion
+
+            if (!interacao)
             {
-                Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos[i].texto);
-                Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenarioAtual].enredos[i].fx);
-            }
-
-            for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes.Count; i++)//mostra todas opções
-            {
-                Debug.Log((gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes[i].resposta));
+                //for (int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].enredos.Count; i++)
+                //{
+                    
+                //}
 
             }
-
-            //Debug.Log(gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].enredos[gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes[escolha].segmento.idCenario].texto);
-            //(gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes[escolha].segmento.idCena)
+            
 
 
+            //for(int i = 0; i < gerenciador.cenarios[cenarioAtual].cenas[cenaAtual].opcoes.Count; i++)
+            //{
+            //    btn_opcs[i].
+            //}
         }
 
         IEnumerator Ditado(string frase)
@@ -103,5 +154,20 @@ namespace textgame
                 scrollbar_historia.value = 0;
             }
         }
+
+
+        private void PlayOneShot(AudioClip clip, float volume)
+        {
+            audios.PlayOneShot(clip, volume);
+            inicioTempo = Time.time;
+        }
+
+        public bool isPlaying()
+        {
+            if ((Time.time - inicioTempo) >= fxAtual.length)
+                return false;
+            return true;
+        }
+
     }
 }
