@@ -1,3 +1,4 @@
+
 {
     "cenarios": [
         {
@@ -17,11 +18,33 @@
                       "fx": "ice_drink.ogg"
                     },
                     {
-                      "texto": "Você está refazendo o “ritual” que você mesmo considera clichê, bebendo uma dose de whisky no seu escritório/apartamento. O lugar também não foge dos padrões impostos pela literatura norte-americana de como deve ser o escritório de um I.P.: sala única com apenas um banheiro, a clássica mesa de madeira no meio e dois gabinetes de arquivos na parede ao lado -os quais você empurra para o lado, revelando uma cama de parede, quando quer dormir. Você se lembra que este foi o único motivo de você escolher este lugar como sua moradia e local de trabalho.Você está escorado na sua mesa, com o copo de whisky na mão, encarando a placa com seu nome ao lado da sua mão.",
+                      "texto": "Você está refazendo o “ritual” que você mesmo considera clichê, bebendo uma dose de whisky no seu escritório/apartamento.",
+                      "fx":null
+                    },
+                    {
+                      "texto": "O lugar também não foge dos padrões impostos pela literatura norte-americana de como deve ser o escritório de um I.P.: sala única com apenas um banheiro, a clássica mesa de madeira no meio e dois gabinetes de arquivos na parede ao lado -os quais você empurra para o lado, revelando uma cama de parede, quando quer dormir.",
+                      "fx":null
+                    },
+                    {
+                      "texto": "Você se lembra que este foi o único motivo de você escolher este lugar como sua moradia e local de trabalho.Você está escorado na sua mesa, com o copo de whisky na mão, encarando a placa com seu nome ao lado da sua mão.",
                       "fx": null
                     },
                     {
-                      "texto": "Você sente a nostalgia que não existe. Você ri internamente compreendendo que uma das suas felicidades nesta vida são esses momentos de nostalgia, vivendo um arquétipo do que seria uma profissão romantizada. Você está tranquilo, pois você já resolveu 4 casos esse mês, pagou todas suas dívidas de aluguel e gastos, re-estocou a dispensa com o necessário e sobrou dinheiro o suficiente para você dar um jeito de passar o próximo mês. É sempre assim, vivendo mês após mês. Apesar de ter entrado neste ramo de trabalho por motivos “glorificados” você é muito bom no que faz e ganhou um razoável reconhecimento na área nestes 6 anos que atua como investigador privado. Você até solucionou alguns crimes que acabou tropeçando enquanto trabalhava em um caso. Por isso não foi surpresa quando a silhueta na sua porta apareceu aquela hora (você mandou trocar a porta de madeira inteiriça do escritório por uma que é metade de vidro embaçado, com seu nome e profissão no meio). A cena é típica de um romance e você sente a mesma adrenalina de estar vivendo um conto de mistério, uma sensação que é segredo para o resto do mundo. Mesmo depois de tantos anos você ainda sente a mesma coisa quando acontece. A sombra bate na porta e você percebe que é uma mulher. A luz do corredor está fraca, impedindo você de deduzir características de clientes de dentro do escritório. Você pensa em mandar trocar a lâmpada. Alguém está na porta.",
+                      "texto": "Você sente uma nostalgia e ri internamente compreendendo que momentos como estes lhe trazem alegria, vivendo um arquétipo do que seria uma profissão romantizada. Você está tranquilo, pois já resolveu 4 casos esse mês, pagou todas suas dívidas de aluguel e gastos, re-estocou a dispensa com o necessário e sobrou dinheiro o suficiente para você dar um jeito de passar o próximo mês.",
+                      "fx": null
+                    },
+                    {
+                      "texto": "É sempre assim, vivendo mês após mês. Apesar de ter entrado neste ramo de trabalho por motivos “glorificados” você é muito bom no que faz e ganhou um razoável reconhecimento na área nestes 6 anos que atua como investigador privado. Você até solucionou alguns crimes que acabou tropeçando enquanto trabalhava em um caso.",
+                      "fx":null
+                    },
+                    {
+                      "texto": "Por isso não foi surpresa quando apareceu uma silhueta em sua porta aquela hora (você mandou trocar a porta de madeira inteiriça do escritório por uma que é metade de vidro embaçado, com seu nome e profissão no meio). Mesmo depois de tantos anos você ainda sente a mesma adrenalina de estar vivendo um conto de mistério, quando isso acontece.",
+                      "bg_cena": ".jpg",
+                      "fx": null
+                    },
+                    {
+                      "texto": "A sombra bate na porta e você percebe que é uma mulher. A luz do corredor está fraca, impedindo você de deduzir características de clientes de dentro do escritório. Você pensa em mandar trocar a lâmpada. Alguém está na porta.",
+                      "bg_cena": ".jpg",
                       "fx": null
                     },
                     {
@@ -67,7 +90,15 @@
                     "bg_cena": "beginning2.jpg",
                     "enredos": [
                         {
-                            "texto": "Você vai até a porta, [segurando o copo]. Você se sente a prova de balas neste momento, herói protagonista do seu próprio show de TV. Você abre a porta com o peito estufado e com a cara o mais serena possível. Todo o ato é inútil. Sua cara serena se desfaz em uma fração de segundo. Você sabia que era uma mulher antes de abrir a porta e parte da sua pose era para impressionar a mulher atrás da sua porta. O inverso acontece. Você abre a porta com as mãos firmes, mas ante da porta chegar na extensão do seu braço esquerdo você mal consegue segurar o copo na mão. A mulher é com toda certeza a pessoa mais bonita que você já viu, cabelos ondulados ruivos e olhos verdes, rosto esculpido e lábios grossos. O padrão de beleza divulgado nas revistas está gritando na sua frente, na sua porta. Nem mesmo você, vivendo o momento nostálgico inexistente, poderia estar preparado para esta cena. A voz leve e forte, quase de um coro se pronuncia ser te dar chance de ao menos pensar em dizer algo: -Boa noite, o senhor Teller se encontra?",
+                            "texto": "Você vai até a porta, [segurando o copo].",
+                            "fx": null
+                        },
+                        {
+                          "texto": "Se sentindo à prova de balas neste momento, herói protagonista do seu próprio show de TV. Você abre a porta com o peito estufado e com a cara o mais serena possível. Todo o ato é inútil. Sua cara serena se desfaz em uma fração de segundo. Você sabia que era uma mulher antes de abrir a porta e parte da sua pose era para impressionar a mulher atrás da sua porta. O inverso acontece. Você abre a porta com as mãos firmes, mas ante da porta chegar na extensão do seu braço esquerdo você mal consegue segurar o copo na mão.",
+                          "fx": null
+                        },
+                        {
+                          "texto": "A mulher é com toda certeza a pessoa mais bonita que você já viu, cabelos ondulados ruivos e olhos verdes, rosto esculpido e lábios grossos. O padrão de beleza divulgado nas revistas está na sua frente. Nem mesmo você poderia estar preparado para esta cena. A voz leve e forte, quase de um coro se pronuncia sem te dar chance de ao menos pensar em dizer algo: -Boa noite, o senhor Teller se encontra?",
                             "fx": null
                         }
                     ],
@@ -95,6 +126,16 @@
                     ]
                 },
                 {
+                  "texto": "Perdoe minha grosseiria. Meu nome é Beatriz Duskwood...",
+                  "fx": null
+                },
+                
+                
+                
+                
+                
+                
+                 {
                     "nomeCena": "dialogo1",
                     "bg_cena": "beginning2.jpg",
                     "enredos": [
@@ -129,6 +170,7 @@
                 {
                     "nomeCena": "dialogo2",
                     "bg_cena": "beginning2.jpg",
+
                     "enredos": [
                         {
                             "texto": "Sim, claro. Eu sou Dante Teller.",
@@ -147,7 +189,7 @@
                             "item": null
                         },
                         {
-                            "resposta": "[Enquanto entra, ela diz:]O senhor não vai precisar disso para conversar comigo, Sr. Teller. [Ela aponta para suas costas]",
+                            "resposta": "[Enquanto entra, ela diz:] O senhor não vai precisar disso para conversar comigo, Sr. Teller. [Ela aponta para suas costas]",
                             "segmento": {
                                 "idCenario": 0,
                                 "idCena": 5
@@ -229,7 +271,11 @@
                     "bg_cena": "beginning3.jpg",
                     "enredos": [
                         {
-                            "texto": "Você a convida para entrar e se sentar. Você a espera entrar e fecha a porta. Você pensa em como ela deve estar acostumada com situações como essa, pessoas que a acabam de conhecê-la simplesmente se esquecer de como ser funcional por alguns segundos. Agora que seu cérebro está em perfeita função de pensamentos novamente você imagina o quanto esta mulher está acostumada a receber tudo que deseja sem levantar um dedo, sem qualquer débito, só pelo fato de ela existir. Você se senta do outro lado da mesa, na sua cadeira. Ainda tem whisky no seu copo… O que você faz?",
+                            "texto": "Você a convida para entrar e se sentar. Espera ela entrar e fecha a porta.",
+                            "fx": null
+                        },
+                        {
+                            "texto": "Você pensa em como ela deve estar acostumada com situações como essa, pessoas que a acabam de conhecê-la simplesmente se esquecer de como ser funcional por alguns segundos. Agora que seu cérebro está em perfeita função de pensamentos novamente você imagina o quanto esta mulher está acostumada a receber tudo que deseja sem levantar um dedo, sem qualquer débito, só pelo fato de ela existir. Você se senta do outro lado da mesa, na sua cadeira. Ainda tem whisky no seu copo… O que você faz?",
                             "fx": null
                         }
                     ],
