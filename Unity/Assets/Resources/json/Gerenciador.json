@@ -88,7 +88,7 @@
                     "bg_cena": "beginning2.jpg",
                     "enredos": [
                         {
-                            "texto": "Você vai até a porta, [segurando o copo]. Você se sente a prova de balas neste momento, herói protagonista do seu próprio show de TV. Você abre a porta com o peito estufado e com a cara o mais serena possível. Todo o ato é inútil. Sua cara serena se desfaz em uma fração de segundo. Você sabia que era uma mulher antes de abrir a porta e parte da sua pose era para impressionar a mulher atrás da sua porta. O inverso acontece. Você abre a porta com as mãos firmes, mas ante da porta chegar na extensão do seu braço esquerdo você mal consegue segurar o copo na mão. A mulher é com toda certeza a pessoa mais bonita que você já viu, cabelos ondulados ruivos e olhos verdes, rosto esculpido e lábios grossos. O padrão de beleza divulgado nas revistas está gritando na sua frente, na sua porta. Nem mesmo você, vivendo o momento nostálgico inexistente, poderia estar preparado para esta cena. A voz leve e forte, quase de um coro se pronuncia ser te dar chance de ao menos pensar em dizer algo: -Boa noite, o senhor Teller se encontra?",
+                            "texto": "Você vai até a porta, [segurando o copo].",
                             "fx": null
                         },
                         {
@@ -180,7 +180,7 @@
                             "item": null
                         },
                         {
-                            "resposta": "[Enquanto entra, ela diz:]O senhor não vai precisar disso para conversar comigo, Sr. Teller. [Ela aponta para suas costas]",
+                            "resposta": "[Enquanto entra, ela diz:] O senhor não vai precisar disso para conversar comigo, Sr. Teller. [Ela aponta para suas costas]",
                             "segmento": {
                                 "idCenario": 0,
                                 "idCena": 5
@@ -262,7 +262,11 @@
                     "bg_cena": "beginning3.jpg",
                     "enredos": [
                         {
-                            "texto": "Você a convida para entrar e se sentar. Você a espera entrar e fecha a porta. Você pensa em como ela deve estar acostumada com situações como essa, pessoas que a acabam de conhecê-la simplesmente se esquecer de como ser funcional por alguns segundos. Agora que seu cérebro está em perfeita função de pensamentos novamente você imagina o quanto esta mulher está acostumada a receber tudo que deseja sem levantar um dedo, sem qualquer débito, só pelo fato de ela existir. Você se senta do outro lado da mesa, na sua cadeira. Ainda tem whisky no seu copo… O que você faz?",
+                            "texto": "Você a convida para entrar e se sentar. Espera ela entrar e fecha a porta.",
+                            "fx": null
+                        },
+                        {
+                            "texto": "Você pensa em como ela deve estar acostumada com situações como essa, pessoas que a acabam de conhecê-la simplesmente se esquecer de como ser funcional por alguns segundos. Agora que seu cérebro está em perfeita função de pensamentos novamente você imagina o quanto esta mulher está acostumada a receber tudo que deseja sem levantar um dedo, sem qualquer débito, só pelo fato de ela existir. Você se senta do outro lado da mesa, na sua cadeira. Ainda tem whisky no seu copo… O que você faz?",
                             "fx": null
                         }
                     ],
