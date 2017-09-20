@@ -6,144 +6,142 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace textgame
-{
+namespace textgame {
     [Serializable]
-    public class Motor : MonoBehaviour
-    {
+    public class Motor : MonoBehaviour {
 
+        #region Objetos Unity
+        [Header("Canvas principal")]
         public Canvas canvas;
 
-        public Text historia;
-        public Text nomeCenario;
+        [Space(5)]
+
+        [Header("Titulo do cenário")]
+        public Text text_tituloCenario;
+
+        [Space(5)]
+
+        [Header("Objetos e componentes do texto")]
+        public Text text_historia;
         public Scrollbar scrollbar_historia;
 
-        private AudioSource audios;
+        [Space(5)]
 
-        private AudioClip fxAtual;
+        [Header("Objeto e componentes das opções")]
+        public Button btn_opcaoModelo;
+        public Transform panel_opcoes;
+
+        [Space(5)]
+
+        [Header("Arquivo JSON")]
+        public TextAsset json_arquivo;
+        #endregion
+
+        //private AudioSource audios;
 
         private bool interacao;
-        private string jsonGerenciador;
-        private string filePath;
         private Gerenciador gerenciador;
 
         private int cenarioAtual;
         private int cenaAtual;
 
-        public Button obj;
-        public Transform painelOpc;
-
         private Personagem personagem;
         private Inventario inventario;
 
-        // Use this for initialization
-        void Start()
-        {
+        // Método de inicialização do Unity
+        void Start() {
             DontDestroyOnLoad(gameObject);
+            //audios = GetComponent<AudioSource>();
 
-            audios = GetComponent<AudioSource>();
-
-            this.jsonGerenciador = "json/Gerenciador.json";
-            //this.jsonGerenciador = "json/Teste.json";
-            this.filePath = Path.Combine(Application.streamingAssetsPath, this.jsonGerenciador);
-
-            historia.text = "";
             personagem = new Personagem();
             inventario = new Inventario();
 
-            personagem.setProfissao("Ator");
-            personagem.Saldo = 200;
-
-            interacao = false;
+            personagem.Saldo = 500.0f;
 
             gerenciador = new Gerenciador();
+
+            interacao = false;
 
             cenarioAtual = 0;
             cenaAtual = 0;
 
-            if (File.Exists(filePath))
-            {
-                string arquivo = File.ReadAllText(filePath);
-
-                gerenciador = JsonUtility.FromJson<Gerenciador>(arquivo);
-                Debug.Log("JSON CARREGADO");
-            }
-            else
-            {
+            if (json_arquivo.text.Length > 0) {
+                gerenciador = JsonUtility.FromJson<Gerenciador>(json_arquivo.text);
+                Debug.Log("JSON carregado com sucesso!");
+            } else {
                 Debug.LogError("Não foi possivel carregar o arquivo JSON!");
             }
-
-            Debug.Log("Motor inicializado.");
-
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            if (!interacao)
-            {
-                Debug.Log("Entrou em '!interacao' ");
+        // O método UPDATE é chamado por frame do jogo
+        void Update() {
+            #region Verifica e espera a interação do usuário
+            if (!interacao) {
+                Cenario cenario = gerenciador.cenarios[cenarioAtual];
+
+                alterarNomeCenario(cenario.nomeCenario);
+                alterarFundo(cenario.cenas[cenaAtual].bg_cena);
+
                 StartCoroutine(
-                    Engrenagem(gerenciador.cenarios[cenarioAtual].cenas[cenaAtual])
+                    Engrenagem(cenario.cenas[cenaAtual])
                 );
+
 
                 this.interacao = true;
             }
+            #endregion
         }
 
+        private void alterarNomeCenario(string nomeCenario) {
+            text_tituloCenario.text = nomeCenario;
+        }
 
-        IEnumerator Engrenagem(Cena cena)
-        {
-            Debug.Log("Entrou em 'Engrenagem' ");
-            nomeCenario.text = gerenciador.cenarios[cenarioAtual].nomeCenario;
-            WWW textura = new WWW(Path.Combine(Application.streamingAssetsPath, "bg_cenario_cena/" + cena.bg_cena));
+        private void alterarFundo(String imagem) {
+            WWW textura = new WWW(Path.Combine(Application.streamingAssetsPath, "bg_cenario_cena/" + imagem));
             canvas.GetComponent<RawImage>().texture = textura.texture;
+        }
 
-            for (int i = 0; i < cena.enredos.Count; i++)
-            {
+        IEnumerator Engrenagem(Cena cena) {
+            
+            for (int i = 0; i < cena.enredos.Count; i++) {
+                AudioClip fxAtual;
+                fxAtual = null;
 
-                if(cena.enredos[i].fx != null)
-                {
-                    WWW wwwAudioFX = new WWW(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
-                    Debug.LogError(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
-                    fxAtual = wwwAudioFX.GetAudioClip(false, true, AudioType.OGGVORBIS);
-                    Debug.LogError(fxAtual);
-                    Debug.Log("Deveria ter FX");
-                }
-                   
+                //if(cena.enredos[i].fx != null)
+                //{
+                //    WWW wwwAudioFX = new WWW(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
+                //    fxAtual = wwwAudioFX.GetAudioClip(false, true, AudioType.OGGVORBIS);
+                //    Debug.Log("Deveria ter FX");
+                //}
 
-                for (int j = 0; j < cena.enredos[i].texto.Length; j++)
-                {
-                    historia.text += cena.enredos[i].texto[j];
-                    yield return new WaitForSeconds(0.04f);
+                for (int j = 0; j < cena.enredos[i].texto.Length; j++) {
+                    text_historia.text += cena.enredos[i].texto[j];
+                    yield return new WaitForSeconds(0.00f);
                     scrollbar_historia.value = 0;
                 }
 
-                if (fxAtual != null)
-                {
-                    audios.PlayOneShot(fxAtual, 1);
-                    fxAtual = null;
-                }
+                //if (fxAtual != null)
+                //{
+                //    audios.PlayOneShot(fxAtual, 1);
+                //    fxAtual = null;
+                //}
 
-                historia.text += "\n";
+                text_historia.text += "\n";
             }
 
             gerarBotao(cena.opcoes);
         }
 
-        public void gerarBotao(List<Opcao> qntOpc)
-        {
+        public void gerarBotao(List<Opcao> qntOpc) {
             Button novoBotao;
             int x = 38;
             int y = 125;
             int z = 0;
 
-            for(int i = 0; i < qntOpc.Count; i++)
-            {
-                if((qntOpc[i].permissao == "todos" || String.Equals(personagem.getHabilidades(), qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
-                    && personagem.Saldo > qntOpc[i].descontar)
-                {
-                    novoBotao = Instantiate(obj, painelOpc); 
+            for (int i = 0; i < qntOpc.Count; i++) {
+                if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.getHabilidades(), qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
+                    && personagem.Saldo > qntOpc[i].descontar) {
+                    novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
                     novoBotao.transform.position = new Vector3(x, y, z);
                     novoBotao.gameObject.SetActive(true);
 
@@ -158,30 +156,24 @@ namespace textgame
             }
         }
 
-        private void eventoBtn(Button b, int cenarioAtual, int cenaAtual, float saldo, Item item)
-        {
+        private void eventoBtn(int cenarioAtual, int cenaAtual, float saldo, Item item) {
             this.cenarioAtual = cenarioAtual;
             this.cenaAtual = cenaAtual;
             this.personagem.Saldo -= saldo;
-            
-            if(item != null)
-            {
+
+            if (item != null) {
                 inventario.Add(item);
             }
 
-            Destroy(b);
-
-            for (int i = 0; i < painelOpc.GetComponentsInChildren<Button>().Length; i++)
-            {
-                Destroy(painelOpc.GetComponentsInChildren<Button>()[i].gameObject);
+            for (int i = 0; i < panel_opcoes.GetComponentsInChildren<Button>().Length; i++) {
+                Destroy(panel_opcoes.GetComponentsInChildren<Button>()[i].gameObject);
             }
-            
+
             interacao = false;
         }
 
-        void AddListener(Button b, int cenarioAtual, int cenaAtual, float saldo, Item item)
-        {
-            b.onClick.AddListener(() => eventoBtn(b, cenarioAtual, cenaAtual, saldo, item));
+        void AddListener(Button button, int cenarioAtual, int cenaAtual, float saldo, Item item) {
+            button.onClick.AddListener(() => eventoBtn(cenarioAtual, cenaAtual, saldo, item));
         }
     }
 }
