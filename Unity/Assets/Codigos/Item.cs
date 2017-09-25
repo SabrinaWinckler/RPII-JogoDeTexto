@@ -8,5 +8,6 @@ namespace textgame
     {
         [SerializeField]
         public string nome;
+        public string img_item;
     }
 }

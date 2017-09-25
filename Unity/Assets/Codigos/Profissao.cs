@@ -31,7 +31,7 @@ namespace textgame
                 }
                 else if (String.Equals(prof, "PSICOLOGO", StringComparison.OrdinalIgnoreCase))
                 {
-                    this.habilidades.Add("1 - HABILIDADES PSICOLOGO.");
+                    this.habilidades.Add("CURA");
                     encontrar = true;
                 }
                 else if (String.Equals(prof, "PROFESSOR", StringComparison.OrdinalIgnoreCase))
