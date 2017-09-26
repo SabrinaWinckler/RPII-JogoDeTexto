@@ -100,6 +100,8 @@ namespace textgame
         public Vector3 pegarPosicao() {
             return this.posicao;
         }
-
+        public List<Item> pegarLista() {
+            return this.inventario;
+        }
     }
 }
