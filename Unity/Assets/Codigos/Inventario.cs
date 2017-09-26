@@ -16,6 +16,7 @@ namespace textgame
         public List<Item> inventario = new List<Item>();
         public Text text_item;
         public Canvas imagem_item;
+        public Vector3 posicao;
 
         //COMPORTAMENTOS E METODOS
         public Inventario()
@@ -62,6 +63,7 @@ namespace textgame
                 {
                     text_item.text = item.nome;
                     mostrarImagemItem(item.img_item);
+                    montarInventario(item);
 
                 }
             }
@@ -74,7 +76,30 @@ namespace textgame
             WWW imagem = new WWW(Path.Combine(Application.streamingAssetsPath, "item_inventario/" + img_item));
             imagem_item.GetComponent<RawImage>().texture = imagem.texture;
         }
+        public Item Pegar(String nome) {
+            Item item_pego = null;
+            foreach (var item in inventario)
+            {
+               
+                if (text_item.text == item.nome) {
+                    item_pego = item;
+                    break;
+                }
+            }
+            return item_pego;
+         
+        }
+        public void montarInventario(Item item) {
+            for (int i = 0; i < inventario.Count; i++)
+            {
+                this.posicao = new Vector3(UnityEngine.Random.Range(-5, 5), 1, UnityEngine.Random.Range(-5, 5));
+                //Instantiate(item, posicao);  // vai no mootor
+            }
 
+        }
+        public Vector3 pegarPosicao() {
+            return this.posicao;
+        }
 
     }
 }
