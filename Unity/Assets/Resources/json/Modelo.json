@@ -1,0 +1,57 @@
+{
+	"cenarios": [
+		{
+			"nomeCenario": "beginning",
+			"cenas": [
+				{
+					"nomeCena": "",
+					"bg_cena": "",
+					"enredos": [
+						{
+							"texto": "",
+							"fx": null
+						},
+						{
+							"texto": "",
+							"fx": null
+						},
+						{
+							"texto": "",
+							"fx": null
+						}
+					],
+					"opcoes": [
+						{
+							"resposta": "",
+							"segmento": {
+								"idCenario": 0,
+								"idCena": 0
+							},
+							"permissao": "",
+							"descontar": 0,
+							"item": {
+								"nome": "",
+								"descricao": "",
+								"img_item": ""
+							}
+						},
+						{
+							"resposta": "",
+							"segmento": {
+								"idCenario": 0,
+								"idCena": 0
+							},
+							"permissao": "",
+							"descontar": 0,
+							"item": {
+								"nome": "",
+								"descricao": "",
+								"img_item": ""
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
