@@ -46,6 +46,9 @@ namespace textgame {
         private int cenaAtual;
 
         private Personagem personagem;
+        private String img_avatar;
+
+
         private Inventario inventario;
 
         // Método de inicialização do Unity
@@ -174,6 +177,16 @@ namespace textgame {
 
         void AddListener(Button button, int cenarioAtual, int cenaAtual, float saldo, Item item) {
             button.onClick.AddListener(() => eventoBtn(cenarioAtual, cenaAtual, saldo, item));
+        }
+
+        public void DefinirProfissao(String profissao)
+        {
+            personagem.setprofissao(profissao);
+            personagem.AtualizaSaldo();
+        }
+        public void AlterarAvatar()
+        {
+            personagem.MostrarAvatar(img_avatar);
         }
     }
 }
