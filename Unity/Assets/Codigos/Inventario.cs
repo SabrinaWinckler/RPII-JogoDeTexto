@@ -63,7 +63,8 @@ namespace textgame
                 {
                     text_item.text = item.nome;
                     mostrarImagemItem(item.img_item);
-                    montarInventario(item);
+                    //montarInventario(item);
+                    
 
                 }
             }
@@ -81,7 +82,7 @@ namespace textgame
             foreach (var item in inventario)
             {
                
-                if (text_item.text == item.nome) {
+                if ( nome == item.nome) {
                     item_pego = item;
                     break;
                 }
@@ -89,14 +90,14 @@ namespace textgame
             return item_pego;
          
         }
-        public void montarInventario(Item item) {
-            for (int i = 0; i < inventario.Count; i++)
-            {
-                this.posicao = new Vector3(UnityEngine.Random.Range(-5, 5), 1, UnityEngine.Random.Range(-5, 5));
-                //Instantiate(item, posicao);  // vai no mootor
-            }
+        //public void montarInventario(Item item) {
+        //    for (int i = 0; i < inventario.Count; i++)
+        //    {
+        //        this.posicao = new Vector3(UnityEngine.Random.Range(-5, 5), 1, UnityEngine.Random.Range(-5, 5));
+        //        //Instantiate(item, posicao);  // vai no mootor
+        //    }
 
-        }
+        //}
         public Vector3 pegarPosicao() {
             return this.posicao;
         }
