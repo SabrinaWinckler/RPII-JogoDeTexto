@@ -56,8 +56,6 @@ namespace textgame {
             personagem = new Personagem();
             inventario = new Inventario();
 
-            personagem.Saldo = 500.0f;
-
             gerenciador = new Gerenciador();
 
             interacao = false;
