@@ -6,14 +6,30 @@ using System.Text;
 
 namespace textgame
 {
-    class Personagem : Profissao
+    class Personagem
     {
-        //ATRIBUTOS
-        private String nome;
-        private float saldo;
+        public float saldo;
+        public Profissao profissao = new Profissao();
+        public Personagem() {
+            Saldo = 0.0f;
+        }
 
-        //COMPORTAMENTOS E METODOS
-        public string Nome { get; private set; }
-        public float Saldo { get; set; }
+        public float Saldo {
+            get {return saldo; }
+            set {saldo = value; }
+        }
+
+        public void setprofissao(String profi) {
+            profissao.Profi = profi;
+        }
+
+        public String getprofissao() {
+            return profissao.Profi;
+        }
+
+        public void AtualizaSaldo() {
+            profissao.Extra();
+            Saldo += profissao.Bonus;
+        }
     }
 }

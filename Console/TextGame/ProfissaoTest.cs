@@ -5,24 +5,32 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace TextGameTESTE {
-    class ProfissaoTest : PersonagemTest{
+    class ProfissaoTest{
         String profissao;
+        float bonus;
 
         public string Profissao { get => profissao; set => profissao = value; }
+        public float Bonus { get => bonus; set => bonus = value; }
 
-        public void Bonus_e_Habilidades() {
+        public void Extra() {
             if (String.Equals(Profissao, "MEDICO", StringComparison.OrdinalIgnoreCase))
-                Saldo = Saldo + 300f;
-            else if (String.Equals(Profissao, "POLICIAL", StringComparison.OrdinalIgnoreCase))
-                Saldo = Saldo + 250f;
+                //Implementar Habilidades
+                Bonus = 300f;
             else if (String.Equals(Profissao, "ADVOGADO", StringComparison.OrdinalIgnoreCase))
-                Saldo = Saldo + 250f;
+                //Implementar Habilidades
+                Bonus = 300f;
+            else if (String.Equals(Profissao, "POLICIAL", StringComparison.OrdinalIgnoreCase))
+                //Implementar Habilidades
+                Bonus = 250f;
             else if (String.Equals(Profissao, "PSICOLOGO", StringComparison.OrdinalIgnoreCase))
-                Saldo = Saldo + 200f;
+                //Implementar Habilidades
+                Bonus = 250f;
             else if (String.Equals(Profissao, "PROFESSOR", StringComparison.OrdinalIgnoreCase))
-                Saldo = Saldo + 100f;
+                //Implementar Habilidades
+                Bonus = 100f;
             else if (String.Equals(Profissao, "ATOR", StringComparison.OrdinalIgnoreCase))
-                Saldo = Saldo + 100f;
+                //Implementar Habilidades
+                Bonus = 100f;
         }
 
     }

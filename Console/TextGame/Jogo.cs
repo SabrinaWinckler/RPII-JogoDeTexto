@@ -74,24 +74,16 @@ namespace TextGameTESTE
         #endregion
 
         #region Teste2
-        private static PersonagemTest p;
-        private static String pr;
-
-        public static void CriarPersonagem() {
-            p = new PersonagemTest();
-        }
-
-        public static void CriarProfissao() {
-            WriteLine("Digite a profissao desejada -> ");
-            pr = ReadLine()
-            p.setProfissaoTest(pr);
-            p.AtualizaSaldo();
-        }
-
         public static void Main(String[] args) {
-            CriarPersonagem();
-            CriarProfissao();
+            PersonagemTest p = new PersonagemTest();
+            String pr;
 
+            p.setProfissaoTest(ReadLine());
+            WriteLine($"Profissao : {p.getProfissaoTest()}");
+            p.AtualizaSaldo();
+            WriteLine($"Saldo : {p.Saldo}");
+
+            ReadKey();
         }
         #endregion
     }
