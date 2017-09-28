@@ -63,8 +63,7 @@ namespace textgame
                 {
                     text_item.text = item.nome;
                     mostrarImagemItem(item.img_item);
-                    //montarInventario(item);
-                    
+                    //montarInventario(item);            
 
                 }
             }

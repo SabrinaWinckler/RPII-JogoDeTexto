@@ -55,6 +55,7 @@ namespace textgame {
 
             personagem = new Personagem();
             inventario = new Inventario();
+            String profissao = null;
 
             personagem.Saldo = 500.0f;
 
@@ -71,6 +72,8 @@ namespace textgame {
             } else {
                 Debug.LogError("Não foi possivel carregar o arquivo JSON!");
             }
+            definirProfissao(profissao);
+            
         }
 
         // O método UPDATE é chamado por frame do jogo
@@ -90,6 +93,13 @@ namespace textgame {
                 this.interacao = true;
             }
             #endregion
+        }
+        private void definirProfissao(String profissao) {
+            //foreach ()
+            //{
+
+            //}
+            personagem.setProfissao(profissao);
         }
 
         private void alterarNomeCenario(string nomeCenario) {
