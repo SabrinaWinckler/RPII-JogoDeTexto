@@ -10,70 +10,37 @@ namespace TextGameTESTE
     class Profissao
     {
         //ATRIBUTOS
-        private String prof;
+        private String profissao;
         private ArrayList habilidades = new ArrayList();
-        private bool encontrar = false;
+        private float bonus;
 
-        //COMPORTAMENTOS E METODOS
-        public void setProfissao(String profissao)
-        {
-            if (!encontrar)
-            {
-                prof = profissao;
-                if (String.Equals(prof, "POLICIAL", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES POLICIAL.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "MEDICO", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES MEDICO.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "PSICOLOGO", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES PSICOLOGO.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "PROFESSOR", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES PROFESSOR.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "ATOR", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES ATOR.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "ADVOGADO", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - ADVOGADO.");
-                    encontrar = true;
-                }
-                else
-                {
-                    Console.WriteLine("Profissao nao disponivel");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Voce ja possui uma profissao -> " + this.prof);
+        //COMPORTAMENTOS E MÉTODOS
+
+        public Profissao(String p) {
+            Prof = p;
+            bonus = getBonus();
+        }
+
+        public String Prof { get => profissao; set => profissao = value; }
+        public ArrayList Habilidades { get => habilidades; set => habilidades = value; }
+
+        public float getBonus() {
+            if (String.Equals(Prof, "MEDICO", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 300f;
+            } else if (String.Equals(Prof, "ADVOGADO", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 300f;
+            } else if (String.Equals(Prof, "POLICIAL", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 250f;
+            } else if (String.Equals(Prof, "PSICOLOGO", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 250f;
+            } else if (String.Equals(Prof, "PROFESSOR", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 100f;
+            } else if (String.Equals(Prof, "ATOR", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 100f;
+            } else {
+                return 0;
             }
         }
 
-        public void getHabilidades()
-        {
-            if (!encontrar)
-            {
-                Console.WriteLine("Nao foi possivel encontrar habilidades!");
-            }
-            else
-            {
-                foreach (var item in habilidades)
-                {
-                    Console.WriteLine(item);
-                }
-            }
-        }
     }
 }
