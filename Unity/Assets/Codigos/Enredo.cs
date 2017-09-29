@@ -9,5 +9,6 @@ namespace textgame
         [SerializeField]
         public string texto;
         public string fx;
+        public String img_avatar;
     }
 }

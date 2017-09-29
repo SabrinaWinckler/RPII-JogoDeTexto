@@ -1,68 +1,47 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace textgame
 {
     class Profissao
     {
         //ATRIBUTOS
-        private String prof;
-        private ArrayList habilidades = new ArrayList();
-        private bool encontrar = false;
+        public String profissao;
+        public List<String> habilidades = new List<String>();
+        public float bonus;
 
         //COMPORTAMENTOS E METODOS
-        public void setProfissao(String profissao)
-        {
-            if (!encontrar)
-            {
-                prof = profissao;
-                if (String.Equals(prof, "POLICIAL", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES POLICIAL.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "MEDICO", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES MEDICO.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "PSICOLOGO", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("CURA");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "PROFESSOR", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES PROFESSOR.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "ATOR", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - HABILIDADES ATOR.");
-                    encontrar = true;
-                }
-                else if (String.Equals(prof, "ADVOGADO", StringComparison.OrdinalIgnoreCase))
-                {
-                    this.habilidades.Add("1 - ADVOGADO.");
-                    encontrar = true;
-                }
-                else
-                {
-                    Console.WriteLine("Profissao nao disponivel");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Voce ja possui uma profissao -> " + this.prof);
-            }
+        public Profissao(String p) {
+            Prof = p;
+            bonus = getBonus();
         }
 
-        public string getHabilidades()
-        {
-            return this.prof;
+        public String Prof {
+            get { return profissao; }
+            set { profissao = value; }
+        }
+        public List<String> Habilidades {
+            get { return habilidades; }
+            set { habilidades = value; }
+        }
+
+        public float getBonus() {
+            if (String.Equals(Prof, "MEDICO", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 300f;
+            } else if (String.Equals(Prof, "ADVOGADO", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 300f;
+            } else if (String.Equals(Prof, "POLICIAL", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 250f;
+            } else if (String.Equals(Prof, "PSICOLOGO", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 250f;
+            } else if (String.Equals(Prof, "PROFESSOR", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 100f;
+            } else if (String.Equals(Prof, "ATOR", StringComparison.OrdinalIgnoreCase)) {
+                return bonus = 100f;
+            } else {
+                return 0;
+            }
         }
     }
 }
