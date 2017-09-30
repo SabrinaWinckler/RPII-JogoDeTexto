@@ -81,6 +81,7 @@
     <Compile Include="Assets\Codigos\Cena.cs" />
     <Compile Include="Assets\Codigos\Cenario.cs" />
     <Compile Include="Assets\Codigos\Configuracao.cs" />
+    <Compile Include="Assets\Codigos\DadosPersonagem.cs" />
     <Compile Include="Assets\Codigos\Enredo.cs" />
     <Compile Include="Assets\Codigos\Gerenciador.cs" />
     <Compile Include="Assets\Codigos\Inventario.cs" />

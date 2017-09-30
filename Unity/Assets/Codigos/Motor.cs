@@ -35,15 +35,6 @@ namespace textgame {
 
         [Header("Arquivo JSON")]
         public TextAsset json_arquivo;
-
-        [Header("Carcacteristicas do personagem")]
-        public Button medico;
-        public Button policial;
-        public Button advogado;
-        public Button professor;
-        public Button ator;
-        public Button pscicologo;
-        public Button proximo;
         #endregion
 
         //private AudioSource audios;
@@ -101,25 +92,6 @@ namespace textgame {
                 this.interacao = true;
             }
             #endregion
-        }
-        private void definirProfissao(String profissao) {
-
-            if (advogado.onClick.Equals(profissao)) {
-                personagem.setProfissao(profissao);
-            } else if (medico.onClick.Equals(profissao)) {
-                personagem.setProfissao(profissao);
-            } else if (policial.onClick.Equals(profissao)) {
-                personagem.setProfissao(profissao);
-            } else if (ator.onClick.Equals(profissao)) {
-                personagem.setProfissao(profissao);
-            } else if (professor.onClick.Equals(profissao)) {
-                personagem.setProfissao(profissao);
-            } else if (pscicologo.onClick.Equals(profissao)) {
-                personagem.setProfissao(profissao);
-            }
-            //Seria tipo assim Michael? Foi a soluão sem lista pra fazer esse esquema que eu encontrei.
-
-            
         }
 
         private void alterarNomeCenario(string nomeCenario) {

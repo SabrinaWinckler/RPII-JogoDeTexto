@@ -687,8 +687,9 @@ GameObject:
   - component: {fileID: 619481828}
   - component: {fileID: 619481827}
   - component: {fileID: 619481826}
+  - component: {fileID: 619481829}
   m_Layer: 5
-  m_Name: btn_advogado
+  m_Name: advogado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -787,6 +788,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 619481824}
+--- !u!114 &619481829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619481824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13d92f5ccd233245b5ca7f63c372d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  text_tituloCenario: {fileID: 0}
+  text_historia: {fileID: 0}
+  scrollbar_historia: {fileID: 0}
+  btn_opcaoModelo: {fileID: 0}
+  panel_opcoes: {fileID: 0}
+  json_arquivo: {fileID: 0}
 --- !u!1 &716684237
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,8 +817,9 @@ GameObject:
   - component: {fileID: 716684241}
   - component: {fileID: 716684240}
   - component: {fileID: 716684239}
+  - component: {fileID: 716684242}
   m_Layer: 5
-  m_Name: btn_professor
+  m_Name: professor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -898,6 +918,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 716684237}
+--- !u!114 &716684242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716684237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13d92f5ccd233245b5ca7f63c372d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  text_tituloCenario: {fileID: 0}
+  text_historia: {fileID: 0}
+  scrollbar_historia: {fileID: 0}
+  btn_opcaoModelo: {fileID: 0}
+  panel_opcoes: {fileID: 0}
+  json_arquivo: {fileID: 0}
 --- !u!1 &751653165
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,7 +1022,7 @@ GameObject:
   - component: {fileID: 768699465}
   - component: {fileID: 768699464}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: profissao
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1397,7 +1435,7 @@ GameObject:
   - component: {fileID: 1179132839}
   - component: {fileID: 1179132838}
   m_Layer: 5
-  m_Name: btn_medico
+  m_Name: medico
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1442,7 +1480,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.9058824, g: 0.90196085, b: 0.9058824, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1612,8 +1650,9 @@ GameObject:
   - component: {fileID: 1334120824}
   - component: {fileID: 1334120823}
   - component: {fileID: 1334120822}
+  - component: {fileID: 1334120825}
   m_Layer: 5
-  m_Name: btn_pscicoloogo
+  m_Name: pscicoloogo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1712,6 +1751,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1334120820}
+--- !u!114 &1334120825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1334120820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13d92f5ccd233245b5ca7f63c372d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  text_tituloCenario: {fileID: 0}
+  text_historia: {fileID: 0}
+  scrollbar_historia: {fileID: 0}
+  btn_opcaoModelo: {fileID: 0}
+  panel_opcoes: {fileID: 0}
+  json_arquivo: {fileID: 0}
 --- !u!1 &1474173493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2019,8 +2076,9 @@ GameObject:
   - component: {fileID: 2119730145}
   - component: {fileID: 2119730144}
   - component: {fileID: 2119730143}
+  - component: {fileID: 2119730146}
   m_Layer: 5
-  m_Name: btn_ator
+  m_Name: ator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2119,6 +2177,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2119730141}
+--- !u!114 &2119730146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2119730141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13d92f5ccd233245b5ca7f63c372d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  text_tituloCenario: {fileID: 0}
+  text_historia: {fileID: 0}
+  scrollbar_historia: {fileID: 0}
+  btn_opcaoModelo: {fileID: 0}
+  panel_opcoes: {fileID: 0}
+  json_arquivo: {fileID: 0}
 --- !u!1 &2144539144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,8 +2206,9 @@ GameObject:
   - component: {fileID: 2144539148}
   - component: {fileID: 2144539147}
   - component: {fileID: 2144539146}
+  - component: {fileID: 2144539149}
   m_Layer: 5
-  m_Name: btn_policial
+  m_Name: policial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2230,3 +2307,21 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2144539144}
+--- !u!114 &2144539149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2144539144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f13d92f5ccd233245b5ca7f63c372d4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  text_tituloCenario: {fileID: 0}
+  text_historia: {fileID: 0}
+  scrollbar_historia: {fileID: 0}
+  btn_opcaoModelo: {fileID: 0}
+  panel_opcoes: {fileID: 0}
+  json_arquivo: {fileID: 0}
