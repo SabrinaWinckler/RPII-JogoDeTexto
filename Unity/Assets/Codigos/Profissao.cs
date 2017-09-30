@@ -9,38 +9,27 @@ namespace textgame
     class Profissao
     {
         //ATRIBUTOS
-        public String profissao;
+        public String nome;
         public float bonus;
+        public List<String> listHabilidades = new List<String>();
 
-        public String Profi { 
-            get { return profissao; }
-            set { profissao = value; }
+
+        //COMPORTAMENTOS E METODOS
+        public Profissao(String n, float b) {
+            Nome = n;
+            Bonus = b;
         }
-
+        public String Nome { 
+            get { return nome; }
+            set { nome = value; }
+        }
         public float Bonus {
             get { return bonus; }
             set { bonus = value;}
         }
-
-        public void Extra() {
-            if (String.Equals(Profi, "MEDICO", StringComparison.OrdinalIgnoreCase))
-                //Implementar Habilidades
-                Bonus = 300f;
-            else if (String.Equals(Profi, "ADVOGADO", StringComparison.OrdinalIgnoreCase))
-                //Implementar Habilidades
-                Bonus = 300f;
-            else if (String.Equals(Profi, "POLICIAL", StringComparison.OrdinalIgnoreCase))
-                //Implementar Habilidades
-                Bonus = 250f;
-            else if (String.Equals(Profi, "PSICOLOGO", StringComparison.OrdinalIgnoreCase))
-                //Implementar Habilidades
-                Bonus = 250f;
-            else if (String.Equals(Profi, "PROFESSOR", StringComparison.OrdinalIgnoreCase))
-                //Implementar Habilidades
-                Bonus = 100f;
-            else if (String.Equals(Profi, "ATOR", StringComparison.OrdinalIgnoreCase))
-                //Implementar Habilidades
-                Bonus = 100f;
+        public List<String> ListHabilidades {
+            get { return listHabilidades; }
+            set { listHabilidades = value; }
         }
     }
 }
