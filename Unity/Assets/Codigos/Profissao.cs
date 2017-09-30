@@ -13,7 +13,6 @@ namespace textgame
         public float bonus;
         public List<String> listHabilidades = new List<String>();
 
-
         //COMPORTAMENTOS E METODOS
         public Profissao(String n, float b) {
             Nome = n;
@@ -27,9 +26,11 @@ namespace textgame
             get { return bonus; }
             set { bonus = value;}
         }
-        public List<String> ListHabilidades {
+        public List<String> List_Habilidades {
             get { return listHabilidades; }
-            set { listHabilidades = value; }
+        }
+        public void Add_Habilidades(String h) {
+            listHabilidades.Add(h);
         }
     }
 }

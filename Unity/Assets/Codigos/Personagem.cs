@@ -58,6 +58,10 @@ namespace textgame
             return null;
         }
 
+        public void setHabilidades(String habilidade) {
+            profissoes[posicao_vetor].Add_Habilidades(habilidade);
+        }
+
         public void AtualizaSaldo() {
             //ATUALIZA SALDO COM ACRÉSCIMO DO BONUS DE CADA PROFISSÃO
             Saldo += profissoes[posicao_vetor].Bonus;

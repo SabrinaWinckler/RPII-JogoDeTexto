@@ -55,6 +55,7 @@ namespace textgame {
 
             personagem = new Personagem();
             inventario = new Inventario();
+            String profissao = null;
 
             gerenciador = new Gerenciador();
 
@@ -69,6 +70,9 @@ namespace textgame {
             } else {
                 Debug.LogError("Não foi possivel carregar o arquivo JSON!");
             }
+
+            personagem.Nome_profissao = profissao;
+
         }
 
         // O método UPDATE é chamado por frame do jogo
