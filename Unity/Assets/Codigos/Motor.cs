@@ -57,8 +57,6 @@ namespace textgame {
             inventario = new Inventario();
             String profissao = null;
 
-            personagem.Saldo = 500.0f;
-
             gerenciador = new Gerenciador();
 
             interacao = false;
@@ -141,7 +139,7 @@ namespace textgame {
             int z = 0;
 
             for (int i = 0; i < qntOpc.Count; i++) {
-                if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.getProfissao(), qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
+                if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.Nome_profissao, qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
                     && personagem.Saldo > qntOpc[i].descontar) {
                     novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
                     novoBotao.transform.position = new Vector3(x, y, z);

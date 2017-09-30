@@ -7,41 +7,28 @@ namespace textgame
     class Profissao
     {
         //ATRIBUTOS
-        public String profissao;
-        public List<String> habilidades = new List<String>();
+        public String nome;
         public float bonus;
+        public List<String> listHabilidades = new List<String>();
 
         //COMPORTAMENTOS E METODOS
-        public Profissao(String p) {
-            Prof = p;
-            bonus = getBonus();
+        public Profissao(String n, float b) {
+            Nome = n;
+            Bonus = b;
         }
-
-        public String Prof {
-            get { return profissao; }
-            set { profissao = value; }
+        public String Nome { 
+            get { return nome; }
+            set { nome = value; }
         }
-        public List<String> Habilidades {
-            get { return habilidades; }
-            set { habilidades = value; }
+        public float Bonus {
+            get { return bonus; }
+            set { bonus = value;}
         }
-
-        public float getBonus() {
-            if (String.Equals(Prof, "MEDICO", StringComparison.OrdinalIgnoreCase)) {
-                return bonus = 300f;
-            } else if (String.Equals(Prof, "ADVOGADO", StringComparison.OrdinalIgnoreCase)) {
-                return bonus = 300f;
-            } else if (String.Equals(Prof, "POLICIAL", StringComparison.OrdinalIgnoreCase)) {
-                return bonus = 250f;
-            } else if (String.Equals(Prof, "PSICOLOGO", StringComparison.OrdinalIgnoreCase)) {
-                return bonus = 250f;
-            } else if (String.Equals(Prof, "PROFESSOR", StringComparison.OrdinalIgnoreCase)) {
-                return bonus = 100f;
-            } else if (String.Equals(Prof, "ATOR", StringComparison.OrdinalIgnoreCase)) {
-                return bonus = 100f;
-            } else {
-                return 0;
-            }
+        public List<String> List_Habilidades {
+            get { return listHabilidades; }
+        }
+        public void Add_Habilidades(String h) {
+            listHabilidades.Add(h);
         }
     }
 }

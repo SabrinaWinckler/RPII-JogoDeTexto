@@ -1,0 +1,7 @@
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGame\bin\Debug\TextGame.exe.config
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGame\bin\Debug\TextGame.exe
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGame\bin\Debug\TextGame.pdb
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGame\obj\Debug\TextGame.csprojResolveAssemblyReference.cache
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGame\obj\Debug\TextGame.csproj.CoreCompileInputs.cache
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGame\obj\Debug\TextGame.exe
+D:\#ENGENHARIA DE SOFTWARE\2º Semestre\RESOLUÇÕES DE PROBLEMAS 2\GitKraken\trabalho1\Console\TextGame\obj\Debug\TextGame.pdb

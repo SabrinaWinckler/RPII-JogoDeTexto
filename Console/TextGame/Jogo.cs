@@ -4,68 +4,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 
 namespace TextGameTESTE
 {
     class Jogo
     {
-        //ATRIBUTOS
-        private static Personagem p;
+        #region Teste2Atualizado
+        public static void Main(String[] args) {
+            Personagem p = new Personagem();
 
-        //COMPORTAMENTOS E METODOS
-        public static void CriarPersonagem()
-        {
-            p = new Personagem();
-            //Inserir personagem
-            Console.WriteLine("Digite o nome do seu personagem -> ");
-            p.Nome = Console.ReadLine();
-        }
+            WriteLine("Inserir Profissao -> ");
+            p.setProfissao(ReadLine());
 
-        public static void CriarProfissao()
-        {
-            Console.WriteLine("Digite a profissao desejada -> ");
-            p.setProfissao(Console.ReadLine());
-        }
+            WriteLine("Inserir Habilidade -> ");
+            p.setHabilidades(ReadLine());
 
-        public static void VerHabilidades()
-        {
-            Console.WriteLine("**Habilidades do jogador**");
+
+            WriteLine($"Profissao : {p.getProfissao()}");
+
+            WriteLine($"Saldo : {p.Saldo}");
+
+            WriteLine($"Habilidades adicionais -> ");
             p.getHabilidades();
-        }
 
-        public static void Menu()
-        {
-            Console.WriteLine("... MENU ...");
-            Console.WriteLine("1 - Inserir Personagem.");
-            Console.WriteLine("2 - Inserir Profissao.");
-            Console.WriteLine("3 - Ver habilidades.");
-            Console.WriteLine("4 - SAIR");
-            Console.WriteLine(); Console.Write("Informe a opcao desejada -> ");
+            ReadKey();
         }
-
-        public static void Main(String[] args)
-        {
-            int opc = 0;
-            do
-            {
-                Console.Clear();
-                Menu();
-                opc = Int32.Parse(Console.ReadLine());
-                switch (opc)
-                {
-                    case 1:
-                        CriarPersonagem();
-                        break;
-                    case 2:
-                        CriarProfissao();
-                        break;
-                    case 3:
-                        VerHabilidades();
-                        break;
-                }
-                Console.Write("Pressione qualquer tecla para continuar...");
-                Console.ReadKey();
-            } while (opc != 4);
-        }
+        #endregion
     }
 }
