@@ -613,6 +613,7 @@ GameObject:
   - component: {fileID: 619481828}
   - component: {fileID: 619481827}
   - component: {fileID: 619481826}
+  - component: {fileID: 619481830}
   - component: {fileID: 619481829}
   m_Layer: 5
   m_Name: advogado
@@ -678,7 +679,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 619481827}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 619481830}
+        m_MethodName: OnClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: advogado
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &619481827
@@ -725,13 +737,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bc15ac08703c647b52d008302bcca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medico: {fileID: 1179132838}
-  policial: {fileID: 1334120822}
+--- !u!114 &619481830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 619481824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6592ef57fcfacd4faa25fd6ad081ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medico: {fileID: 0}
+  policial: {fileID: 0}
   advogado: {fileID: 619481826}
-  atleta: {fileID: 716684239}
-  proximo: {fileID: 862572462}
+  atleta: {fileID: 0}
   text_profissao: {fileID: 972367927}
-  click: 0
 --- !u!1 &716684237
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +764,7 @@ GameObject:
   - component: {fileID: 716684241}
   - component: {fileID: 716684240}
   - component: {fileID: 716684239}
+  - component: {fileID: 716684243}
   - component: {fileID: 716684242}
   m_Layer: 5
   m_Name: atleta
@@ -808,7 +830,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 716684240}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 716684243}
+        m_MethodName: OnClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: atleta
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &716684240
@@ -855,13 +888,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bc15ac08703c647b52d008302bcca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medico: {fileID: 1179132838}
-  policial: {fileID: 1334120822}
-  advogado: {fileID: 619481826}
+--- !u!114 &716684243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716684237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6592ef57fcfacd4faa25fd6ad081ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medico: {fileID: 0}
+  policial: {fileID: 0}
+  advogado: {fileID: 0}
   atleta: {fileID: 716684239}
-  proximo: {fileID: 862572462}
   text_profissao: {fileID: 972367927}
-  click: 0
 --- !u!1 &751653165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1164,13 +1206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bc15ac08703c647b52d008302bcca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medico: {fileID: 1179132838}
-  policial: {fileID: 1334120822}
-  advogado: {fileID: 619481826}
-  atleta: {fileID: 716684239}
-  proximo: {fileID: 862572462}
-  text_profissao: {fileID: 972367927}
-  click: 0
 --- !u!1 &972036822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1303,6 +1338,7 @@ GameObject:
   - component: {fileID: 972367930}
   - component: {fileID: 972367929}
   - component: {fileID: 972367927}
+  - component: {fileID: 972367931}
   - component: {fileID: 972367928}
   m_Layer: 5
   m_Name: text_profissao
@@ -1355,13 +1391,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bc15ac08703c647b52d008302bcca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medico: {fileID: 1179132838}
-  policial: {fileID: 1334120822}
-  advogado: {fileID: 619481826}
-  atleta: {fileID: 716684239}
-  proximo: {fileID: 862572462}
-  text_profissao: {fileID: 972367927}
-  click: 0
 --- !u!222 &972367929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1386,6 +1415,22 @@ RectTransform:
   m_AnchoredPosition: {x: 73, y: -67.55}
   m_SizeDelta: {x: 163.4, y: 28.9}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &972367931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 972367926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6592ef57fcfacd4faa25fd6ad081ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medico: {fileID: 0}
+  policial: {fileID: 0}
+  advogado: {fileID: 0}
+  atleta: {fileID: 0}
+  text_profissao: {fileID: 972367927}
 --- !u!1 &1124412741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,6 +1516,7 @@ GameObject:
   - component: {fileID: 1179132840}
   - component: {fileID: 1179132839}
   - component: {fileID: 1179132838}
+  - component: {fileID: 1179132842}
   - component: {fileID: 1179132841}
   m_Layer: 5
   m_Name: medico
@@ -1537,17 +1583,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1179132842}
+        m_MethodName: OnClick
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: medico
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1179132839
@@ -1594,13 +1640,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bc15ac08703c647b52d008302bcca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1179132842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1179132836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6592ef57fcfacd4faa25fd6ad081ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   medico: {fileID: 1179132838}
-  policial: {fileID: 1334120822}
-  advogado: {fileID: 619481826}
-  atleta: {fileID: 716684239}
-  proximo: {fileID: 862572462}
+  policial: {fileID: 0}
+  advogado: {fileID: 0}
+  atleta: {fileID: 0}
   text_profissao: {fileID: 972367927}
-  click: 0
 --- !u!1 &1290272455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,6 +1772,7 @@ GameObject:
   - component: {fileID: 1334120824}
   - component: {fileID: 1334120823}
   - component: {fileID: 1334120822}
+  - component: {fileID: 1334120826}
   - component: {fileID: 1334120825}
   m_Layer: 5
   m_Name: policial
@@ -1782,7 +1838,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1334120823}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1334120826}
+        m_MethodName: OnClick
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: policial
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1334120823
@@ -1829,13 +1896,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60bc15ac08703c647b52d008302bcca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  medico: {fileID: 1179132838}
+--- !u!114 &1334120826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1334120820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6592ef57fcfacd4faa25fd6ad081ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medico: {fileID: 0}
   policial: {fileID: 1334120822}
-  advogado: {fileID: 619481826}
-  atleta: {fileID: 716684239}
-  proximo: {fileID: 862572462}
+  advogado: {fileID: 0}
+  atleta: {fileID: 0}
   text_profissao: {fileID: 972367927}
-  click: 0
 --- !u!1 &1474173493
 GameObject:
   m_ObjectHideFlags: 0
