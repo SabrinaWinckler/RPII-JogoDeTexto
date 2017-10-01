@@ -88,6 +88,7 @@
     <Compile Include="Assets\Codigos\Enredo.cs" />
     <Compile Include="Assets\Codigos\Gerenciador.cs" />
     <Compile Include="Assets\Codigos\Inventario.cs" />
+    <Compile Include="Assets\Codigos\Inventory.cs" />
     <Compile Include="Assets\Codigos\Item.cs" />
     <Compile Include="Assets\Codigos\ItemDatabase.cs" />
     <Compile Include="Assets\Codigos\Jogo.cs" />
