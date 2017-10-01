@@ -36,20 +36,19 @@ namespace textgame
         // Update is called once per frame
         void Update()
         {
-            if (!interacao)
-            {
-                ButtonQualquer_Click(medico);
-                this.interacao = true;
-            }
+           
+                ButtonQualquer_Click(atleta, 3);
+
+            
 
 
         }
                 
-        public void definirProfissao()
+        public void definirProfissao(Button botao, int posicao_vetor)
         {
             
             
-                if (medico.name.Equals(personagem.profissoes[personagem.posicao_vetor].Nome, StringComparison.OrdinalIgnoreCase))
+                if (botao.name.Equals(personagem.profissoes[posicao_vetor].Nome, StringComparison.OrdinalIgnoreCase))
                 {
                     personagem.nome_profissao = medico.name;
                     text_profissao.text = personagem.nome_profissao;
@@ -57,14 +56,14 @@ namespace textgame
                    
                 }
 
-                else if (atleta.name.Equals(personagem.profissoes[personagem.posicao_vetor].Nome, StringComparison.OrdinalIgnoreCase))
+                else if (botao.name.Equals(personagem.profissoes[posicao_vetor].Nome, StringComparison.OrdinalIgnoreCase))
                 {
                     personagem.nome_profissao = atleta.name;
                     text_profissao.text = personagem.nome_profissao;
                    
 
                 }
-                else if (policial.name.Equals(personagem.profissoes[personagem.posicao_vetor].Nome, StringComparison.OrdinalIgnoreCase))
+                else if (botao.name.Equals(personagem.profissoes[posicao_vetor].Nome, StringComparison.OrdinalIgnoreCase))
                 {
                     personagem.nome_profissao = policial.name;
                     String aux = personagem.GetProfissao().Nome;
@@ -72,7 +71,7 @@ namespace textgame
                     
 
                 }
-                else if (advogado.name.Equals(personagem.profissoes[personagem.posicao_vetor].Nome, StringComparison.OrdinalIgnoreCase))
+                else if (botao.name.Equals(personagem.profissoes[posicao_vetor].Nome, StringComparison.OrdinalIgnoreCase))
                 {
                     personagem.nome_profissao = advogado.name;
                     String aux = personagem.GetProfissao().Nome;
@@ -81,56 +80,55 @@ namespace textgame
                 }
          
         }
-        public void escolhermedico()
-
+       
+        public void ButtonQualquer_Click(object sender, int pos)
         {
-            if (!click) {
-                medico.onClick = new Button.ButtonClickedEvent();
-                medico.onClick.AddListener(() => definirProfissao());
-                personagem.posicao_vetor = 0;
-                click = true;
-            }
-            
-            
-            
-        }
-        public void ButtonQualquer_Click(object sender)
-        {
-            personagem.posicao_vetor = 0;
+            personagem.posicao_vetor = pos;
             Button btnClicado = (Button)sender;
-            text_profissao.text = btnClicado.name;
+            btnClicado.onClick.AddListener(()=>definirProfissao(btnClicado, pos));
+            
         }
-        public void selecionado() {
+        //public void escolhermedico()
 
-          
-        }
-        public void escolheratleta() {
-            if (!click)
-            {
-                click = true;
-                personagem.posicao_vetor = 1;
-                atleta.onClick = new Button.ButtonClickedEvent();
-                atleta.onClick.AddListener(() => definirProfissao());
-            }
-        }
-        public void escolherpolicial() {
-            if (!click)
-            {
-                click = true;
-                personagem.posicao_vetor = 2;
-                policial.onClick = new Button.ButtonClickedEvent();
-                policial.onClick.AddListener(() => definirProfissao());
-            }
-        }
-        public void escolherAdvogado() {
-            if (!click)
-            {
-                click = true;
-                personagem.posicao_vetor = 3;
-                advogado.onClick = new Button.ButtonClickedEvent();
-                advogado.onClick.AddListener(() => definirProfissao());
-            }
-        }
+        //{
+        //    if (!click)
+        //    {
+        //        medico.onClick = new Button.ButtonClickedEvent();
+        //        medico.onClick.AddListener(() => definirProfissao());
+        //        personagem.posicao_vetor = 0;
+        //        click = true;
+        //    }
+
+
+
+        //}
+        //public void escolheratleta() {
+        //    if (!click)
+        //    {
+        //        click = true;
+        //        personagem.posicao_vetor = 1;
+        //        atleta.onClick = new Button.ButtonClickedEvent();
+        //        atleta.onClick.AddListener(() => definirProfissao());
+        //    }
+        //}
+        //public void escolherpolicial() {
+        //    if (!click)
+        //    {
+        //        click = true;
+        //        personagem.posicao_vetor = 2;
+        //        policial.onClick = new Button.ButtonClickedEvent();
+        //        policial.onClick.AddListener(() => definirProfissao());
+        //    }
+        //}
+        //public void escolherAdvogado() {
+        //    if (!click)
+        //    {
+        //        click = true;
+        //        personagem.posicao_vetor = 3;
+        //        advogado.onClick = new Button.ButtonClickedEvent();
+        //        advogado.onClick.AddListener(() => definirProfissao());
+        //    }
+        //}
     }
 }
 
