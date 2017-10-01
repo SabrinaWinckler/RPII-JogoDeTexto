@@ -55,7 +55,7 @@ namespace textgame {
 
             personagem = new Personagem();
             inventario = new Inventario();
-            String profissao = null;
+
 
             gerenciador = new Gerenciador();
 
