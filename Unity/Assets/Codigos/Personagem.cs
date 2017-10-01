@@ -21,8 +21,9 @@ namespace textgame
         public int posicao_vetor;
         public Profissao[] profissoes = new Profissao[6];
         public String nome_profissao;
-        public Text text_img_Avatar;
-        public Canvas img_Avatar;
+        public String text_img_Avatar;
+        public GameObject img_Avatar;
+        public Image imagem;
 
         public Personagem() {
             Profissao medico = new Profissao("Medico", 300f);
@@ -35,6 +36,18 @@ namespace textgame
             profissoes[3] = atleta;
 
             Saldo = 0.0f;
+        }
+        public void setAvatar(Button avatar) {
+
+            this.text_img_Avatar = avatar.image.name;
+            this.img_Avatar = avatar.image.gameObject;
+            imagem = avatar.image;
+        }
+        public GameObject getAvatar() {
+            return this.img_Avatar;
+        }
+        public Image getAvatarImg() {
+            return this.imagem;
         }
 
         public float Saldo {
@@ -73,7 +86,7 @@ namespace textgame
 
         public void MostrarAvatar(String person) {
 
-            text_img_Avatar.text = person;
+            text_img_Avatar = person;
 
             WWW avatarPersonagem = new WWW(Path.Combine(Application.streamingAssetsPath, "Img_Personagem/" + person));
             img_Avatar.GetComponent<RawImage>().texture = avatarPersonagem.texture;

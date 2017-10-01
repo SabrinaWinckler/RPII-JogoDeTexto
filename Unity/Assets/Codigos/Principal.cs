@@ -19,13 +19,14 @@ namespace textgame
         // Use this for initialization
         void Start()
         {
-            
+
             btn_iniciar.onClick = new Button.ButtonClickedEvent();
 
-           
+
             btn_iniciar.onClick.AddListener(() => {
-                SceneManager.LoadScene(cena_jogo);
+               SceneManager.LoadScene("DadosPersonagem");
             });
+            
 
             Debug.Log("Jogo inicializou");
         }
@@ -35,5 +36,6 @@ namespace textgame
         {
 
         }
+      
     }
 }
