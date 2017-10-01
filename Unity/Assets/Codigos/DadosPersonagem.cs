@@ -41,12 +41,7 @@ namespace textgame
             personagem.nome_profissao = nome;
             text_profissao.text = personagem.GetProfissao().Nome;
         }
-<<<<<<< Updated upstream
-=======
-
-    }
->>>>>>> Stashed changes
-
+        
     }
 }
 
