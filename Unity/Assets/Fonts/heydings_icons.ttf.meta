@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 3bdb2e7453290c2408fa7f5244947719
+timeCreated: 1504251218
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Heydings Icons
+  fontNames:
+  - Heydings Icons
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

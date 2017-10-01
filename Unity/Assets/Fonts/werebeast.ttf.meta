@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 739d65209f80cc14dab62eb1ea9e5645
+timeCreated: 1504247226
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Were-Beast
+  fontNames:
+  - Were-Beast
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

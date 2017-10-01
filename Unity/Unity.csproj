@@ -88,6 +88,9 @@
     <Reference Include="Facebook.Unity.Settings">
       <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
     </Reference>
+    <Reference Include="LitJson">
+      <HintPath>Assets\Plugins\LitJson.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Codigos\Cena.cs" />
@@ -97,6 +100,7 @@
     <Compile Include="Assets\Codigos\Gerenciador.cs" />
     <Compile Include="Assets\Codigos\Inventario.cs" />
     <Compile Include="Assets\Codigos\Item.cs" />
+    <Compile Include="Assets\Codigos\ItemDatabase.cs" />
     <Compile Include="Assets\Codigos\Jogo.cs" />
     <Compile Include="Assets\Codigos\Motor.cs" />
     <Compile Include="Assets\Codigos\Opcao.cs" />
