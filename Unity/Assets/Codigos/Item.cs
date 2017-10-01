@@ -10,4 +10,5 @@ namespace textgame
         public string nome;
         public string img_item;
     }
+
 }

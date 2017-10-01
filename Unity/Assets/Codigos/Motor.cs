@@ -55,8 +55,7 @@ namespace textgame {
 
             personagem = new Personagem();
             inventario = new Inventario();
-
-            personagem.Saldo = 500.0f;
+            String profissao = null;
 
             gerenciador = new Gerenciador();
 
@@ -71,6 +70,7 @@ namespace textgame {
             } else {
                 Debug.LogError("Não foi possivel carregar o arquivo JSON!");
             }
+            
         }
 
         // O método UPDATE é chamado por frame do jogo
@@ -139,7 +139,7 @@ namespace textgame {
             int z = 0;
 
             for (int i = 0; i < qntOpc.Count; i++) {
-                if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.getHabilidades(), qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
+                if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.Nome_profissao, qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
                     && personagem.Saldo > qntOpc[i].descontar) {
                     novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
                     novoBotao.transform.position = new Vector3(x, y, z);
