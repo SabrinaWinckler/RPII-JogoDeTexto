@@ -93,7 +93,7 @@ namespace textgame {
         }
 
         private void alterarNomeCenario(string nomeCenario) {
-            text_tituloCenario.text = nomeCenario;
+            GameObject.Find("text_tituloCenario").GetComponent<Text>().text  = nomeCenario;
         }
 
         private void alterarFundo(String imagem) {
