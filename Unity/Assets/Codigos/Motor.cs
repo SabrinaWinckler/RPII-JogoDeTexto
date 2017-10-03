@@ -55,6 +55,7 @@ namespace textgame {
 
             personagem = new Personagem();
             inventario = new Inventario();
+            String profissao = null;
 
 
             gerenciador = new Gerenciador();
@@ -70,7 +71,7 @@ namespace textgame {
             } else {
                 Debug.LogError("Não foi possivel carregar o arquivo JSON!");
             }
-            
+
         }
 
         // O método UPDATE é chamado por frame do jogo
@@ -102,7 +103,7 @@ namespace textgame {
         }
 
         IEnumerator Engrenagem(Cena cena) {
-            
+
             for (int i = 0; i < cena.enredos.Count; i++) {
                 AudioClip fxAtual;
                 fxAtual = null;
@@ -175,5 +176,46 @@ namespace textgame {
         void AddListener(Button button, int cenarioAtual, int cenaAtual, float saldo, Item item) {
             button.onClick.AddListener(() => eventoBtn(cenarioAtual, cenaAtual, saldo, item));
         }
+
+
+
+        //adiconar item 
+        public void AdicionarItem(string item)
+        {
+            Item i = new Item();
+            i.nome = item;
+            inventario.Add(i);
+        }
+        //remover
+        public void Remove(String item_remover)
+        {
+            inventario.Remove(item_remover);
+
+        }
+        //se estiver vazio
+        public void IsEmpty()
+        {
+            return (inventario.count == 0);
+        }
+        //se estiver cheio
+        public void IsFull()
+        {
+            return (inventario.cout == 10);
+        }
+        //abrir
+        //se o usuario apertar o botão inventario ele vai executar o metodo.
+        
+        public void Abrir()
+        {
+            
+        }
+
+            
+                
+            
+        
+
+        
+
     }
 }
