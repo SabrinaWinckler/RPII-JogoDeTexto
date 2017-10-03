@@ -51,4 +51,9 @@ public class ItemDatabase : MonoBehaviour {
         this.Valor = valor;
     }
 
+    public ItemJson()
+    {
+        this.ID = -1;
+    }
+
 }
