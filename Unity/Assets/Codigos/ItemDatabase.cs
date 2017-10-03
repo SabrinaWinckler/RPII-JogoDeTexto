@@ -30,7 +30,7 @@ public class ItemDatabase : MonoBehaviour {
     {
         for (int i = 0; i < itemData.Count; i++)
         {
-            database.Add(new ItemJson((int)itemData[i]["id"], itemData[i]["nome"].ToString(), itemData[i]["descricao"].ToString(), (int)itemData[i]["valor"]));
+            database.Add(new ItemJson((int)itemData[i]["id"], itemData[i]["nome"].ToString(), itemData[i]["descricao"].ToString(), (int)itemData[i]["valor"], itemData[i]["slug"].ToString()));
         }
     }
 }
@@ -40,15 +40,19 @@ public class ItemDatabase : MonoBehaviour {
     public string Nome { get; set; }
     public string Descricao { get; set; }
     public int Valor { get; set; }
+    public string Slug { get; set; }
+    public Sprite Sprite { get; set; }
 
     
 
-    public ItemJson(int id, string nome, string descricao, int valor)
+    public ItemJson(int id, string nome, string descricao, int valor, string slug)
     {
         this.ID = id;
         this.Nome = nome;
         this.Descricao = descricao;
         this.Valor = valor;
+        this.Slug = slug;
+        this.Sprite = Resources.Load<Sprite>("Sprites/Items/" + slug);
     }
 
     public ItemJson()

@@ -572,8 +572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98a62a74445ecc644930d7706edbcb67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryPanel: {fileID: 0}
-  slotPanel: {fileID: 0}
+  database: {fileID: 0}
   inventorySlot: {fileID: 1657799066757708, guid: ffc981f85336756458e1a82b12215ad3,
     type: 2}
   inventoryItem: {fileID: 1283574681546812, guid: 3e7e24250021f7749beb3b886299af03,
@@ -789,7 +788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvas: {fileID: 1262649297}
-  text_tituloCenario: {fileID: 0}
+  text_tituloCenario: {fileID: 1238791184}
   text_historia: {fileID: 0}
   scrollbar_historia: {fileID: 0}
   btn_opcaoModelo: {fileID: 0}

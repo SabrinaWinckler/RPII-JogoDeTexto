@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Inventory : MonoBehaviour {
@@ -29,6 +30,7 @@ public class Inventory : MonoBehaviour {
 
         }
         AddItem(0);
+        AddItem(1);
     }
 
     public void AddItem(int id)
@@ -41,7 +43,9 @@ public class Inventory : MonoBehaviour {
                 items[i] = itemToAdd;
                 GameObject itemObj = Instantiate(inventoryItem);
                 itemObj.transform.SetParent(slots[i].transform);
+                itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
                 itemObj.transform.position = Vector2.zero;
+                itemObj.name = itemToAdd.Nome;
                 break;
             }
         }
