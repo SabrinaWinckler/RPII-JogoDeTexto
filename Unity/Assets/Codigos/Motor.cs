@@ -192,16 +192,7 @@ namespace textgame {
             inventario.Remove(item_remover);
 
         }
-        //se estiver vazio
-        public void IsEmpty()
-        {
-            return (inventario.count == 0);
-        }
-        //se estiver cheio
-        public void IsFull()
-        {
-            return (inventario.cout == 10);
-        }
+
         //abrir
         //se o usuario apertar o botão inventario ele vai executar o metodo.
         

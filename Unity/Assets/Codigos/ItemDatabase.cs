@@ -30,7 +30,9 @@ public class ItemDatabase : MonoBehaviour {
     {
         for (int i = 0; i < itemData.Count; i++)
         {
-            database.Add(new ItemJson((int)itemData[i]["id"], itemData[i]["nome"].ToString(), itemData[i]["descricao"].ToString(), (int)itemData[i]["valor"], itemData[i]["slug"].ToString()));
+            database.Add(new ItemJson((int)itemData[i]["id"], itemData[i]["nome"].ToString(),
+                itemData[i]["descricao"].ToString(), (int)itemData[i]["valor"], itemData[i]["slug"].ToString(),
+                (bool)itemData[i]["stackable"]));
         }
     }
 }
@@ -42,10 +44,11 @@ public class ItemDatabase : MonoBehaviour {
     public int Valor { get; set; }
     public string Slug { get; set; }
     public Sprite Sprite { get; set; }
+    public bool Stackable { get; set; }
 
     
 
-    public ItemJson(int id, string nome, string descricao, int valor, string slug)
+    public ItemJson(int id, string nome, string descricao, int valor, string slug, bool stackable)
     {
         this.ID = id;
         this.Nome = nome;
@@ -53,6 +56,7 @@ public class ItemDatabase : MonoBehaviour {
         this.Valor = valor;
         this.Slug = slug;
         this.Sprite = Resources.Load<Sprite>("Sprites/Items/" + slug);
+        this.Stackable = stackable;
     }
 
     public ItemJson()

@@ -3,10 +3,11 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class Inventory : MonoBehaviour {
+public class Inventory : MonoBehaviour
+{
 
-    GameObject inventoryPanel;
-    GameObject slotPanel;
+    public GameObject inventoryPanel;
+    public GameObject slotPanel;
     public ItemDatabase database;
     public GameObject inventorySlot;
     public GameObject inventoryItem;
@@ -14,15 +15,16 @@ public class Inventory : MonoBehaviour {
     int slotAmount;
     public List<ItemJson> items = new List<ItemJson>();
     public List<GameObject> slots = new List<GameObject>();
+    public GameObject panel;
 
     private void Start()
     {
 
         database = GetComponent<ItemDatabase>();
-        slotAmount = 12;
-        inventoryPanel = GameObject.Find("Panel_Inventario");
-        slotPanel = inventoryPanel.transform.Find("Panel_Slots").gameObject;
-        for(int i = 0; i < slotAmount; i++)
+        slotAmount = 16;
+        //inventoryPanel = GameObject.Find("Panel_Inventario");
+        //slotPanel = inventoryPanel.transform.Find("Panel_Slots").gameObject;
+        for (int i = 0; i < slotAmount; i++)
         {
             items.Add(new ItemJson());
             slots.Add(Instantiate(inventorySlot));
@@ -38,7 +40,7 @@ public class Inventory : MonoBehaviour {
         ItemJson itemToAdd = database.FetchItemByID(id);
         for (int i = 0; i < slots.Count; i++)
         {
-            if(items[i].ID == -1)
+            if (items[i].ID == -1)
             {
                 items[i] = itemToAdd;
                 GameObject itemObj = Instantiate(inventoryItem);
@@ -49,7 +51,7 @@ public class Inventory : MonoBehaviour {
                 break;
             }
         }
-         
+
     }
 
 }
