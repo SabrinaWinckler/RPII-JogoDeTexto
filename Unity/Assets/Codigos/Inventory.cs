@@ -33,25 +33,53 @@ public class Inventory : MonoBehaviour
         }
         AddItem(0);
         AddItem(1);
+        AddItem(2);
+        AddItem(2);
+        AddItem(2);
+        AddItem(2); 
+        AddItem(2);
+        AddItem(2);
     }
 
     public void AddItem(int id)
     {
         ItemJson itemToAdd = database.FetchItemByID(id);
-        for (int i = 0; i < slots.Count; i++)
+        if (itemToAdd.Stackable && checkItem(itemToAdd))
         {
-            if (items[i].ID == -1)
+            for (int i = 0; i < items.Count; i++)
             {
-                items[i] = itemToAdd;
-                GameObject itemObj = Instantiate(inventoryItem);
-                itemObj.transform.SetParent(slots[i].transform);
-                itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
-                itemObj.transform.position = Vector2.zero;
-                itemObj.name = itemToAdd.Nome;
-                break;
+                if (items[i].ID == id)
+                {
+                    ItemData data = slots[i].transform.GetChild(0).GetComponent<ItemData>();
+                    data.amount++;
+                    data.transform.GetChild(0).GetComponent<Text>().text = data.amount.ToString();
+                    break;
+                }
             }
         }
-
+        else { 
+            for (int i = 0; i < slots.Count; i++)
+            {
+                if (items[i].ID == -1)
+                {
+                    items[i] = itemToAdd;
+                    GameObject itemObj = Instantiate(inventoryItem);
+                    itemObj.transform.SetParent(slots[i].transform);
+                    itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
+                    itemObj.transform.position = Vector2.zero;
+                    itemObj.name = itemToAdd.Nome;
+                    break;
+                }
+            }
+        }
     }
 
+    bool checkItem(ItemJson item)
+    {
+        for (int i = 0; i < items.Count; i++)
+            if (items[i].ID == item.ID)
+            return true;
+        return false;
+        
+    }
 }

@@ -83,9 +83,9 @@ namespace textgame {
                 alterarNomeCenario(cenario.nomeCenario);
                 alterarFundo(cenario.cenas[cenaAtual].bg_cena);
 
-                StartCoroutine(
-                    Engrenagem(cenario.cenas[cenaAtual])
-                );
+                //StartCoroutine(
+                //    Engrenagem(cenario.cenas[cenaAtual])
+                //);
 
 
                 this.interacao = true;
@@ -102,36 +102,36 @@ namespace textgame {
             canvas.GetComponent<RawImage>().texture = textura.texture;
         }
 
-        IEnumerator Engrenagem(Cena cena) {
+        //IEnumerator Engrenagem(Cena cena) {
 
-            for (int i = 0; i < cena.enredos.Count; i++) {
-                AudioClip fxAtual;
-                fxAtual = null;
+        //    for (int i = 0; i < cena.enredos.Count; i++) {
+        //        AudioClip fxAtual;
+        //        fxAtual = null;
 
-                //if(cena.enredos[i].fx != null)
-                //{
-                //    WWW wwwAudioFX = new WWW(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
-                //    fxAtual = wwwAudioFX.GetAudioClip(false, true, AudioType.OGGVORBIS);
-                //    Debug.Log("Deveria ter FX");
-                //}
+        //        //if(cena.enredos[i].fx != null)
+        //        //{
+        //        //    WWW wwwAudioFX = new WWW(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
+        //        //    fxAtual = wwwAudioFX.GetAudioClip(false, true, AudioType.OGGVORBIS);
+        //        //    Debug.Log("Deveria ter FX");
+        //        //}
 
-                for (int j = 0; j < cena.enredos[i].texto.Length; j++) {
-                    text_historia.text += cena.enredos[i].texto[j];
-                    yield return new WaitForSeconds(0.00f);
-                    scrollbar_historia.value = 0;
-                }
+        //        for (int j = 0; j < cena.enredos[i].texto.Length; j++) {
+        //            text_historia.text += cena.enredos[i].texto[j];
+        //            yield return new WaitForSeconds(0.00f);
+        //            scrollbar_historia.value = 0;
+        //        }
 
-                //if (fxAtual != null)
-                //{
-                //    audios.PlayOneShot(fxAtual, 1);
-                //    fxAtual = null;
-                //}
+        //        //if (fxAtual != null)
+        //        //{
+        //        //    audios.PlayOneShot(fxAtual, 1);
+        //        //    fxAtual = null;
+        //        //}
 
-                text_historia.text += "\n";
-            }
+        //        text_historia.text += "\n";
+        //    }
 
-            gerarBotao(cena.opcoes);
-        }
+        //    gerarBotao(cena.opcoes);
+        //}
 
         public void gerarBotao(List<Opcao> qntOpc) {
             Button novoBotao;

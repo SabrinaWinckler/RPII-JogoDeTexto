@@ -4,24 +4,27 @@
     "nome": ".357 Magnum",
     "descricao": "Uma arma de calibre 357, classica e muito bem concervada.",
     "valor": 128,
-    "slug": "mag_357",
-    "stackable" : false
+    "stackable": false,
+    "slug": "mag_357"
+
   },
   {
     "id": 1,
     "nome": "Documentos Rabiscados",
     "descricao": "Você encontrou esses documentos no abartamento revirado do Doutor Duskwood.",
     "valor": 0,
-    "slug": "doc_letter",
-    "stackable": false
+    "stackable": false,
+    "slug": "doc_letter"
+
   },
   {
     "id": 2,
     "nome": "Bandagem",
-    "descrição": "Bandagem simples para ferimentos leves.",
+    "descricao": "Bandagem simples para ferimentos leves.",
     "valor": 25,
-    "slug": "band_aid",
-    "stackable": true
+    "stackable": true,
+    "slug": "band_aid"
+
   }
 
 ]
