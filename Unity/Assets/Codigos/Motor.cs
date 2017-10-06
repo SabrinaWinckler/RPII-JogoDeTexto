@@ -55,7 +55,6 @@ namespace textgame {
 
             personagem = new Personagem();
             inventario = new Inventario();
-            String profissao = null;
 
 
             gerenciador = new Gerenciador();
@@ -82,10 +81,11 @@ namespace textgame {
 
                 alterarNomeCenario(cenario.nomeCenario);
                 alterarFundo(cenario.cenas[cenaAtual].bg_cena);
-
-                //StartCoroutine(
-                //    Engrenagem(cenario.cenas[cenaAtual])
-                //);
+                /*
+                StartCoroutine(
+                    Engrenagem(cenario.cenas[cenaAtual])
+                );
+                */
 
 
                 this.interacao = true;
@@ -101,8 +101,8 @@ namespace textgame {
             WWW textura = new WWW(Path.Combine(Application.streamingAssetsPath, "bg_cenario_cena/" + imagem));
             canvas.GetComponent<RawImage>().texture = textura.texture;
         }
-
-        //IEnumerator Engrenagem(Cena cena) {
+        /*
+        IEnumerator Engrenagem(Cena cena) {
 
         //    for (int i = 0; i < cena.enredos.Count; i++) {
         //        AudioClip fxAtual;
@@ -130,9 +130,9 @@ namespace textgame {
         //        text_historia.text += "\n";
         //    }
 
-        //    gerarBotao(cena.opcoes);
-        //}
-
+            gerarBotao(cena.opcoes);
+        }
+        */
         public void gerarBotao(List<Opcao> qntOpc) {
             Button novoBotao;
             int x = 38;
@@ -176,9 +176,7 @@ namespace textgame {
         void AddListener(Button button, int cenarioAtual, int cenaAtual, float saldo, Item item) {
             button.onClick.AddListener(() => eventoBtn(cenarioAtual, cenaAtual, saldo, item));
         }
-
-
-
+        
         //adiconar item 
         public void AdicionarItem(string item)
         {
@@ -192,10 +190,9 @@ namespace textgame {
             inventario.Remove(item_remover);
 
         }
-
         //abrir
         //se o usuario apertar o botão inventario ele vai executar o metodo.
-        
+
         public void Abrir()
         {
             

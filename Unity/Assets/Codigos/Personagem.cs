@@ -7,14 +7,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using System.IO;
 
 namespace textgame
 {
-    class Personagem
+    class Personagem : MonoBehaviour
     {
 
         public float saldo;
@@ -24,6 +20,7 @@ namespace textgame
         public String text_img_Avatar;
         public GameObject img_Avatar;
         public Image imagem;
+        public Text text_profissao;
 
         public Personagem() {
             Profissao medico = new Profissao("Medico", 300f);
@@ -37,12 +34,18 @@ namespace textgame
 
             Saldo = 0.0f;
         }
+
+        void Awake() {
+            text_profissao.text = profissoes[posicao_vetor].nome;
+        }
+
         public void setAvatar(Button avatar) {
 
             this.text_img_Avatar = avatar.image.name;
             this.img_Avatar = avatar.image.gameObject;
             imagem = avatar.image;
         }
+
         public GameObject getAvatar() {
             return this.img_Avatar;
         }
