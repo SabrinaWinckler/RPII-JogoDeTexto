@@ -95,8 +95,8 @@
     <Compile Include="Assets\Codigos\Configuracao.cs" />
     <Compile Include="Assets\Codigos\DadosPersonagem.cs" />
     <Compile Include="Assets\Codigos\Enredo.cs" />
+    <Compile Include="Assets\Codigos\Frase.cs" />
     <Compile Include="Assets\Codigos\Gerenciador.cs" />
-    <Compile Include="Assets\Codigos\IA.cs" />
     <Compile Include="Assets\Codigos\Inventario.cs" />
     <Compile Include="Assets\Codigos\Item.cs" />
     <Compile Include="Assets\Codigos\ItemDatabase.cs" />
@@ -106,6 +106,7 @@
     <Compile Include="Assets\Codigos\Personagem.cs" />
     <Compile Include="Assets\Codigos\Principal.cs" />
     <Compile Include="Assets\Codigos\Profissao.cs" />
+    <Compile Include="Assets\Codigos\ReconhecimentoPalavra.cs" />
     <Compile Include="Assets\Codigos\Segmento.cs" />
     <Compile Include="Assets\Codigos\TogglePainel.cs" />
   </ItemGroup>
