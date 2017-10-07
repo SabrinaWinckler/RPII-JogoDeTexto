@@ -135,6 +135,7 @@ namespace textgame
         //}
 
         // Update is called once per frame
+<<<<<<< Updated upstream
         //void Update()
         //{
         //    if (Input.GetKey(KeyCode.Escape))
@@ -345,4 +346,217 @@ namespace textgame
     //    }
     //    #endregion
     //}
+=======
+        void Update()
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
+
+            //if (Input.GetKey(KeyCode.I))
+            //{
+            //    Debug.Log(personagem1.Nome);
+            //}
+        }
+
+        public void fecharJogo()
+        {
+            Application.Quit();
+            Debug.Log("Fecho");
+        }
+
+        #region METODOS - Configuração de resolução
+        private void inserirResolucoes()
+        {
+            dp_resolucoes.options.Clear();
+            dp_resolucoes.options.Add(new Dropdown.OptionData() { text = "1024x576" });
+            dp_resolucoes.options.Add(new Dropdown.OptionData() { text = "1280x720" });
+        }
+
+        private Resolution novaResolucao(int width, int heigth, int refreshRate)
+        {
+            Resolution res = new Resolution();
+
+            res.width = width;
+            res.height = heigth;
+            res.refreshRate = refreshRate;
+
+            return res;
+        }
+
+        private void setResolucao(int newres)
+        {
+            PlayerPrefs.SetInt("RESOLUCAO", dp_resolucoes.value);
+            Screen.SetResolution(resolucoesSuportadas[newres].width, resolucoesSuportadas[newres].height, false);
+        }
+        #endregion
+
+        #region METODOS - Configuração de áudio
+        private void setAudioGeral(bool audio)
+        {
+            if (!audio)
+            {
+                slider_audio.interactable = false;
+                toggle_efeitos.interactable = false;
+                slider_efeitos.interactable = false;
+                toggle_musica.interactable = false;
+                slider_musica.interactable = false;
+
+                GetComponent<AudioSource>().enabled = false;
+                PlayerPrefs.SetInt("AUDIO_GERAL_ATIVADO", 0);
+            }
+            else
+            {
+                setAudioMusica(audio);
+                setAudioEfeitos(audio);
+
+                slider_audio.interactable = true;
+                toggle_efeitos.interactable = true;
+                slider_efeitos.interactable = true;
+                toggle_musica.interactable = true;
+                slider_musica.interactable = true;
+
+                GetComponent<AudioSource>().enabled = true;
+                PlayerPrefs.SetInt("AUDIO_GERAL_ATIVADO", 1);
+            }
+        }
+
+        private void setVolumeGeral(float audio)
+        {
+            AudioListener.volume = audio;
+            PlayerPrefs.SetFloat("AUDIO_GERAL", audio);
+        }
+
+
+        private void setAudioEfeitos(bool audio)
+        {
+            if (!audio)
+            {
+                setVolumeEfeitos(0);
+                toggle_efeitos.isOn = false;
+                slider_efeitos.interactable = false;
+                PlayerPrefs.SetInt("AUDIO_EFEITO_ATIVADO", 0);
+            }
+            else
+            {
+                setVolumeEfeitos(slider_efeitos.value);
+                toggle_efeitos.isOn = true;
+                slider_efeitos.interactable = true;
+                PlayerPrefs.SetInt("AUDIO_EFEITO_ATIVADO", 1);
+            }
+        }
+
+        private void setVolumeEfeitos(float audio)
+        {
+            PlayerPrefs.SetFloat("AUDIO_EFEITO", audio);
+        }
+
+
+        private void setAudioMusica(bool audio)
+        {
+            if (!audio)
+            {
+                audio_musica.volume = 0;
+                toggle_musica.isOn = false;
+                slider_musica.interactable = false;
+                PlayerPrefs.SetInt("AUDIO_MUSICA_ATIVADO", 0);
+            }
+            else
+            {
+                audio_musica.volume = slider_musica.value;
+                toggle_musica.isOn = true;
+                slider_musica.interactable = true;
+                PlayerPrefs.SetInt("AUDIO_MUSICA_ATIVADO", 1);
+            }
+        }
+
+        private void setVolumeMusica(float audio)
+        {
+            audio_musica.volume = audio;
+            PlayerPrefs.SetFloat("AUDIO_MUSICA", audio);
+        }
+        #endregion
+
+        #region METODOS - Configuração de preferências
+        private void playerPrefs()
+        {
+            if (PlayerPrefs.HasKey("RESOLUCAO"))
+            {
+                dp_resolucoes.value = PlayerPrefs.GetInt("RESOLUCAO");
+
+
+                if (PlayerPrefs.GetInt("RESOLUCAO") == 0)
+                {
+                    dp_resolucoes.captionText.text = "1024x576";
+                }
+                else
+                {
+                    dp_resolucoes.captionText.text = "1280x720";
+                }
+            }
+
+            if (PlayerPrefs.HasKey("AUDIO_GERAL_ATIVADO"))
+            {
+                if (PlayerPrefs.GetInt("AUDIO_GERAL_ATIVADO") == 0)
+                {
+                    setAudioGeral(false);
+                    toggle_audio.isOn = false;
+                }
+                else
+                {
+                    setAudioGeral(true);
+                    toggle_audio.isOn = true;
+                }
+            }
+
+            if (PlayerPrefs.HasKey("AUDIO_GERAL"))
+            {
+                AudioListener.volume = PlayerPrefs.GetFloat("AUDIO_GERAL");
+                slider_audio.value = PlayerPrefs.GetFloat("AUDIO_GERAL");
+            }
+
+            if (PlayerPrefs.HasKey("AUDIO_EFEITO_ATIVADO"))
+            {
+                if (PlayerPrefs.GetInt("AUDIO_EFEITO_ATIVADO") == 0)
+                {
+                    setAudioEfeitos(false);
+                    toggle_efeitos.isOn = false;
+                }
+                else
+                {
+                    setAudioEfeitos(true);
+                    toggle_efeitos.isOn = true;
+                }
+            }
+
+            if (PlayerPrefs.HasKey("AUDIO_EFEITO"))
+            {
+                setVolumeEfeitos(PlayerPrefs.GetFloat("AUDIO_EFEITO"));
+                slider_efeitos.value = PlayerPrefs.GetFloat("AUDIO_EFEITO");
+            }
+
+            if (PlayerPrefs.HasKey("AUDIO_MUSICA_ATIVADO"))
+            {
+                if (PlayerPrefs.GetInt("AUDIO_MUSICA_ATIVADO") == 0)
+                {
+                    setAudioMusica(false);
+                    toggle_musica.isOn = false;
+                }
+                else
+                {
+                    setAudioMusica(true);
+                    toggle_musica.isOn = true;
+                }
+            }
+
+            if (PlayerPrefs.HasKey("AUDIO_MUSICA"))
+            {
+                setVolumeMusica(PlayerPrefs.GetFloat("AUDIO_MUSICA"));
+                slider_musica.value = PlayerPrefs.GetFloat("AUDIO_MUSICA");
+            }
+        }
+        #endregion
+    }
+>>>>>>> Stashed changes
 }

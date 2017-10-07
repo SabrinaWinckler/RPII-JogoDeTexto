@@ -79,23 +79,16 @@
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity.Settings">
-      <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
-    </Reference>
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Codigos\Alinhamento.cs" />
     <Compile Include="Assets\Codigos\Cena.cs" />
     <Compile Include="Assets\Codigos\Cenario.cs" />
     <Compile Include="Assets\Codigos\Configuracao.cs" />
+    <Compile Include="Assets\Codigos\Configuracao01.cs" />
     <Compile Include="Assets\Codigos\DadosPersonagem.cs" />
     <Compile Include="Assets\Codigos\Enredo.cs" />
     <Compile Include="Assets\Codigos\Gerenciador.cs" />
