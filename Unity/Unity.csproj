@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -88,10 +90,10 @@
     <Compile Include="Assets\Codigos\Cena.cs" />
     <Compile Include="Assets\Codigos\Cenario.cs" />
     <Compile Include="Assets\Codigos\Configuracao.cs" />
-    <Compile Include="Assets\Codigos\Configuracao01.cs" />
     <Compile Include="Assets\Codigos\DadosPersonagem.cs" />
     <Compile Include="Assets\Codigos\Enredo.cs" />
     <Compile Include="Assets\Codigos\Gerenciador.cs" />
+    <Compile Include="Assets\Codigos\InforJogador.cs" />
     <Compile Include="Assets\Codigos\Inventario.cs" />
     <Compile Include="Assets\Codigos\Inventory.cs" />
     <Compile Include="Assets\Codigos\Item.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="Assets\Codigos\Principal.cs" />
     <Compile Include="Assets\Codigos\Profissao.cs" />
     <Compile Include="Assets\Codigos\Segmento.cs" />
+    <Compile Include="Assets\Codigos\StatsBar.cs" />
     <Compile Include="Assets\Codigos\TogglePainel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
