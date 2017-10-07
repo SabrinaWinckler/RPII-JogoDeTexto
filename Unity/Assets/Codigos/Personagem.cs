@@ -21,6 +21,7 @@ namespace textgame
         public GameObject img_Avatar;
         public Image imagem;
         public Text text_profissao;
+        public Text text_saldo;
 
         public Personagem() {
             Profissao medico = new Profissao("Medico", 300f);
@@ -37,6 +38,7 @@ namespace textgame
 
         void Awake() {
             text_profissao.text = profissoes[posicao_vetor].nome;
+            text_saldo.text = "$ " + (profissoes[posicao_vetor].Bonus + Saldo);
         }
 
         public void setAvatar(Button avatar) {
