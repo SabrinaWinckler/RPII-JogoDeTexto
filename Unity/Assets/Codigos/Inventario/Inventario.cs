@@ -7,8 +7,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.IO;
+using 
 
-namespace Inventario {
+namespace Estoque{
 
     public class Inventario {
         //ATRIBUTOS

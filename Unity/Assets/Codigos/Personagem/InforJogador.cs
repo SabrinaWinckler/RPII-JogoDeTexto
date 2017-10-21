@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Personagem {
+namespace Protagonista {
 
     public class InforJogador : MonoBehaviour {
         //ATRIBUTOS UNITY
