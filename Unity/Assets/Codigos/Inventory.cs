@@ -31,14 +31,17 @@ public class Inventory : MonoBehaviour
             slots[i].transform.SetParent(slotPanel.transform);
 
         }
+
+        //teste
         AddItem(0);
         AddItem(1);
         AddItem(2);
         AddItem(2);
         AddItem(2);
-        AddItem(2); 
+        AddItem(2);  
         AddItem(2);
         AddItem(2);
+
     }
 
     public void AddItem(int id)
@@ -64,6 +67,7 @@ public class Inventory : MonoBehaviour
                 {
                     items[i] = itemToAdd;
                     GameObject itemObj = Instantiate(inventoryItem);
+                    itemObj.GetComponent<ItemData>().item = itemToAdd;
                     itemObj.transform.SetParent(slots[i].transform);
                     itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
                     itemObj.transform.position = Vector2.zero;
