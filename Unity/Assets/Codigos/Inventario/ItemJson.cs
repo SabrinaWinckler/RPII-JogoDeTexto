@@ -5,8 +5,8 @@ using System.Text;
 using UnityEngine;
 
 
-namespace Inventario : MonoBehaviour {
-    public class ItemJson {
+namespace Inventario {
+    public class ItemJson : MonoBehaviour {
         public int ID { get; set; }
         public string Nome { get; set; }
         public string Descricao { get; set; }
@@ -14,9 +14,6 @@ namespace Inventario : MonoBehaviour {
         public bool Stackable { get; set; }
         public string Slug { get; set; }
         public Sprite Sprite { get; set; }
-
-
-
 
         public ItemJson(int id, string nome, string descricao, int valor, bool stackable, string slug) {
             this.ID = id;

@@ -8,9 +8,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Personagem {
+namespace Protagonista {
 
-    class Personagem : MonoBehaviour {
+    public class Personagem : MonoBehaviour {
 
         public float saldo;
         public Profissao[] profissoes = new Profissao[6];

@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace Personagem {
+namespace Protagonista {
 
     public class Alinhamento : MonoBehaviour {
         [SerializeField]

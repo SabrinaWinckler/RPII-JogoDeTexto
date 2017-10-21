@@ -5,8 +5,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Serializaveis;
+using Protagonista;
 
-using Assets.Codigos.Serializaveis;
+
 
 namespace Unity {
 
@@ -48,16 +50,16 @@ namespace Unity {
         private int cenarioAtual;
         private int cenaAtual;
 
-        private Personagem personagem;
-        private Inventario inventario;
+       private Personagem personagem;
+       // private Inventario inventario;
 
         // Método de inicialização do Unity
         void Start() {
             DontDestroyOnLoad(gameObject);
             //audios = GetComponent<AudioSource>();
 
-            personagem = new Personagem();
-            inventario = new Inventario();
+           // personagem = new Personagem();
+           // inventario = new Inventario();
 
 
             gerenciador = new Gerenciador();
@@ -66,7 +68,7 @@ namespace Unity {
 
             cenarioAtual = 0;
             cenaAtual = 0;
-
+            Debug.Log(json_arquivo.text);
             if (json_arquivo.text.Length > 0) {
                 gerenciador = JsonUtility.FromJson<Gerenciador>(json_arquivo.text);
                 Debug.Log("JSON carregado com sucesso!");
@@ -84,11 +86,11 @@ namespace Unity {
 
                 alterarNomeCenario(cenario.nomeCenario);
                 alterarFundo(cenario.cenas[cenaAtual].bg_cena);
-                /*
+
                 StartCoroutine(
                     Engrenagem(cenario.cenas[cenaAtual])
                 );
-                */
+
 
 
                 this.interacao = true;
@@ -104,69 +106,69 @@ namespace Unity {
             WWW textura = new WWW(Path.Combine(Application.streamingAssetsPath, "bg_cenario_cena/" + imagem));
             canvas.GetComponent<RawImage>().texture = textura.texture;
         }
-        /*
+
         IEnumerator Engrenagem(Cena cena) {
 
-        //    for (int i = 0; i < cena.enredos.Count; i++) {
-        //        AudioClip fxAtual;
-        //        fxAtual = null;
+            for (int i = 0; i < cena.enredos.Count; i++) {
+                //        AudioClip fxAtual;
+                //        fxAtual = null;
 
-        //        //if(cena.enredos[i].fx != null)
-        //        //{
-        //        //    WWW wwwAudioFX = new WWW(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
-        //        //    fxAtual = wwwAudioFX.GetAudioClip(false, true, AudioType.OGGVORBIS);
-        //        //    Debug.Log("Deveria ter FX");
-        //        //}
+                //if(cena.enredos[i].fx != null)
+                //{
+                //    WWW wwwAudioFX = new WWW(Path.Combine(Application.streamingAssetsPath, "musicas/" + cena.enredos[i].fx));
+                //    fxAtual = wwwAudioFX.GetAudioClip(false, true, AudioType.OGGVORBIS);
+                //    Debug.Log("Deveria ter FX");
+                //}
 
-        //        for (int j = 0; j < cena.enredos[i].texto.Length; j++) {
-        //            text_historia.text += cena.enredos[i].texto[j];
-        //            yield return new WaitForSeconds(0.00f);
-        //            scrollbar_historia.value = 0;
-        //        }
+                for (int j = 0; j < cena.enredos[i].texto.Length; j++) {
+                    text_historia.text += cena.enredos[i].texto[j];
+                    yield return new WaitForSeconds(0.00f);
+                    // scrollbar_historia.value = 0;
+                }
 
-        //        //if (fxAtual != null)
-        //        //{
-        //        //    audios.PlayOneShot(fxAtual, 1);
-        //        //    fxAtual = null;
-        //        //}
+                //        //if (fxAtual != null)
+                //        //{
+                //        //    audios.PlayOneShot(fxAtual, 1);
+                //        //    fxAtual = null;
+                //        //}
 
-        //        text_historia.text += "\n";
-        //    }
+                text_historia.text += "\n";
+            }
 
             gerarBotao(cena.opcoes);
         }
-        */
-        //public void gerarBotao(List<Opcao> qntOpc) {
-        //    Button novoBotao;
-        //    int x = 38;
-        //    int y = 125;
-        //    int z = 0;
 
-        //    for (int i = 0; i < qntOpc.Count; i++) {
-        //        if ((qntOpc[i].permissao == "todos" || String.Equals(personagem., qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
-        //            && personagem.Saldo > qntOpc[i].descontar) {
-        //            novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
-        //            novoBotao.transform.position = new Vector3(x, y, z);
-        //            novoBotao.gameObject.SetActive(true);
+        public void gerarBotao(List<Opcao> qntOpc) {
+            Button novoBotao;
+            int x = 38;
+            int y = 125;
+            int z = 0;
 
-        //            novoBotao.GetComponentsInChildren<Text>()[0].text = qntOpc[i].resposta;
+            for (int i = 0; i < qntOpc.Count; i++) {
+                if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.name, qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
+                    && personagem.Saldo > qntOpc[i].descontar) {
+                    novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
+                    novoBotao.transform.position = new Vector3(x, y, z);
+                    novoBotao.gameObject.SetActive(true);
 
-        //            novoBotao.onClick = new Button.ButtonClickedEvent();
+                    novoBotao.GetComponentsInChildren<Text>()[0].text = qntOpc[i].resposta;
 
-        //            AddListener(novoBotao, qntOpc[i].segmento.idCenario, qntOpc[i].segmento.idCena, qntOpc[i].descontar, qntOpc[i].item);
+                    novoBotao.onClick = new Button.ButtonClickedEvent();
 
-        //            y -= 32;
-        //        }
-        //    }
-        //}
+                    AddListener(novoBotao, qntOpc[i].segmento.idCenario, qntOpc[i].segmento.idCena, qntOpc[i].descontar, qntOpc[i].item);
+
+                    y -= 32;
+                }
+            }
+        }
 
         private void eventoBtn(int cenarioAtual, int cenaAtual, float saldo, Item item) {
             this.cenarioAtual = cenarioAtual;
             this.cenaAtual = cenaAtual;
-            this.personagem.Saldo -= saldo;
+         //   this.personagem.Saldo -= saldo;
 
             if (item != null) {
-                inventario.Add(item);
+              //  inventario.Add(item);
             }
 
             for (int i = 0; i < panel_opcoes.GetComponentsInChildren<Button>().Length; i++) {
@@ -182,13 +184,13 @@ namespace Unity {
 
         //adiconar item 
         public void AdicionarItem(string item) {
-            Item i = new Item();
+          //  Item i = new Item();
             i.nome = item;
-            inventario.Add(i);
+          //  inventario.Add(i);
         }
         //remover
         public void Remove(String item_remover) {
-            inventario.Remove(item_remover);
+           // inventario.Remove(item_remover);
 
         }
         //abrir
@@ -197,5 +199,6 @@ namespace Unity {
         public void Abrir() {
 
         }
+        
     }
 }
