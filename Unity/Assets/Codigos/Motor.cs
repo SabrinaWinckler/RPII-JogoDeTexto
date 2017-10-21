@@ -133,29 +133,29 @@ namespace textgame {
             gerarBotao(cena.opcoes);
         }
         */
-        public void gerarBotao(List<Opcao> qntOpc) {
-            Button novoBotao;
-            int x = 38;
-            int y = 125;
-            int z = 0;
+        //public void gerarBotao(List<Opcao> qntOpc) {
+        //    Button novoBotao;
+        //    int x = 38;
+        //    int y = 125;
+        //    int z = 0;
 
-            for (int i = 0; i < qntOpc.Count; i++) {
-                if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.Nome_profissao, qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
-                    && personagem.Saldo > qntOpc[i].descontar) {
-                    novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
-                    novoBotao.transform.position = new Vector3(x, y, z);
-                    novoBotao.gameObject.SetActive(true);
+        //    for (int i = 0; i < qntOpc.Count; i++) {
+        //        if ((qntOpc[i].permissao == "todos" || String.Equals(personagem., qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
+        //            && personagem.Saldo > qntOpc[i].descontar) {
+        //            novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
+        //            novoBotao.transform.position = new Vector3(x, y, z);
+        //            novoBotao.gameObject.SetActive(true);
 
-                    novoBotao.GetComponentsInChildren<Text>()[0].text = qntOpc[i].resposta;
+        //            novoBotao.GetComponentsInChildren<Text>()[0].text = qntOpc[i].resposta;
 
-                    novoBotao.onClick = new Button.ButtonClickedEvent();
+        //            novoBotao.onClick = new Button.ButtonClickedEvent();
 
-                    AddListener(novoBotao, qntOpc[i].segmento.idCenario, qntOpc[i].segmento.idCena, qntOpc[i].descontar, qntOpc[i].item);
+        //            AddListener(novoBotao, qntOpc[i].segmento.idCenario, qntOpc[i].segmento.idCena, qntOpc[i].descontar, qntOpc[i].item);
 
-                    y -= 32;
-                }
-            }
-        }
+        //            y -= 32;
+        //        }
+        //    }
+        //}
 
         private void eventoBtn(int cenarioAtual, int cenaAtual, float saldo, Item item) {
             this.cenarioAtual = cenarioAtual;

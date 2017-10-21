@@ -1183,6 +1183,7 @@ GameObject:
   - component: {fileID: 481199627}
   - component: {fileID: 481199629}
   - component: {fileID: 481199628}
+  - component: {fileID: 481199630}
   m_Layer: 5
   m_Name: Panel_Infor
   m_TagString: Untagged
@@ -1249,6 +1250,24 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 481199626}
+--- !u!114 &481199630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 481199626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d368c3ff138c793459819a48d8647b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saldo: 0
+  nome_profissao: 
+  text_img_Avatar: 
+  img_Avatar: {fileID: 0}
+  imagem: {fileID: 0}
+  text_nome_profissao: {fileID: 0}
+  text_saldo: {fileID: 0}
 --- !u!1 &487122845
 GameObject:
   m_ObjectHideFlags: 0
@@ -4310,11 +4329,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 132
+    m_FontSize: 180
     m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 133
+    m_MaxSize: 182
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -4343,7 +4362,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00039196, y: -14.06}
+  m_AnchoredPosition: {x: 0.00039196, y: -0.000032425}
   m_SizeDelta: {x: 924.3, y: 336.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1324144714
@@ -5739,7 +5758,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.39820457, y: 0.9335897}
   m_AnchorMax: {x: 0.6008409, y: 1}
-  m_AnchoredPosition: {x: 2.3999023, y: 91.75}
+  m_AnchoredPosition: {x: 2.3999023, y: 91.750244}
   m_SizeDelta: {x: 807.1, y: 183.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772407890
@@ -6260,13 +6279,14 @@ GameObject:
   - component: {fileID: 2001776565}
   - component: {fileID: 2001776564}
   - component: {fileID: 2001776567}
+  - component: {fileID: 2001776568}
   m_Layer: 5
   m_Name: Panel_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2001776564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6342,13 +6362,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   saldo: 0
-  posicao_vetor: 2
   nome_profissao: 
   text_img_Avatar: 
   img_Avatar: {fileID: 0}
   imagem: {fileID: 0}
-  text_profissao: {fileID: 1860328826}
+  text_nome_profissao: {fileID: 1860328826}
   text_saldo: {fileID: 1301281767}
+--- !u!114 &2001776568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2001776563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6592ef57fcfacd4faa25fd6ad081ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  medico: {fileID: 0}
+  policial: {fileID: 0}
+  advogado: {fileID: 0}
+  atleta: {fileID: 0}
+  proximo: {fileID: 0}
+  fechar: {fileID: 0}
+  avatar1: {fileID: 0}
+  avatar2: {fileID: 0}
+  avatar3: {fileID: 0}
+  personagem: {fileID: 0}
+  text_profissao: {fileID: 0}
+  profissao: {fileID: 0}
+  painel_inicial: {fileID: 0}
+  img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &2027606807
 GameObject:
   m_ObjectHideFlags: 0

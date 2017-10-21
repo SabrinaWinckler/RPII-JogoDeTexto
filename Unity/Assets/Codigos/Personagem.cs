@@ -14,13 +14,12 @@ namespace textgame
     {
 
         public float saldo;
-        public int posicao_vetor;
         public Profissao[] profissoes = new Profissao[6];
         public String nome_profissao;
         public String text_img_Avatar;
         public GameObject img_Avatar;
         public Image imagem;
-        public Text text_profissao;
+        public Text text_nome_profissao;
         public Text text_saldo;
 
         public Personagem() {
@@ -37,8 +36,8 @@ namespace textgame
         }
 
         void Awake() {
-            text_profissao.text = profissoes[posicao_vetor].nome;
-            text_saldo.text = "$ " + (profissoes[posicao_vetor].Bonus + Saldo);
+            text_nome_profissao.text = nome_profissao;
+            text_saldo.text = "  $ " + Saldo;
         }
 
         public void setAvatar(Button avatar) {
@@ -51,6 +50,7 @@ namespace textgame
         public GameObject getAvatar() {
             return this.img_Avatar;
         }
+
         public Image getAvatarImg() {
             return this.imagem;
         }
@@ -60,16 +60,10 @@ namespace textgame
             set {saldo = value; }
         }
 
-        public String Nome_profissao {
-            get { return nome_profissao; }
-            set { nome_profissao = value; }
-        }
-
         public Profissao GetProfissao() {
             for (int i = 0; i < profissoes.Length; i++) {
                 if (profissoes[i] != null) {
-                    if (profissoes[i].Nome.Equals(Nome_profissao, StringComparison.OrdinalIgnoreCase)) {
-                        this.posicao_vetor = i;
+                    if (profissoes[i].Nome.Equals(nome_profissao, StringComparison.OrdinalIgnoreCase)) {
                         //RETORNA O OBJETO PROFISSAO COM TODOS SEUS ATRIBUTOS/MÉTODOS
                         return profissoes[i];
                     }
@@ -81,12 +75,12 @@ namespace textgame
         }
 
         public void setHabilidades(String habilidade) {
-            profissoes[posicao_vetor].Add_Habilidades(habilidade);
+            GetProfissao().List_Habilidades.Add(habilidade);
         }
 
         public void AtualizaSaldo() {
             //ATUALIZA SALDO COM ACRÉSCIMO DO BONUS DE CADA PROFISSÃO
-            Saldo += profissoes[posicao_vetor].Bonus;
+            Saldo += GetProfissao().Bonus;
         }
 
         public void MostrarAvatar(String person) {

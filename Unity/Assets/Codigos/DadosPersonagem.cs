@@ -53,8 +53,9 @@ namespace textgame
             //img_Avatar.gameObject.SetActive(false);
             painel_inicial.SetActive(true);
             //painelimagem.SetActive(false);
-                     
+
             //Input.GetMouseButtonUp(0)
+            
         }
 
         // Update is called once per frame
@@ -66,7 +67,8 @@ namespace textgame
         public void OnClick(String nome)
         {
             personagem.nome_profissao = nome;
-            text_profissao.text = personagem.GetProfissao().Nome;
+            Profissao p = personagem.GetProfissao();
+            text_profissao.text = p.nome;
         }
         public void OnClick() {
              SceneManager.LoadScene("Jogo");
