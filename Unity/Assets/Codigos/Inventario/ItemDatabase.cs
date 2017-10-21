@@ -4,7 +4,7 @@ using UnityEngine;
 using LitJson;
 using System.IO;
 
-namespace Inventario {
+namespace  Catalogo {
     public class ItemDatabase : MonoBehaviour {
 
         public List<ItemJson> database = new List<ItemJson>();

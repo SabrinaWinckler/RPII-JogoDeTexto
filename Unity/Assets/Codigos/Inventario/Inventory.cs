@@ -1,8 +1,9 @@
-﻿using System.Collections.Generic;
+﻿
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Inventario {
+namespace Catalogo {
 
     public class Inventory : MonoBehaviour {
 
@@ -19,7 +20,6 @@ namespace Inventario {
 
         private void Start() {
 
-<<<<<<< Updated upstream:Unity/Assets/Codigos/Inventario/Inventory.cs
             database = GetComponent<ItemDatabase>();
             slotAmount = 16;
             //inventoryPanel = GameObject.Find("Panel_Inventario");
@@ -28,31 +28,31 @@ namespace Inventario {
                 items.Add(new ItemJson());
                 slots.Add(Instantiate(inventorySlot));
                 slots[i].transform.SetParent(slotPanel.transform);
-=======
-        database = GetComponent<ItemDatabase>();
-        slotAmount = 16;
-        //inventoryPanel = GameObject.Find("Panel_Inventario");
-        //slotPanel = inventoryPanel.transform.Find("Panel_Slots").gameObject;
-        for (int i = 0; i < slotAmount; i++)
-        {
-            items.Add(new ItemJson());
-            slots.Add(Instantiate(inventorySlot));
-            slots[i].GetComponent<Slot>().id = i;
-            slots[i].transform.SetParent(slotPanel.transform);
->>>>>>> Stashed changes:Unity/Assets/Codigos/Inventory.cs
+
+                database = GetComponent<ItemDatabase>();
+                slotAmount = 16;
+                //inventoryPanel = GameObject.Find("Panel_Inventario");
+                //slotPanel = inventoryPanel.transform.Find("Panel_Slots").gameObject;
+                for (int j = 0; j < slotAmount; j++) {
+                    items.Add(new ItemJson());
+                    slots.Add(Instantiate(inventorySlot));
+                    slots[j].GetComponent<Slot>().id = j;
+                    slots[j].transform.SetParent(slotPanel.transform);
+
+
+                }
+
+                //teste
+                AddItem(0);
+                AddItem(1);
+                AddItem(2);
+                AddItem(2);
+                AddItem(2);
+                AddItem(2);
+                AddItem(2);
+                AddItem(2);
 
             }
-
-            //teste
-            AddItem(0);
-            AddItem(1);
-            AddItem(2);
-            AddItem(2);
-            AddItem(2);
-            AddItem(2);
-            AddItem(2);
-            AddItem(2);
-
         }
 
         public void AddItem(int id) {
@@ -66,7 +66,7 @@ namespace Inventario {
                         break;
                     }
                 }
-<<<<<<< Updated upstream:Unity/Assets/Codigos/Inventario/Inventory.cs
+
             } else {
                 for (int i = 0; i < slots.Count; i++) {
                     if (items[i].ID == -1) {
@@ -79,82 +79,47 @@ namespace Inventario {
                         itemObj.name = itemToAdd.Nome;
                         break;
                     }
-=======
-            }
-        }
-        else { 
-            for (int i = 0; i < slots.Count; i++)
-            {
-                if (items[i].ID == -1)
-                {
-                    items[i] = itemToAdd;
-                    GameObject itemObj = Instantiate(inventoryItem);
-                    itemObj.GetComponent<ItemData>().item = itemToAdd;
-                    itemObj.GetComponent<ItemData>().amount = 1;
-                    itemObj.GetComponent<ItemData>().slot = i;
-                    itemObj.transform.SetParent(slots[i].transform);
-                    itemObj.GetComponent<Image>().sprite = itemToAdd.Sprite;
-                    itemObj.transform.position = Vector2.zero;
-                    itemObj.name = itemToAdd.Nome;
-                    break;
->>>>>>> Stashed changes:Unity/Assets/Codigos/Inventory.cs
+
                 }
             }
         }
 
-<<<<<<< Updated upstream:Unity/Assets/Codigos/Inventario/Inventory.cs
-        bool checkItem(ItemJson item) {
+        public bool checkItem(ItemJson item) {
             for (int i = 0; i < items.Count; i++)
                 if (items[i].ID == item.ID)
                     return true;
             return false;
 
         }
-=======
-    public void RemoveItem(int id)
-    {
-        ItemJson itemToRemove = database.FetchItemByID(id);
-        if (itemToRemove.Stackable && checkItem(itemToRemove))
-        {
-            for (int j = 0; j < items.Count; j++)
-            {
-                if (items[j].ID == id)
-                {
-                    ItemData data = slots[j].transform.GetChild(0).GetComponent<ItemData>();
-                    data.amount--;
-                    data.transform.GetChild(0).GetComponent<Text>().text = data.amount.ToString();
-                    if (data.amount == 0)
-                    {
-                        Destroy(slots[j].transform.GetChild(0).gameObject);
-                        items[j] = new ItemJson();
-                        break;
-                    }
-                    if (data.amount == 1)
-                    {
-                        slots[j].transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = "";
-                        break;
-                    }
-                    break;
-                }
-            }
-        }
-        else
-            for (int i = 0; i < items.Count; i++)
-                if (items[i].ID != -1 && items[i].ID == id)
-                {
-                    Destroy(slots[i].transform.GetChild(0).gameObject);
-                    items[i] = new ItemJson();
-                    break;
-                }
-    }
 
-    bool checkItem(ItemJson item)
-    {
-        for (int i = 0; i < items.Count; i++)
-            if (items[i].ID == item.ID)
-            return true;
-        return false;
-        
->>>>>>> Stashed changes:Unity/Assets/Codigos/Inventory.cs
+        public void RemoveItem(int id) {
+            ItemJson itemToRemove = database.FetchItemByID(id);
+            if (itemToRemove.Stackable && checkItem(itemToRemove)) {
+                for (int j = 0; j < items.Count; j++) {
+                    if (items[j].ID == id) {
+                        ItemData data = slots[j].transform.GetChild(0).GetComponent<ItemData>();
+                        data.amount--;
+                        data.transform.GetChild(0).GetComponent<Text>().text = data.amount.ToString();
+                        if (data.amount == 0) {
+                            Destroy(slots[j].transform.GetChild(0).gameObject);
+                            items[j] = new ItemJson();
+                            break;
+                        }
+                        if (data.amount == 1) {
+                            slots[j].transform.GetChild(0).transform.GetChild(0).GetComponent<Text>().text = "";
+                            break;
+                        }
+                        break;
+                    }
+                }
+            } else
+                for (int i = 0; i < items.Count; i++)
+                    if (items[i].ID != -1 && items[i].ID == id) {
+                        Destroy(slots[i].transform.GetChild(0).gameObject);
+                        items[i] = new ItemJson();
+                        break;
+                    }
+        }
+
     }
 }

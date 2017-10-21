@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Catalogo;
+using System;
 using UnityEngine;
 
 namespace Serializaveis {
@@ -11,6 +12,6 @@ namespace Serializaveis {
         public Segmento segmento;
         public string permissao;
         public float descontar;
-        public Item item;
+        public ItemData item;
     }
 }

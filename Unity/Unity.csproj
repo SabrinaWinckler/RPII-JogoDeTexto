@@ -82,9 +82,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Codigos\Configuracao.cs" />
-    <Compile Include="Assets\Codigos\Inventario\Inventario.cs" />
     <Compile Include="Assets\Codigos\Inventario\Inventory.cs" />
-    <Compile Include="Assets\Codigos\Inventario\ItemData.cs" />
     <Compile Include="Assets\Codigos\Inventario\ItemDatabase.cs" />
     <Compile Include="Assets\Codigos\Inventario\ItemJson.cs" />
     <Compile Include="Assets\Codigos\ItemData.cs" />

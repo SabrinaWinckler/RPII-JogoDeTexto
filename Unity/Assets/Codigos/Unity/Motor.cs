@@ -135,57 +135,57 @@ namespace Unity {
                 text_historia.text += "\n";
             }
 
-            gerarBotao(cena.opcoes);
+          //  gerarBotao(cena.opcoes);
         }
 
-        public void gerarBotao(List<Opcao> qntOpc) {
-            Button novoBotao;
-            int x = 38;
-            int y = 125;
-            int z = 0;
+        //public void gerarBotao(List<Opcao> qntOpc) {
+        //    Button novoBotao;
+        //    int x = 38;
+        //    int y = 125;
+        //    int z = 0;
 
-            for (int i = 0; i < qntOpc.Count; i++) {
-                if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.name, qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
-                    && personagem.Saldo > qntOpc[i].descontar) {
-                    novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
-                    novoBotao.transform.position = new Vector3(x, y, z);
-                    novoBotao.gameObject.SetActive(true);
+        //    for (int i = 0; i < qntOpc.Count; i++) {
+        //        if ((qntOpc[i].permissao == "todos" || String.Equals(personagem.name, qntOpc[i].permissao, StringComparison.OrdinalIgnoreCase))
+        //            && personagem.Saldo > qntOpc[i].descontar) {
+        //            novoBotao = Instantiate(btn_opcaoModelo, panel_opcoes);
+        //            novoBotao.transform.position = new Vector3(x, y, z);
+        //            novoBotao.gameObject.SetActive(true);
 
-                    novoBotao.GetComponentsInChildren<Text>()[0].text = qntOpc[i].resposta;
+        //            novoBotao.GetComponentsInChildren<Text>()[0].text = qntOpc[i].resposta;
 
-                    novoBotao.onClick = new Button.ButtonClickedEvent();
+        //            novoBotao.onClick = new Button.ButtonClickedEvent();
 
-                    AddListener(novoBotao, qntOpc[i].segmento.idCenario, qntOpc[i].segmento.idCena, qntOpc[i].descontar, qntOpc[i].item);
+        //            AddListener(novoBotao, qntOpc[i].segmento.idCenario, qntOpc[i].segmento.idCena, qntOpc[i].descontar, qntOpc[i].item);
 
-                    y -= 32;
-                }
-            }
-        }
+        //            y -= 32;
+        //        }
+        //    }
+        //}
 
-        private void eventoBtn(int cenarioAtual, int cenaAtual, float saldo, Item item) {
-            this.cenarioAtual = cenarioAtual;
-            this.cenaAtual = cenaAtual;
-         //   this.personagem.Saldo -= saldo;
+        //private void eventoBtn(int cenarioAtual, int cenaAtual, float saldo, ItemData item) {
+        //    this.cenarioAtual = cenarioAtual;
+        //    this.cenaAtual = cenaAtual;
+        //    //   this.personagem.Saldo -= saldo;
 
-            if (item != null) {
-              //  inventario.Add(item);
-            }
+        //    if (item != null) {
+        //        //  inventario.Add(item);
+        //    }
 
-            for (int i = 0; i < panel_opcoes.GetComponentsInChildren<Button>().Length; i++) {
-                Destroy(panel_opcoes.GetComponentsInChildren<Button>()[i].gameObject);
-            }
+        //    for (int i = 0; i < panel_opcoes.GetComponentsInChildren<Button>().Length; i++) {
+        //        Destroy(panel_opcoes.GetComponentsInChildren<Button>()[i].gameObject);
+        //    }
 
-            interacao = false;
-        }
+        //    interacao = false;
+        //}
 
-        void AddListener(Button button, int cenarioAtual, int cenaAtual, float saldo, Item item) {
-            button.onClick.AddListener(() => eventoBtn(cenarioAtual, cenaAtual, saldo, item));
-        }
+        //void AddListener(Button button, int cenarioAtual, int cenaAtual, float saldo, Item item) {
+        //    button.onClick.AddListener(() => eventoBtn(cenarioAtual, cenaAtual, saldo, item));
+        //}
 
         //adiconar item 
         public void AdicionarItem(string item) {
           //  Item i = new Item();
-            i.nome = item;
+            //i.nome = item;
           //  inventario.Add(i);
         }
         //remover

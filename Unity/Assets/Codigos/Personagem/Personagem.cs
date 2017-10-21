@@ -13,7 +13,7 @@ namespace Protagonista {
     public class Personagem : MonoBehaviour {
 
         public float saldo;
-        public Profissao[] profissoes = new Profissao[6];
+        private Profissao[] profissoes = new Profissao[6];
         public String nome_profissao;
         public String text_img_Avatar;
         public GameObject img_Avatar;
@@ -23,13 +23,13 @@ namespace Protagonista {
 
         public Personagem() {
             Profissao medico = new Profissao("Medico", 300f);
-            profissoes[0] = medico;
+            Profissoes[0] = medico;
             Profissao advogado = new Profissao("Advogado", 300f);
-            profissoes[1] = advogado;
+            Profissoes[1] = advogado;
             Profissao policial = new Profissao("Policial", 200f);
-            profissoes[2] = policial;
+            Profissoes[2] = policial;
             Profissao atleta = new Profissao("Atleta", 100f);
-            profissoes[3] = atleta;
+            Profissoes[3] = atleta;
 
             Saldo = 0.0f;
         }
@@ -53,25 +53,36 @@ namespace Protagonista {
             get { return saldo; }
             set { saldo = value; }
         }
-        public Profissao GetProfissao() {
-            for (int i = 0; i < profissoes.Length; i++) {
-                if (profissoes[i] != null) {
-                    if (profissoes[i].Nome.Equals(nome_profissao, StringComparison.OrdinalIgnoreCase)) {
-                        //RETORNA O OBJETO PROFISSAO COM TODOS SEUS ATRIBUTOS/MÉTODOS
-                        return profissoes[i];
-                    }
-                }
+
+        internal Profissao[] Profissoes {
+            get {
+                return profissoes;
             }
 
-            //RETORNA NULO SE NÃO ENCONTRAR A PROFISSAO PELA STRING
-            return null;
+            set {
+                profissoes = value;
+            }
         }
+
+        //public Profissao GetProfissao() {
+        //    for (int i = 0; i < Profissoes.Length; i++) {
+        //        if (Profissoes[i] != null) {
+        //            if (Profissoes[i].Nome.Equals(nome_profissao, StringComparison.OrdinalIgnoreCase)) {
+        //                //RETORNA O OBJETO PROFISSAO COM TODOS SEUS ATRIBUTOS/MÉTODOS
+        //                return Profissoes[i];
+        //            }
+        //        }
+        //    }
+
+            //RETORNA NULO SE NÃO ENCONTRAR A PROFISSAO PELA STRING
+        //    return null;
+        //}
         public void setHabilidades(String habilidade) {
-            GetProfissao().List_Habilidades.Add(habilidade);
+            //GetProfissao().List_Habilidades.Add(habilidade);
         }
         public void AtualizaSaldo() {
             //ATUALIZA SALDO COM ACRÉSCIMO DO BONUS DE CADA PROFISSÃO
-            Saldo += GetProfissao().Bonus;
+           // Saldo += GetProfissao().Bonus;
         }
         public void MostrarAvatar(String person) {
 

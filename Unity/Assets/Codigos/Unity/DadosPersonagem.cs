@@ -63,8 +63,8 @@ namespace Unity {
 
         public void OnClick(String nome) {
             personagem.nome_profissao = nome;
-            Profissao p = personagem.GetProfissao();
-            text_profissao.text = p.nome;
+            //Profissao p = personagem.GetProfissao();
+            //text_profissao.text = personagem.nome;
         }
         public void OnClick() {
             SceneManager.LoadScene("Jogo");

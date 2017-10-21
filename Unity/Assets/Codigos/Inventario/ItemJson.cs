@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 
 
-namespace Inventario {
+namespace Catalogo {
     public class ItemJson : MonoBehaviour {
         public int ID { get; set; }
         public string Nome { get; set; }
