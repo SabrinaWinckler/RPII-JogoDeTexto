@@ -79,6 +79,15 @@
     <Reference Include="Mono.Cecil">
       <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
     </Reference>
@@ -92,6 +101,7 @@
     <Compile Include="Assets\Codigos\DadosPersonagem.cs" />
     <Compile Include="Assets\Codigos\Enredo.cs" />
     <Compile Include="Assets\Codigos\Gerenciador.cs" />
+    <Compile Include="Assets\Codigos\InforJogador.cs" />
     <Compile Include="Assets\Codigos\Inventario.cs" />
     <Compile Include="Assets\Codigos\Inventory.cs" />
     <Compile Include="Assets\Codigos\Item.cs" />
@@ -104,7 +114,10 @@
     <Compile Include="Assets\Codigos\Principal.cs" />
     <Compile Include="Assets\Codigos\Profissao.cs" />
     <Compile Include="Assets\Codigos\Segmento.cs" />
+    <Compile Include="Assets\Codigos\StatsBar.cs" />
     <Compile Include="Assets\Codigos\TogglePainel.cs" />
+    <Compile Include="Assets\ConfigInventario.cs" />
+    <Compile Include="Assets\Monobehaviour.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
