@@ -2,25 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-<<<<<<< Updated upstream:Unity/Assets/Codigos/Inventario/ItemData.cs
-
-namespace Inventario {
-
-    public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler {
-        public ItemJson item;
-        public int amount;
-
-        private Transform originalParent;
-        private Vector2 offset;
-
-        public void OnBeginDrag(PointerEventData eventData) {
-            if (item != null) {
-                offset = eventData.position - new Vector2(this.transform.position.x, this.transform.position.y);
-                originalParent = this.transform.parent;
-                this.transform.SetParent(this.transform.parent.parent);
-                this.transform.position = eventData.position - offset;
-            }
-=======
 
 public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerEnterHandler, IPointerExitHandler {
     public ItemJson item;
@@ -47,23 +28,17 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             this.transform.SetParent(this.transform.parent.parent);
             this.transform.position = eventData.position - offset;
             GetComponent<CanvasGroup>().blocksRaycasts = false;
->>>>>>> Stashed changes:Unity/Assets/Codigos/ItemData.cs
-        }
-
-        public void OnDrag(PointerEventData eventData) {
-            if (item != null) {
-                this.transform.position = eventData.position - offset;
-            }
-        }
-
-<<<<<<< Updated upstream:Unity/Assets/Codigos/Inventario/ItemData.cs
-        public void OnEndDrag(PointerEventData eventData) {
-            this.transform.SetParent(originalParent);
         }
     }
 
-}
-=======
+    public void OnDrag(PointerEventData eventData)
+    {
+        if (item != null)
+        {
+            this.transform.position = eventData.position - offset;
+        }
+    }
+
     public void OnEndDrag(PointerEventData eventData)
     {
         this.transform.SetParent(inv.slots[slot].transform);
@@ -81,4 +56,3 @@ public class ItemData : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         tooltip.Deactivate();
     }
 }
->>>>>>> Stashed changes:Unity/Assets/Codigos/ItemData.cs
