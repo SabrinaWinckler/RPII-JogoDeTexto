@@ -41,7 +41,7 @@ namespace textgame {
 
         void Update() { Barra(); }
 
-#region Metodos para test no Unity fucionando
+        #region Metodos para test no Unity fucionando
         public float MaxValue { get; set; }
 
         public float Value {
@@ -65,21 +65,13 @@ namespace textgame {
             //SITUAÇÕES PARA TESTE DE ACORDO COM O DECREMENTO DAS BARRAS
             //RESTA IMPLEMENTAÇÃO COMPLEXA E ELIMINAR/DIMINUIR OS if's
             if (ValorAtual == 0.0f) {
-                if (Bar.name.Equals("BarVida", StringComparison.OrdinalIgnoreCase)) {
-                    text_Status.text = "Você morreu, fim de jogo!";
-                } else {
-                    text_Status.text = "Sua moral acabou, mude seu estilo de resposta para recuperar sua moral!";
-                }
+                text_Status.text = GetNomeBar() + " Zerou!";
             } else if (ValorAtual > 0 && ValorAtual <= 0.2f) {
-                text_Status.text = "Atencão com seu nível de " + GetNomeBar(Bar.name) + " muito baixo.";
+                text_Status.text = GetNomeBar() + " muito baixo!";
             } else if (ValorAtual <= 0.5f) {
-                text_Status.text = "Nível de " + GetNomeBar(Bar.name) + " esta diminuindo.";
+                text_Status.text = GetNomeBar() + " diminuindo!";
             } else if (ValorAtual <= 1f) {
-                if (Bar.name.Equals("BarVida", StringComparison.OrdinalIgnoreCase)) {
-                    text_Status.text = "Barra de vida estável!";
-                } else {
-                    text_Status.text = "Barra de moral estável!";
-                }
+                text_Status.text = GetNomeBar() + " estável!";
             }
         }
 
@@ -89,15 +81,15 @@ namespace textgame {
         }
 
         //RETORNA O NOME DE CADA BARRA QUE ESTÁ SENDO ALTERADA
-        private String GetNomeBar(String n) {
-            if (n.Equals("barvida", StringComparison.OrdinalIgnoreCase)) return "Vida";
-            else return "Moral";
+        private String GetNomeBar() {
+            if (Bar.name.Equals("barvida", StringComparison.OrdinalIgnoreCase)) return "Moral";
+            else return "Vida";
         }
 
 
-#endregion
+        #endregion
 
-#region Metodos para implementar com o motor
+        #region Metodos para implementar com o motor
         //public void SistemaDeMoral() { 
         ////    if (BarraMoral != null) {
         //        if (MoralAtual >= MoralCheia) {
