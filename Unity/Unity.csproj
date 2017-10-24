@@ -76,31 +76,20 @@
     <Reference Include="UnityEngine.HoloLens">
       <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
     </Reference>
-    <Reference Include="Mono.Cecil">
-      <HintPath>Library\UnityAssemblies\Mono.Cecil.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.iOS.Extensions.Common">
-      <HintPath>Library\UnityAssemblies\UnityEditor.iOS.Extensions.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Facebook.Unity.Settings">
-      <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
-    </Reference>
     <Reference Include="LitJson">
       <HintPath>Assets\Plugins\LitJson.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Codigos\Alinhamento.cs" />
-    <Compile Include="Assets\Codigos\Cena.cs" />
-    <Compile Include="Assets\Codigos\Cenario.cs" />
     <Compile Include="Assets\Codigos\Configuracao.cs" />
     <Compile Include="Assets\Codigos\Configuracao01.cs" />
-    <Compile Include="Assets\Codigos\DadosPersonagem.cs" />
-    <Compile Include="Assets\Codigos\Enredo.cs" />
-    <Compile Include="Assets\Codigos\Gerenciador.cs" />
+    <Compile Include="Assets\Codigos\Historia\Cena.cs" />
+    <Compile Include="Assets\Codigos\Historia\Cenario.cs" />
+    <Compile Include="Assets\Codigos\Historia\Enredo.cs" />
+    <Compile Include="Assets\Codigos\Historia\Gerenciador.cs" />
+    <Compile Include="Assets\Codigos\Historia\Opcao.cs" />
+    <Compile Include="Assets\Codigos\Historia\Segmento.cs" />
     <Compile Include="Assets\Codigos\InforJogador.cs" />
     <Compile Include="Assets\Codigos\Inventario.cs" />
     <Compile Include="Assets\Codigos\Inventory\Inventory.cs" />
@@ -111,11 +100,11 @@
     <Compile Include="Assets\Codigos\Item.cs" />
     <Compile Include="Assets\Codigos\Jogo.cs" />
     <Compile Include="Assets\Codigos\Motor.cs" />
-    <Compile Include="Assets\Codigos\Opcao.cs" />
     <Compile Include="Assets\Codigos\Personagem.cs" />
+    <Compile Include="Assets\Codigos\Personagem\DadosPersonagem.cs" />
+    <Compile Include="Assets\Codigos\Personagem\Jogo.cs" />
     <Compile Include="Assets\Codigos\Principal.cs" />
     <Compile Include="Assets\Codigos\Profissao.cs" />
-    <Compile Include="Assets\Codigos\Segmento.cs" />
     <Compile Include="Assets\Codigos\StatsBar.cs" />
     <Compile Include="Assets\Codigos\TogglePainel.cs" />
     <Compile Include="Assets\ConfigInventario.cs" />
