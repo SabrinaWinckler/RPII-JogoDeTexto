@@ -1,0 +1,1483 @@
+{
+    "cenarios": [
+        {
+            "nomeCenario": "beginning",
+            "cenas": [
+                {
+                    "nomeCena": "cena1",
+                    "bg_cena": "thebeginning1.jpg",
+                    "enredos": [
+                        {
+                            "texto": "O fim do seu expediente já passou e seu dia foi basicamente o mesmo. Bom, “expediente” é relativo:",
+                            "fx": null
+                        },
+                        {
+                            "texto": "- Ontem foi as 18:30, hoje foi ás 17:45.",
+                            "fx": "ice_drink.ogg"
+                        },
+                        {
+                            "texto": "Você está refazendo o “ritual” que você mesmo considera clichê, bebendo uma dose de whisky no seu escritório/apartamento.",
+                            "fx": null
+                        },
+                        {
+                            "texto": "O lugar também não foge dos padrões impostos pela literatura norte-americana de como deve ser o escritório de um I.P.: sala única com apenas um banheiro, a clássica mesa de madeira no meio e dois gabinetes de arquivos na parede ao lado -os quais você empurra para o lado, revelando uma cama de parede, quando quer dormir.",
+                            "fx": null
+                        },
+                        {
+                            "texto": "Você se lembra que este foi o único motivo de você escolher este lugar como sua moradia e local de trabalho.Você está escorado na sua mesa, com o copo de whisky na mão, encarando a placa com seu nome ao lado da sua mão.",
+                            "fx": null
+                        },
+                        {
+                            "texto": "Você sente uma nostalgia e ri internamente compreendendo que momentos como estes lhe trazem alegria, vivendo um arquétipo do que seria uma profissão romantizada. Você está tranquilo, pois já resolveu 4 casos esse mês, pagou todas suas dívidas de aluguel e gastos, re-estocou a dispensa com o necessário e sobrou dinheiro o suficiente para você dar um jeito de passar o próximo mês.",
+                            "fx": null
+                        },
+                        {
+                            "texto": "É sempre assim, vivendo mês após mês. Apesar de ter entrado neste ramo de trabalho por motivos “glorificados” você é muito bom no que faz e ganhou um razoável reconhecimento na área nestes 6 anos que atua como investigador privado. Você até solucionou alguns crimes que acabou tropeçando enquanto trabalhava em um caso.",
+                            "fx": null
+                        },
+                        {
+                            "texto": "Por isso não foi surpresa quando apareceu uma silhueta em sua porta aquela hora (você mandou trocar a porta de madeira inteiriça do escritório por uma que é metade de vidro embaçado, com seu nome e profissão no meio). Mesmo depois de tantos anos você ainda sente a mesma adrenalina de estar vivendo um conto de mistério, quando isso acontece.",
+                            "bg_cena": ".jpg",
+                            "fx": null
+                        },
+                        {
+                            "texto": "A sombra bate na porta e você percebe que é uma mulher. A luz do corredor está fraca, impedindo você de deduzir características de clientes de dentro do escritório. Você pensa em mandar trocar a lâmpada. Alguém está na porta.",
+                            "bg_cena": ".jpg",
+                            "fx": null
+                        },
+                        {
+                            "texto": "O que você faz?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Deixa o copo de whisky na mesa e vai atender a porta.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 1
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Desencosta da mesa e vai até a porta, tomando mais um gole da dose de whisky.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 1
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Pega seu revolver magnum .357 na gaveta da mesa e coloca atrás na sua calça, deixa o copo na mesa e vai até a porta. Nunca se pode ser cuidadoso demais...",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 1
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "cena2",
+                    "bg_cena": "beginning2.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Você vai até a porta, [segurando o copo]. Você se sente a prova de balas neste momento, herói protagonista do seu próprio show de TV. Você abre a porta com o peito estufado e com a cara o mais serena possível. Todo o ato é inútil. Sua cara serena se desfaz em uma fração de segundo. Você sabia que era uma mulher antes de abrir a porta e parte da sua pose era para impressionar a mulher atrás da sua porta. O inverso acontece. Você abre a porta com as mãos firmes, mas ante da porta chegar na extensão do seu braço esquerdo você mal consegue segurar o copo na mão. A mulher é com toda certeza a pessoa mais bonita que você já viu, cabelos ondulados ruivos e olhos verdes, rosto esculpido e lábios grossos. O padrão de beleza divulgado nas revistas está gritando na sua frente, na sua porta. Nem mesmo você, vivendo o momento nostálgico inexistente, poderia estar preparado para esta cena. A voz leve e forte, quase de um coro se pronuncia ser te dar chance de ao menos pensar em dizer algo: -Boa noite, o senhor Teller se encontra?",
+                            "fx": null
+                        },
+                        {
+                            "texto": "Se sentindo à prova de balas neste momento, herói protagonista do seu próprio show de TV. Você abre a porta com o peito estufado e com a cara o mais serena possível. Todo o ato é inútil. Sua cara serena se desfaz em uma fração de segundo. Você sabia que era uma mulher antes de abrir a porta e parte da sua pose era para impressionar a mulher atrás da sua porta. O inverso acontece. Você abre a porta com as mãos firmes, mas ante da porta chegar na extensão do seu braço esquerdo você mal consegue segurar o copo na mão.",
+                            "fx": null
+                        },
+                        {
+                            "texto": "A mulher é com toda certeza a pessoa mais bonita que você já viu, cabelos ondulados ruivos e olhos verdes, rosto esculpido e lábios grossos. O padrão de beleza divulgado nas revistas está na sua frente. Nem mesmo você poderia estar preparado para esta cena. A voz leve e forte, quase de um coro se pronuncia sem te dar chance de ao menos pensar em dizer algo: -Boa noite, o senhor Teller se encontra?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Ah.. Boa noite. Sim, eu sou Dante Teller.. E a senhora é?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 2
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Uh.. Olá, quem gostaria?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 2
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "texto": "Perdoe minha grosseiria. Meu nome é Beatriz Duskwood...",
+                    "fx": null
+                },
+                {
+                    "nomeCena": "dialogo1",
+                    "bg_cena": "beginning2.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Perdoe minha grosseiria. Meu nome é Beatriz Duskwood...",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "E por favor, não existe necessidade de me chamar de Senhora. Não tenho cônjuge legal e não sou tão velha.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 4
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "O senhor Teller?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 3
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo2",
+                    "bg_cena": "beginning2.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Sim, claro. Eu sou Dante Teller.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Por favor, entre..",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 5
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Enquanto entra, ela diz:]O senhor não vai precisar disso para conversar comigo, Sr. Teller. [Ela aponta para suas costas]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 5
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo3",
+                    "bg_cena": "beginning2.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Por favor, entre..",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Pode me chamar apenas de Beatriz...",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 7
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo4",
+                    "bg_cena": "beginning2.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Não se preocupe com isso Sra. Duskwood",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Ela levanta uma sobrancelha] Certo, mas já disse, não sou casada ou velha pra me chamar de “Senhora”.[Ela tenta esboçar um sorriso amigável, mas a preocupação em seu rosto não desaparece...]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 6
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo5",
+                    "bg_cena": "beginning2.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Como posso chama-la então?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Pode me chamar apenas de Beatriz...",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 7
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "cena3",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Você a convida para entrar e se sentar. Você a espera entrar e fecha a porta. Você pensa em como ela deve estar acostumada com situações como essa, pessoas que a acabam de conhecê-la simplesmente se esquecer de como ser funcional por alguns segundos. Agora que seu cérebro está em perfeita função de pensamentos novamente você imagina o quanto esta mulher está acostumada a receber tudo que deseja sem levantar um dedo, sem qualquer débito, só pelo fato de ela existir. Você se senta do outro lado da mesa, na sua cadeira. Ainda tem whisky no seu copo… O que você faz?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Você coloca o revolver prateado no coldre axilar pendurado na arara de casacos]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 11
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Você passa pelo lado da mesa e coloca o revolver prateado casualmente em sua superfície, próximo do seu lado da mesa]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 8
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Você vai para o seu lado da mesa e coloca o revolver prateado dentro de uma gaveta]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 11
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo41",
+                    "bg_cena": "arma-beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Beatriz olha a arma na mesa durante alguns segundos e seu rosto mostra que ela tentando decidir se você não percebe que fez isso por costume ou se você fez intencionalmente por algum motivo..]",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Vira o resto do whisky, pega a garrafa em baixo da mesa e se serve outra dose] Gostaria de um drink?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 13
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Vira o resto do whisky, pega a garrafa em baixo da mesa e se serve outra dose] No que posso lhe ajudar?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 14
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Vira o resto do whisky, coloca o copo de lado] No que posso lhe ajudar?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 14
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Ignora o whisky, não seria bom beber na frente de possíveis clientes] No que posso lhe ajudar?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 14
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo42",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Vira o resto do whisky, pega a garrafa em baixo da mesa e se serve outra dose] Gostaria de um drink?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 13
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo43",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Vira o resto do whisky, pega a garrafa em baixo da mesa e se serve outra dose] No que posso lhe ajudar?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 14
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo44",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Vira o resto do whisky, coloca o copo de lado] No que posso lhe ajudar?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 14
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo45",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Ignora o whisky, não seria bom beber na frente de possíveis clientes] No que posso lhe ajudar?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 14
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo6",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Não, obrigada. Não bebo.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Ok. Então, no que posso lhe ajudar?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 14
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo7",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Bom, preciso que encontre provas de um crime Sr. Teller.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Um crime? O que quer dizer?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 15
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Continue..",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 16
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo8",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Tecnicamente foi um acidente..",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "O que aconteceu exatamente?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 16
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo9",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Bom... É meu tio Joh.. Doutor Joseph Duskwood. Ele morreu na semana passada enquanto voltava do laboratório onde trabalhava...",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 17
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo10",
+                    "bg_cena": "beco-beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Ela respira um pouco mais profundo e exala] Ele morreu na entrada de um beco..",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "O que foi a causa da morte? Um suposto acidente?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 20
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Pela forma que você está me contando isso ele morreu de causas naturais... O que aconteceu realamente?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 19
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo11",
+                    "bg_cena": "beco-beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "E foi, tecnicamente...",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continue",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 20
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo111",
+                    "bg_cena": "beco-beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "E foi, tecnicamente...",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continue",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 20
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo12",
+                    "bg_cena": "beco-beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "O coração dele parou de funcionar de repente... Parada cardíaca súbita..",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continue",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 21
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo13",
+                    "bg_cena": "beco-beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Achei que ele tinha sido morto..",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continue",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 22
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo14",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "O que me faz duvidar da casualidade da morte do meu tio são os acontecimentos anteriores desse dia Sr. Teller. [O rosto de Beatriz faz uma expressão severa. Ela provavelmente questionada antes da mesma forma que você a questiona agora.]",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "O que aconteceu então senhora Beatriz.. que a faz questionar a causa da morte do seu tio? ",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 24
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Diga então o que aconteceu, suspense nessa situação não fará bem a ninguém..",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 23
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Então..?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 24
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo15",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Ela parece se irritar um pouco com sua declaração]",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "O que aconteceu então senhora Beatriz.. que a faz questionar a causa da morte do seu tio? ",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 24
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Diga então o que aconteceu, suspense nessa situação não fará bem a ninguém..",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 23
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo16",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "O que aconteceu Sr. Teller é que meu tio estava paranoico, dizendo que viriam atrás dele uma hora ou outra, que ele precisava descobrir o que estava vindo atrás dele o mais rápido possível.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Você conversava bastante com seu tio então? ",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 25
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "E ele te disse isso tudo a alguns dias atrás?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 25
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo17",
+                    "bg_cena": "winchester.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Não, não moro aqui em Londres. Moro em Winchester. Eu e meu tio sempre trocamos cartas desde que me mudei a 6 anos atrás... [Por alguns momentos ela segura o choro que veio com a lembrança]",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continua",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 26
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo18",
+                    "bg_cena": "carta.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Ele começou a me contar coisas estranhas, dizendo que parecia estar dendo vigiado desde que voltou de sua ultima expedição, e que estava preocupado... Depois começou a piorar, ele dizia que corria risco de vida e que via coisas que ninguém deveria ver. Nas ultimas cartas disse que não tinha o que fazer, que “eles” estavam vindo pega-lo e que não voltaria a me escrever para não me colocar em perigo.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continue",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 27
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo19",
+                    "bg_cena": "carta.jpg",
+                    "enredos": [
+                        {
+                            "texto": "E então?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continue",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 28
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo20",
+                    "bg_cena": "londres.JPG",
+                    "enredos": [
+                        {
+                            "texto": "Então fiquei muito preocupada e vim para Londres vê-lo... Cheguei 2 dias após seu falecimento... Demorei quase um dia todo para descobrir que ele estava morto e no mortuário da cidade. Como era sua parente mais próxima, fiquei com posse de todos os seus bens. Passei os últimos 6 dias resolvendo problemas legais e tentando fazer um funeral para meu tio. Mas todo esse tempo só consegui pensar em como as coisas aconteceram e quanto mais penso mais certeza tenho que não pode ter sido só uma coincidência. Meu tio sempre teve uma saúde muito boa e nunca teve qualquer tipo de problema no coração. Não temos nem histórico deste tipo de problemas na família. Algo não está certo Sr. Teller, tenho certeza!",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Entendo.. De fato, parece ser muito estranho. Tem mais alguma coisa?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 30
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "hmmm... Algo mais?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 30
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Realmente é uma coincidência muito estranha..",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 29
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo21",
+                    "bg_cena": "londres.JPG",
+                    "enredos": [
+                        {
+                            "texto": "Tem mais uma coisa Sr. Teller...",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 30
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo22",
+                    "bg_cena": "carta.jpg",
+                    "enredos": [
+                        {
+                            "texto": "No apartamento do meu tio havia uma carta endereçada para mim. Nesta carta ele me pedia desculpas e dizia que esperava que nada daquilo me atingisse, e que se eu estivesse a lendo provavelmente ele já estivesse morto. [A voz de Beatriz treme enquanto ela te conta isso] Ele descreveu alguns dos momentos que tivemos juntos... E no fim pede, que eu queime todo o estudo no qual ele estava trabalhando.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Você queimou a pesquisa dele?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 31
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "E?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 31
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo23",
+                    "bg_cena": "universidadeRoyal.JPG",
+                    "enredos": [
+                        {
+                            "texto": "Ainda não consegui permissão do laboratório que ele trabalhava na Universidade Royal Holloway para recolher sua pesquisa. Por contrato eles têm direito de revisar todo o trabalho de meu tio antes de libera-los. Está tudo lá ainda.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Se o que você me disse é verdade... Realmente alguma coisa pode ter acontecido..",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 32
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "É uma história muito estranha de fato, porém...",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 32
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Lamento pela sua perda, mas...",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 32
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo24",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Antes de dizer qualquer coisa quero que pelo menos tente achar algo Sr. Teller. Pelo o que ouvi do senhor, você é muito talentoso e estou disposta a lhe pagar 10 mil libras pelo serviço, isso se de fato o senhor descobrir o que estava acontecendo com o meu tio e o que o matou.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[você engole seco por um momento... ]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 33
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "cena4",
+                    "bg_cena": "beginning4.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Você sente um certo desespero na voz dela, que ela tenta esconder. Ainda assim, por experiência de alguns anos de prática, você sabe como essas histórias de “não foi acidente” geralmente levam para “foi sim um acidente”. Bom, nesse caso, morte natural. Quando de fato tem algo mal explicado nos acontecimentos é praticamente impossível justificá-los, geralmente por um motivo bem simples: mortos não falam. Você tem uma certeza quase absoluta que este caso será entediante e não levará a nada. Você se pergunta se realmente precisa de tanto dinheiro… Dinheiro que você só vai receber se encontrar alguma coisa. O que você responde para ela?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Ok Beatriz, aceito o trabalho. Mas preciso saber mais algumas coisas antes de começar a investigar a morte do seu tio.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 37
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Olha, Beatriz.. casos assim geralmente têm o mesmo resultado: não se descobre muito mais do que já se sabia e quando se descobre, não se pode provar nada... São casos muito complicados...",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 36
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Dez mil!? E como você iria pagar essa quantia?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 34
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo25",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Tenho condições financeiras para cumprir com essa promessa Sr. Teller. A família Duskwood sempre foi conhecida pelas suas riquezas e pelo fato de sempre pagar suas dívidas.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Certo, digamos que você realmente irá pagar 10 mil libras para eu encontrar a suposta causa real da morte do seu tio e no que ele se meteu... Eu só recebo o dinheiro SE eu resolver esses mistérios, certo? Não me leve a mal senha Beatriz, mas as chances de eu encontrar o que você procura são muito pequenas, talvez impossíveis. Não sei se eu posso me dedicar a um caso desses.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 35
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo26",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Se o problema for receio de se esforçar e não receber nada Sr. Teller, eu pretendo, lhe pagar uma parte do dinheiro para que o senhor possa começar o serviço despreocupado",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Tudo bem... Eu aceito o seu caso Beatriz.. Mas vou precisar saber mais algumas coisas.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 37
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo27",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Por favor Sr. Teller, a polícia já encerrou o caso, todas as pessoas que eu tentei recorrer ou disseram que eu estava louca ou disseram para eu tentar um investigador privado. Muitos me recomendaram o senhor... Sr. Teller, não tenho mais a quem recorrer...",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Tudo bem... Eu aceito o seu caso Beatriz.. Mas vou precisar saber mais algumas coisas.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 37
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo28",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "E o que mais gostaria de saber Sr. Teller?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Na verdade, vou precisar de acesso ao apartamento do seu tio e também gostaria de dar uma olhada nas cartas que ele lhe enviou, inclusive a que você encontrou no apartamento dele. ",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 38
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo29",
+                    "bg_cena": "winchester.jpg",
+                    "enredos": [
+                        {
+                            "texto": "A chave do apartamento do meu tio está comigo, posso deixar aqui com você. As correspondências estão em Winchester, na minha casa. Vai levar alguns dias para traze-las. Só tenho a carta que achei no apartamento e ela está no hotel em que estou hospedada. Posso mandar entrega-la aqui amanhã pela manhã.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Poderia ir pegar-lá? Prefiro eu mesmo busca-lá.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 39
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "Ok, se eu não estiver aqui amanhã de manhã o entregador pode deixar com o dono da loja aqui embaixo. Confio nele.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 40
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo30",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Ok. irei anotar o endereço do meu hotel e o quarto que estou. Anotarei também o endereço do apartamento do meu tio. [Ela tira uma caneta e papel da bolsa, anota os endereços e coloca na sua mesa.]",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Gostaria de saber também em qual mortuário está o corpo do seu tio, quero ver o laudo.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 41
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo31",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Ok. Irei anotar o endereço do meu hotel e o quarto que estou. Anotarei também o endereço do apartamento do meu tio. [Ela tira uma caneta e papel da bolsa, anota os endereços e coloca na sua mesa.]",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Ok. Vou anotar o endereço do apartamento do meu tio. [Ela tira uma caneta e papel da bolsa, anota o endereço e coloca na sua mesa.]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 41
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo32",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "O corpo dele está no mortuário público Greenwich. Espero que encontre algo que os especialistas deixaram passar...",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 42
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo33",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Certo. [Ela pega a bolsa e tira dela um envelope marrom, com um volume visível] Aqui tem 2500 libras. O senhor receberá os restante das 10 mil libras quando e se terminar o serviço.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Isso é muito dinheiro... 7500 é ainda mais. Você pega o envelope, abre e vê as notas.] Ok Beatriz, começarei imediatamente.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 43
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo34",
+                    "bg_cena": "beginning3.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Fico feliz em saber Sr. Teller. Espero saber sobre o andamento da sua investigação em breve.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Isso é muito dinheiro... 7500 é ainda mais. Você pega o envelope, abre e vê as notas.] Ok Beatriz, começarei imediatamente.",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 43
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "cena5",
+                    "bg_cena": "beginning5.jpg",
+                    "enredos": [
+                        {
+                            "texto": "Fico feliz em saber Sr. Teller. Espero saber sobre o andamento da sua investigação em breve.",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 45
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo35",
+                    "bg_cena": "beginning4.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Começa a investigação essa noite mesmo e vai para o apartamento do doutor tentar investigar qualquer pista sobre sua pesquisa. Ele devia ter algo em sua residência que explicasse sua paranoia.]",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "Tem uma entrada para o metrô perto de seu escritório, vai demorar um pouco mais, mas com certeza será mais barato que um táxi] 1 hora e 30 minutos $3,25",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 46
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Você chega na rua descrita no papel que Beatriz escreveu. A rua é repleta de pequenos prédios espremidos uns nos outros, a maioria de 4 ou 5 andares. O prédio que você procura é o da esquina.] O que você faz?",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 46
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo36",
+                    "bg_cena": "beginning4.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Você chega na rua descrita no papel que Beatriz escreveu. A rua é repleta de pequenos prédios espremidos uns nos outros, a maioria de 4 ou 5 andares. O prédio que você procura é o da esquina.] O que você faz?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Entra direto no prédio e vai pro apartamento. Quanto mais cedo você terminar aqui melhor.]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 51
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Dá uma olhada nos arredores. As vezes você encontra alguma pista.]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 47
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo37",
+                    "bg_cena": "beginning4.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Você vira a esquina. O prédio tem um beco ao lado.] O que você faz?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Vai até o beco.]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 49
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Volta e entra no prédio e depois direto para o apartamento. É só um beco.]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 51
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo377",
+                    "bg_cena": "beginning4.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Você vira a esquina. O prédio tem um beco ao lado.] O que você faz?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Vai até o beco.]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 49
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        },
+                        {
+                            "resposta": "[Volta e entra no prédio e depois direto para o apartamento. É só um beco.]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 51
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo38",
+                    "bg_cena": "beginning4.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Você entra no beco. É um corredor entre dois prédios não muito altos. Aparentemente esse beco só é limpo de alguma forma em dias de chuva. Você anda um pouco mais e ve um punhado de cacos de vidro no chão, ao lado de vários sacos de lixo.] O que você faz?",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "[Volta, não há muito o que fazer aqui.]",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 50
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo39",
+                    "bg_cena": "beginning4.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Você se agacha e examina os cacos mais de perto. É fácil perceber que esses cacos estão aqui a pouco tempo. Os cacos de vidros estão extremamente limpos comparados ao chão do beco. Você olha para cima e vê a janela que foi quebrada, completamente estourada, como se alguem tivesse mergulhado por ela... Do quarto andar. O apartamento do doutor é no quarto andar... Não, impossível. Você se levanta e volta para a frente do prédio e entra.]  ",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 0,
+                                "idCena": 51
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                },
+                {
+                    "nomeCena": "dialogo_40",
+                    "bg_cena": "beginning4.jpg",
+                    "enredos": [
+                        {
+                            "texto": "[Você sobe até o quarto andar do prédio e começa a olhar as portas, procurando os “404”. São 6 portas em um pequeno corredor. Enquanto você anda pelo corredor uma porta que você acabou de passar em frente abre. Você olha e vê só o vulto de uma senhora de idade fechando a porta novamente. Você chega na porta 404.]",
+                            "fx": null
+                        }
+                    ],
+                    "opcoes": [
+                        {
+                            "resposta": "continuar",
+                            "segmento": {
+                                "idCenario": 1,
+                                "idCena": 0
+                            },
+                            "permissao": "todos",
+                            "descontar": 0.0,
+                            "item": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

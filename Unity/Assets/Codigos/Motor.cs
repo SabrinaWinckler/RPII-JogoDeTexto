@@ -171,9 +171,9 @@ namespace textgame {
             text_historia.text += "\n";
 
 
-            if (item != null) {
-                inventario.Add(item);
-            }
+            //if (item != null) {
+            //    inventario.Add(item);
+            //}
 
             for (int i = 0; i < panel_opcoes.GetComponentsInChildren<Button>().Length; i++) {
                 Destroy(panel_opcoes.GetComponentsInChildren<Button>()[i].gameObject);
