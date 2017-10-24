@@ -1,34 +1,34 @@
-<<<<<<< HEAD
-﻿//using System;
+//<<<<<<< HEAD
+//﻿//using System;
+////using System.Collections.Generic;
+////using System.Linq;
+////using System.Text;
+//=======
+//﻿using System;
 //using System.Collections.Generic;
 //using System.Linq;
 //using System.Text;
-=======
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using UnityEngine.Experimental.UIElements;
->>>>>>> Rodrigo
+//using UnityEngine.Experimental.UIElements;
+//>>>>>>> Rodrigo
 
-//namespace textgame
+////namespace textgame
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
+////{
+////    class ConfigInventario: Monobehaviour
+////    {
+////        public Button btn_fechar;
+////        public Button btn_config;
+////        public Button
+////    }
+////}
+//=======
 //{
 //    class ConfigInventario: Monobehaviour
 //    {
 //        public Button btn_fechar;
 //        public Button btn_config;
-//        public Button
+
 //    }
 //}
-=======
-{
-    class ConfigInventario: Monobehaviour
-    {
-        public Button btn_fechar;
-        public Button btn_config;
-
-    }
-}
->>>>>>> Rodrigo
+//>>>>>>> Rodrigo
