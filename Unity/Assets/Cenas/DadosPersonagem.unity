@@ -261,7 +261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &254501722
 RectTransform:
   m_ObjectHideFlags: 0
@@ -335,10 +335,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 0}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 254501721}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &308771082
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,10 +557,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 514130647}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 0}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &546876386
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,10 +705,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 546876388}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 0}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &560735955
 GameObject:
   m_ObjectHideFlags: 0
@@ -934,10 +940,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 972367927}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &716684237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1081,10 +1089,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 972367927}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &751653165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,10 +1431,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 0}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &972036822
 GameObject:
   m_ObjectHideFlags: 0
@@ -1654,10 +1666,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 972367927}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &1091472023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1962,10 +1976,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 972367927}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &1334120820
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,10 +2137,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 972367927}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &1474173493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,10 +2306,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 0}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 1614762417}
+  painelescolha: {fileID: 0}
 --- !u!1 &1815504350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2582,10 +2602,12 @@ MonoBehaviour:
   avatar1: {fileID: 1897877371}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 0}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 0}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!1 &1979261565
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,10 +2740,12 @@ MonoBehaviour:
   avatar1: {fileID: 0}
   avatar2: {fileID: 0}
   avatar3: {fileID: 0}
+  personagem: {fileID: 0}
   text_profissao: {fileID: 0}
   profissao: {fileID: 0}
   painel_inicial: {fileID: 254501721}
   img_Avatar: {fileID: 0}
+  painelescolha: {fileID: 0}
 --- !u!114 &2025546584
 MonoBehaviour:
   m_ObjectHideFlags: 0

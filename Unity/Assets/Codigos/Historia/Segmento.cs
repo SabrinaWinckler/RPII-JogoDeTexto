@@ -9,5 +9,6 @@ namespace textgame
         [SerializeField]
         public int idCenario;
         public int idCena;
+        public String topico;
     }
 }
