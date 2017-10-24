@@ -5642,8 +5642,6 @@ GameObject:
   - component: {fileID: 1745234273}
   - component: {fileID: 1745234272}
   - component: {fileID: 1745234274}
-  - component: {fileID: 1745234276}
-  - component: {fileID: 1745234275}
   m_Layer: 5
   m_Name: Panel_Slots
   m_TagString: Untagged
@@ -5758,7 +5756,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.39820457, y: 0.9335897}
   m_AnchorMax: {x: 0.6008409, y: 1}
-  m_AnchoredPosition: {x: 2.3999023, y: 91.75}
+  m_AnchoredPosition: {x: 2.3999023, y: 91.75012}
   m_SizeDelta: {x: 807.1, y: 183.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772407890
@@ -6285,7 +6283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2001776564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6494,7 +6492,7 @@ MonoBehaviour:
   moral:
     confBar: {fileID: 1077480128}
     valMax: 100
-    valAtual: 50
+    valAtual: 100
 --- !u!1 &2048732708
 GameObject:
   m_ObjectHideFlags: 0

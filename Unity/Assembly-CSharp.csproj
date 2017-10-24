@@ -55,6 +55,7 @@
      <Compile Include="Assets\Codigos\Cena.cs" />
      <Compile Include="Assets\Codigos\Cenario.cs" />
      <Compile Include="Assets\Codigos\Configuracao.cs" />
+     <Compile Include="Assets\Codigos\Configuracao01.cs" />
      <Compile Include="Assets\Codigos\DadosPersonagem.cs" />
      <Compile Include="Assets\Codigos\Enredo.cs" />
      <Compile Include="Assets\Codigos\Gerenciador.cs" />
@@ -73,6 +74,8 @@
      <Compile Include="Assets\Codigos\Segmento.cs" />
      <Compile Include="Assets\Codigos\StatsBar.cs" />
      <Compile Include="Assets\Codigos\TogglePainel.cs" />
+     <Compile Include="Assets\ConfigInventario.cs" />
+     <Compile Include="Assets\Monobehaviour.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
