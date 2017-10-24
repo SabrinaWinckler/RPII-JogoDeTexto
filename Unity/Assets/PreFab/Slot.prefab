@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 224885052175365150}
   - component: {fileID: 222917299894864832}
   - component: {fileID: 114690325998546310}
+  - component: {fileID: 114683148424431868}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -28,6 +29,17 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114683148424431868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1657799066757708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea22cde23d80fb34dafa136aeaa9b8a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114690325998546310
 MonoBehaviour:
   m_ObjectHideFlags: 1

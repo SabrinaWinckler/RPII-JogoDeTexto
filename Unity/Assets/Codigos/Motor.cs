@@ -46,7 +46,7 @@ namespace textgame {
         private int cenaAtual;
 
         private Personagem personagem;
-        private Inventario inventario;
+     //   private Inventario inventario;
 
         // Método de inicialização do Unity
         void Start() {
@@ -54,7 +54,7 @@ namespace textgame {
             //audios = GetComponent<AudioSource>();
 
             personagem = new Personagem();
-            inventario = new Inventario();
+      //      inventario = new Inventario();
 
 
             gerenciador = new Gerenciador();
@@ -162,9 +162,9 @@ namespace textgame {
             this.cenaAtual = cenaAtual;
             this.personagem.Saldo -= saldo;
 
-            if (item != null) {
-                inventario.Add(item);
-            }
+            //if (item != null) {
+            //    inventario.Add(item);
+            //}
 
             for (int i = 0; i < panel_opcoes.GetComponentsInChildren<Button>().Length; i++) {
                 Destroy(panel_opcoes.GetComponentsInChildren<Button>()[i].gameObject);
@@ -178,18 +178,18 @@ namespace textgame {
         }
         
         //adiconar item 
-        public void AdicionarItem(string item)
-        {
-            Item i = new Item();
-            i.nome = item;
-            inventario.Add(i);
-        }
+        //public void AdicionarItem(string item)
+        //{
+        //    Item i = new Item();
+        //    i.nome = item;
+        //    inventario.Add(i);
+        //}
         //remover
-        public void Remove(String item_remover)
-        {
-            inventario.Remove(item_remover);
+        //public void Remove(String item_remover)
+        //{
+        //    inventario.Remove(item_remover);
 
-        }
+        //}
         //abrir
         //se o usuario apertar o botão inventario ele vai executar o metodo.
 
