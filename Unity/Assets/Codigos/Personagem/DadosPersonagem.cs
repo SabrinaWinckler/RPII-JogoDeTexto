@@ -66,7 +66,7 @@ namespace textgame
         public void OnClick(String nome)
         {
             personagem.nome_profissao = nome;
-            text_profissao.text = personagem.GetProfissao().Nome;
+            text_profissao.text = "Profissão selecionada -> " + personagem.GetProfissao().Nome;
         }
         public void OnClick() {
              SceneManager.LoadScene("Jogo");

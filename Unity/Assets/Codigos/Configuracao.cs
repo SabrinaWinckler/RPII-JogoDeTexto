@@ -5,10 +5,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace textgame
-{
-    public class Configuracao : MonoBehaviour
-    {
+namespace textgame {
+    public class Configuracao : MonoBehaviour {
         #region Instância dos objetos do Unity
         #region Botões superiores direitos
         [Header("Botões superiores direitos")]
@@ -44,7 +42,7 @@ namespace textgame
         public Toggle toggle_efeitos;
         public Slider slider_efeitos;
         #endregion
-        
+
         //esse codigo tá uma bosta
         #region Configurações de musica
         [Space(20)]
@@ -78,38 +76,38 @@ namespace textgame
 
         //Use this for initialization
 
-       //void Start()
-       // {
+        //void Start()
+        // {
 
-       //    resolucoesSuportadas = new Resolution[] { novaResolucao(1024, 576, 60), novaResolucao(1280, 720, 60) };
+        //    resolucoesSuportadas = new Resolution[] { novaResolucao(1024, 576, 60), novaResolucao(1280, 720, 60) };
 
-       //    inserirResolucoes();
-
-
-       //    playerPrefs();
+        //    inserirResolucoes();
 
 
-       //    Cursor.visible = true;
-
-       //    Time.timeScale = 1;
-
-       //     #region Eventos dos objetos do UNITY
-       //     btn_fechar.onClick = new Button.ButtonClickedEvent();
-
-       //    btn_config.onClick = new Button.ButtonClickedEvent();
-
-       //    btn_pronto_config.onClick = new Button.ButtonClickedEvent();
+        //    playerPrefs();
 
 
-       //    dp_resolucoes.onValueChanged = new Dropdown.DropdownEvent();
+        //    Cursor.visible = true;
+
+        //    Time.timeScale = 1;
+
+        //     #region Eventos dos objetos do UNITY
+        //     btn_fechar.onClick = new Button.ButtonClickedEvent();
+
+        //    btn_config.onClick = new Button.ButtonClickedEvent();
+
+        //    btn_pronto_config.onClick = new Button.ButtonClickedEvent();
 
 
-       //    toggle_audio.onValueChanged = new Toggle.ToggleEvent();
-
-       //    slider_audio.onValueChanged = new Slider.SliderEvent();
+        //    dp_resolucoes.onValueChanged = new Dropdown.DropdownEvent();
 
 
-       //    toggle_efeitos.onValueChanged = new Toggle.ToggleEvent();
+        //    toggle_audio.onValueChanged = new Toggle.ToggleEvent();
+
+        //    slider_audio.onValueChanged = new Slider.SliderEvent();
+
+
+        //    toggle_efeitos.onValueChanged = new Toggle.ToggleEvent();
 
         // Update is called once per frame
         //{
@@ -119,98 +117,98 @@ namespace textgame
         //    }
 
 
-       //    toggle_musica.onValueChanged = new Toggle.ToggleEvent();
+        //    toggle_musica.onValueChanged = new Toggle.ToggleEvent();
 
-       //    slider_musica.onValueChanged = new Slider.SliderEvent();
+        //    slider_musica.onValueChanged = new Slider.SliderEvent();
 
-       //     #endregion
+        //     #endregion
 
-       // #region Chamar métodos a partir dos eventos dos objetos
+        // #region Chamar métodos a partir dos eventos dos objetos
 
-       //    btn_fechar.onClick.AddListener(() => fecharJogo());
+        //    btn_fechar.onClick.AddListener(() => fecharJogo());
 
-       // btn_config.onClick.AddListener(() => {
-       //         cena_config.gameObject.SetActive(true);
-       //         iniciar.gameObject.SetActive(false);
-       //     });
+        // btn_config.onClick.AddListener(() => {
+        //         cena_config.gameObject.SetActive(true);
+        //         iniciar.gameObject.SetActive(false);
+        //     });
 
-       //     btn_pronto_config.onClick.AddListener(() => {
-       //         cena_config.gameObject.SetActive(false);
-       //         iniciar.gameObject.SetActive(true);
-       //         audios.PlayOneShot(fx_pronto_config, PlayerPrefs.GetFloat("AUDIO_EFEITO"));
-       //     });
+        //     btn_pronto_config.onClick.AddListener(() => {
+        //         cena_config.gameObject.SetActive(false);
+        //         iniciar.gameObject.SetActive(true);
+        //         audios.PlayOneShot(fx_pronto_config, PlayerPrefs.GetFloat("AUDIO_EFEITO"));
+        //     });
 
-       //     dp_resolucoes.onValueChanged.AddListener(setResolucao);
+        //     dp_resolucoes.onValueChanged.AddListener(setResolucao);
 
-       //     toggle_audio.onValueChanged.AddListener(setAudioGeral);
-       //     slider_audio.onValueChanged.AddListener(setVolumeGeral);
+        //     toggle_audio.onValueChanged.AddListener(setAudioGeral);
+        //     slider_audio.onValueChanged.AddListener(setVolumeGeral);
 
-       //     toggle_efeitos.onValueChanged.AddListener(setAudioEfeitos);
-       //     slider_efeitos.onValueChanged.AddListener(setVolumeEfeitos);
+        //     toggle_efeitos.onValueChanged.AddListener(setAudioEfeitos);
+        //     slider_efeitos.onValueChanged.AddListener(setVolumeEfeitos);
 
-       //     toggle_musica.onValueChanged.AddListener(setAudioMusica);
-       //     slider_musica.onValueChanged.AddListener(setVolumeMusica);
-       //     #endregion
+        //     toggle_musica.onValueChanged.AddListener(setAudioMusica);
+        //     slider_musica.onValueChanged.AddListener(setVolumeMusica);
+        //     #endregion
 
-       //     Debug.Log("Jogo inicializou");
-       // }
+        //     Debug.Log("Jogo inicializou");
+        // }
 
-         //Update is called once per frame
-//        void Update()
-//{
-//    if (Input.GetKey(KeyCode.Escape))
-//    {
-//        Application.Quit();
-//    }
+        //Update is called once per frame
+        //        void Update()
+        //{
+        //    if (Input.GetKey(KeyCode.Escape))
+        //    {
+        //        Application.Quit();
+        //    }
 
-//    //if (Input.GetKey(KeyCode.I))
-//    //{
-//    //    Debug.Log(personagem1.Nome);
-//    //}
-//}
+        //    //if (Input.GetKey(KeyCode.I))
+        //    //{
+        //    //    Debug.Log(personagem1.Nome);
+        //    //}
+        //}
 
-//public void fecharJogo()
-//{
-//    Application.Quit();
-//    Debug.Log("Fecho");
-//}
+        //public void fecharJogo()
+        //{
+        //    Application.Quit();
+        //    Debug.Log("Fecho");
+        //}
 
-//#region METODOS - Configuração de resolução
-//private void inserirResolucoes()
-//{
-//    dp_resolucoes.options.Clear();
-//    dp_resolucoes.options.Add(new Dropdown.OptionData() { text = "1024x576" });
-//    dp_resolucoes.options.Add(new Dropdown.OptionData() { text = "1280x720" });
-//}
+        //#region METODOS - Configuração de resolução
+        //private void inserirResolucoes()
+        //{
+        //    dp_resolucoes.options.Clear();
+        //    dp_resolucoes.options.Add(new Dropdown.OptionData() { text = "1024x576" });
+        //    dp_resolucoes.options.Add(new Dropdown.OptionData() { text = "1280x720" });
+        //}
 
-//private Resolution novaResolucao(int width, int heigth, int refreshRate)
-//{
-//    Resolution res = new Resolution();
+        //private Resolution novaResolucao(int width, int heigth, int refreshRate)
+        //{
+        //    Resolution res = new Resolution();
 
-//    res.width = width;
-//    res.height = heigth;
-//    res.refreshRate = refreshRate;
+        //    res.width = width;
+        //    res.height = heigth;
+        //    res.refreshRate = refreshRate;
 
-//    return res;
-//}
+        //    return res;
+        //}
 
-//private void setResolucao(int newres)
-//{
-//    PlayerPrefs.SetInt("RESOLUCAO", dp_resolucoes.value);
-//    Screen.SetResolution(resolucoesSuportadas[newres].width, resolucoesSuportadas[newres].height, false);
-//}
-//#endregion
+        //private void setResolucao(int newres)
+        //{
+        //    PlayerPrefs.SetInt("RESOLUCAO", dp_resolucoes.value);
+        //    Screen.SetResolution(resolucoesSuportadas[newres].width, resolucoesSuportadas[newres].height, false);
+        //}
+        //#endregion
 
-//#region METODOS - Configuração de áudio
-//private void setAudioGeral(bool audio)
-//{
-//    if (!audio)
-//    {
-//        slider_audio.interactable = false;
-//        toggle_efeitos.interactable = false;
-//        slider_efeitos.interactable = false;
-//        toggle_musica.interactable = false;
-//        slider_musica.interactable = false;
+#region METODOS - Configuração de áudio
+private void setAudioGeral(bool audio)
+{
+    if (!audio)
+    {
+        slider_audio.interactable = false;
+        toggle_efeitos.interactable = false;
+        slider_efeitos.interactable = false;
+        toggle_musica.interactable = false;
+        slider_musica.interactable = false;
 
 //        GetComponent<AudioSource>().enabled = false;
 //        PlayerPrefs.SetInt("AUDIO_GERAL_ATIVADO", 0);
@@ -231,21 +229,21 @@ namespace textgame
 //    }
 //}
 
-//    //        if (PlayerPrefs.HasKey("AUDIO_MUSICA"))
-//    //        {
-//    //            setVolumeMusica(PlayerPrefs.GetFloat("AUDIO_MUSICA"));
-//    //            slider_musica.value = PlayerPrefs.GetFloat("AUDIO_MUSICA");
-//    //        }
-//    //    }
-//    //    #endregion
-//    //}
-//=======
-//        void Update()
-//        {
-//            if (Input.GetKey(KeyCode.Escape))
-//            {
-//                Application.Quit();
-//            }
+    //        if (PlayerPrefs.HasKey("AUDIO_MUSICA"))
+    //        {
+    //            setVolumeMusica(PlayerPrefs.GetFloat("AUDIO_MUSICA"));
+    //            slider_musica.value = PlayerPrefs.GetFloat("AUDIO_MUSICA");
+    //        }
+    //    }
+    //    #endregion
+    //}
+=======
+        void Update()
+        {
+            if (Input.GetKey(KeyCode.Escape))
+            {
+                Application.Quit();
+            }
 
 //            //if (Input.GetKey(KeyCode.I))
 //            //{
@@ -285,16 +283,16 @@ namespace textgame
 //        }
 //        #endregion
 
-//        #region METODOS - Configuração de áudio
-//        private void setAudioGeral(bool audio)
-//        {
-//            if (!audio)
-//            {
-//                slider_audio.interactable = false;
-//                toggle_efeitos.interactable = false;
-//                slider_efeitos.interactable = false;
-//                toggle_musica.interactable = false;
-//                slider_musica.interactable = false;
+        #region METODOS - Configuração de áudio
+        private void setAudioGeral(bool audio)
+        {
+            if (!audio)
+            {
+                slider_audio.interactable = false;
+                toggle_efeitos.interactable = false;
+                slider_efeitos.interactable = false;
+                toggle_musica.interactable = false;
+                slider_musica.interactable = false;
 
 //                GetComponent<AudioSource>().enabled = false;
 //                PlayerPrefs.SetInt("AUDIO_GERAL_ATIVADO", 0);
@@ -322,23 +320,23 @@ namespace textgame
 //        }
 
 
-//        private void setAudioEfeitos(bool audio)
-//        {
-//            if (!audio)
-//            {
-//                setVolumeEfeitos(0);
-//                toggle_efeitos.isOn = false;
-//                slider_efeitos.interactable = false;
-//                PlayerPrefs.SetInt("AUDIO_EFEITO_ATIVADO", 0);
-//            }
-//            else
-//            {
-//                setVolumeEfeitos(slider_efeitos.value);
-//                toggle_efeitos.isOn = true;
-//                slider_efeitos.interactable = true;
-//                PlayerPrefs.SetInt("AUDIO_EFEITO_ATIVADO", 1);
-//            }
-//        }
+        private void setAudioEfeitos(bool audio)
+        {
+            if (!audio)
+            {
+                setVolumeEfeitos(0);
+                toggle_efeitos.isOn = false;
+                slider_efeitos.interactable = false;
+                PlayerPrefs.SetInt("AUDIO_EFEITO_ATIVADO", 0);
+            }
+            else
+            {
+                setVolumeEfeitos(slider_efeitos.value);
+                toggle_efeitos.isOn = true;
+                slider_efeitos.interactable = true;
+                PlayerPrefs.SetInt("AUDIO_EFEITO_ATIVADO", 1);
+            }
+        }
 
 //        private void setVolumeEfeitos(float audio)
 //        {
@@ -346,23 +344,23 @@ namespace textgame
 //        }
 
 
-//        private void setAudioMusica(bool audio)
-//        {
-//            if (!audio)
-//            {
-//                audio_musica.volume = 0;
-//                toggle_musica.isOn = false;
-//                slider_musica.interactable = false;
-//                PlayerPrefs.SetInt("AUDIO_MUSICA_ATIVADO", 0);
-//            }
-//            else
-//            {
-//                audio_musica.volume = slider_musica.value;
-//                toggle_musica.isOn = true;
-//                slider_musica.interactable = true;
-//                PlayerPrefs.SetInt("AUDIO_MUSICA_ATIVADO", 1);
-//            }
-//        }
+        private void setAudioMusica(bool audio)
+        {
+            if (!audio)
+            {
+                audio_musica.volume = 0;
+                toggle_musica.isOn = false;
+                slider_musica.interactable = false;
+                PlayerPrefs.SetInt("AUDIO_MUSICA_ATIVADO", 0);
+            }
+            else
+            {
+                audio_musica.volume = slider_musica.value;
+                toggle_musica.isOn = true;
+                slider_musica.interactable = true;
+                PlayerPrefs.SetInt("AUDIO_MUSICA_ATIVADO", 1);
+            }
+        }
 
 //        private void setVolumeMusica(float audio)
 //        {
@@ -443,12 +441,13 @@ namespace textgame
 //                }
 //            }
 
-//            if (PlayerPrefs.HasKey("AUDIO_MUSICA"))
-//            {
-//                setVolumeMusica(PlayerPrefs.GetFloat("AUDIO_MUSICA"));
-//                slider_musica.value = PlayerPrefs.GetFloat("AUDIO_MUSICA");
-//            }
-//        }
-//        #endregion
+            if (PlayerPrefs.HasKey("AUDIO_MUSICA"))
+            {
+                setVolumeMusica(PlayerPrefs.GetFloat("AUDIO_MUSICA"));
+                slider_musica.value = PlayerPrefs.GetFloat("AUDIO_MUSICA");
+            }
+        }
+        #endregion
     }
+>>>>>>> Stashed changes
 }
